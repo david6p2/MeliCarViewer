@@ -1,0 +1,2561 @@
+List Details https://frontend.mercadolibre.com/sites/MCO/search?MODEL=59350&definition_filters=years&years=2015-2020&category=MCO1744&BRAND=40661&limit=20&offset=0&pure_query=false&zipcode=CO-DC_TUNPQ0ZPTjcyNzAz&retailer=secondary&mclicsOn=true&adult_content=no
+{
+  "site_id": "MCO",
+  "paging": {
+    "total": 82,
+    "offset": 0,
+    "limit": 20,
+    "primary_results": 42
+  },
+  "results": [
+    {
+      "id": "MCO574128847",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 79800000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 136443726,
+        "car_dealer": true,
+        "real_estate_agency": false,
+        "tags": [
+          "car_dealer",
+          "messages_as_seller",
+          "messages_as_buyer"
+        ],
+        "address": {
+          "id": 104892048,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1NVQjUzNzQ4",
+            "name": "Suba"
+          }
+        },
+        "car_dealer_logo": "https://resources.mlstatic.com/classifieds_accounts/MCO_car_dealer/136443726_vip_v3.jpg"
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-574128847-audi-a3-2017-_JM#position=1&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 Ambition Stronic Sedán",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 14,
+      "logo": "https://resources.mlstatic.com/classifieds_accounts/MCO_car_dealer/136443726_vip_v3.jpg",
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-2017-S_994243-MCO42971111102_082020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-2017-S_994243-MCO42971111102_082020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-2017-D_NQ_NP_994243-MCO42971111102_082020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=311%208950734&phones=57%203118950734&vertical=MOT&primary_attribute=2017%20-%2035.901%20Km&title=Audi%20A3%20Ambition%20Stronic%20Sed%C3%A1n&price=79800000&id=MCO574128847&seller_id=136443726&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-2017-D_NQ_NP_994243-MCO42971111102_082020-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-574128847-audi-a3-2017-_JM&currency_id=COP&status=active#position=1&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-574128847-audi-a3-2017-_JM"
+        },
+        "fav": {
+          "item_id": "MCO574128847"
+        }
+      },
+      "primary_attribute": "2017 - 35.901 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2017",
+        "kilometers": "35.901"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO579890391",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 68000000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 635600616,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+          "normal",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 1127823351,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1VTQTY3MTQ1",
+            "name": "Usaquén"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-579890391-audi-a3-sportback-_JM#position=2&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 Sportback",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 13,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-sportback-S_607467-MCO43308686435_082020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sportback-S_607467-MCO43308686435_082020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sportback-D_NQ_NP_607467-MCO43308686435_082020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=3006489340&phones=57%203006489340&vertical=MOT&primary_attribute=2017%20-%2011.500%20Km&title=Audi%20A3%20Sportback&price=68000000&id=MCO579890391&seller_id=635600616&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-sportback-D_NQ_NP_607467-MCO43308686435_082020-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-579890391-audi-a3-sportback-_JM&currency_id=COP&status=active#position=2&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-579890391-audi-a3-sportback-_JM"
+        },
+        "fav": {
+          "item_id": "MCO579890391"
+        }
+      },
+      "primary_attribute": "2017 - 11.500 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2017",
+        "kilometers": "11.500"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO576548487",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 68900000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 624434686,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+          "normal",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 1124094236,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1BVRTg0NTU0",
+            "name": "Puente Aranda"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-576548487-audi-a3-sline-1800-_JM#position=3&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 Sline 1800",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 14,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-sline-1800-S_696483-MCO43137994863_082020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sline-1800-S_696483-MCO43137994863_082020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sline-1800-D_NQ_NP_696483-MCO43137994863_082020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=3202716739&phones=57%203133062771&vertical=MOT&primary_attribute=2015%20-%2051.000%20Km&title=Audi%20A3%20Sline%201800&price=68900000&id=MCO576548487&seller_id=624434686&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-sline-1800-D_NQ_NP_696483-MCO43137994863_082020-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-576548487-audi-a3-sline-1800-_JM&currency_id=COP&status=active#position=3&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-576548487-audi-a3-sline-1800-_JM"
+        },
+        "fav": {
+          "item_id": "MCO576548487"
+        }
+      },
+      "primary_attribute": "2015 - 51.000 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2015",
+        "kilometers": "51.000"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO577676547",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 62900000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 272956513,
+        "car_dealer": true,
+        "real_estate_agency": false,
+        "tags": [
+          "car_dealer",
+          "messages_as_seller",
+          "messages_as_buyer"
+        ],
+        "address": {
+          "id": 1006731960,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1NVQjUzNzQ4",
+            "name": "Suba"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-577676547-audi-a3-sportback-18t-2016-_JM#position=4&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 Sport Back",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 8,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-sportback-18t-2016-S_790467-MCO43192195000_082020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sportback-18t-2016-S_790467-MCO43192195000_082020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sportback-18t-2016-D_NQ_NP_790467-MCO43192195000_082020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=313%202563035&phones=57%203132563035&vertical=MOT&primary_attribute=2016%20-%2039.800%20Km&title=Audi%20A3%20Sport%20Back&price=62900000&id=MCO577676547&seller_id=272956513&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-sportback-18t-2016-D_NQ_NP_790467-MCO43192195000_082020-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-577676547-audi-a3-sportback-18t-2016-_JM&currency_id=COP&status=active#position=4&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-577676547-audi-a3-sportback-18t-2016-_JM"
+        },
+        "fav": {
+          "item_id": "MCO577676547"
+        }
+      },
+      "primary_attribute": "2016 - 39.800 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2016",
+        "kilometers": "39.800"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO571967316",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 85000000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 131871561,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+          "franchise",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 1029094112,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1VTQTY3MTQ1",
+            "name": "Usaquén"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-571967316-audi-a3-18cc-at-aa-_JM#position=5&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 1.8cc At Aa",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 12,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-18cc-at-aa-S_739962-MCO32124774300_092019-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-18cc-at-aa-S_739962-MCO32124774300_092019-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-18cc-at-aa-D_NQ_NP_739962-MCO32124774300_092019-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=311%205386118&vertical=MOT&primary_attribute=2017%20-%2036.300%20Km&title=Audi%20A3%201.8cc%20At%20Aa&price=85000000&id=MCO571967316&seller_id=131871561&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-18cc-at-aa-D_NQ_NP_739962-MCO32124774300_092019-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-571967316-audi-a3-18cc-at-aa-_JM&currency_id=COP&status=active#position=5&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-571967316-audi-a3-18cc-at-aa-_JM"
+        },
+        "fav": {
+          "item_id": "MCO571967316"
+        }
+      },
+      "primary_attribute": "2017 - 36.300 Km",
+      "location": "Cundinamarca",
+      "attributes": {
+        "year": "2017",
+        "kilometers": "36.300"
+      },
+      "secondary_attribute": "Cundinamarca",
+      "address_title": "Cundinamarca"
+    },
+    {
+      "id": "MCO573161856",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 75000000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 150323537,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+          "branch",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 128376892,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "name": "Usaquén"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-573161856-audi-a3-8v-sedan-18-tfsi-ambition-tp-1800cc-t-ct-_JM#position=6&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 8v Sedan 1.8 Tfsi Ambition Tp 1800cc T Ct",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 8,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-8v-sedan-18-tfsi-ambition-tp-1800cc-t-ct-S_913506-MCO28807950928_112018-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-8v-sedan-18-tfsi-ambition-tp-1800cc-t-ct-S_913506-MCO28807950928_112018-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-8v-sedan-18-tfsi-ambition-tp-1800cc-t-ct-D_NQ_NP_913506-MCO28807950928_112018-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=317%204357346&vertical=MOT&primary_attribute=2015%20-%2051.000%20Km&title=Audi%20A3%208v%20Sedan%201.8%20Tfsi%20Ambition%20Tp%201800cc%20T%20Ct&price=75000000&id=MCO573161856&seller_id=150323537&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-8v-sedan-18-tfsi-ambition-tp-1800cc-t-ct-D_NQ_NP_913506-MCO28807950928_112018-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-573161856-audi-a3-8v-sedan-18-tfsi-ambition-tp-1800cc-t-ct-_JM&currency_id=COP&status=active#position=6&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-573161856-audi-a3-8v-sedan-18-tfsi-ambition-tp-1800cc-t-ct-_JM"
+        },
+        "fav": {
+          "item_id": "MCO573161856"
+        }
+      },
+      "primary_attribute": "2015 - 51.000 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2015",
+        "kilometers": "51.000"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO576514967",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 63000000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 523876645,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+          "normal",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 1086829717,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1NVQjUzNzQ4",
+            "name": "Suba"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-576514967-audi-a3-ambition-stronic-at-18cc-t-ct-_JM#position=7&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 Ambition Stronic At 1.8cc T Ct",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 13,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-ambition-stronic-at-18cc-t-ct-S_605427-MCO40692754279_022020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-ambition-stronic-at-18cc-t-ct-S_605427-MCO40692754279_022020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-ambition-stronic-at-18cc-t-ct-D_NQ_NP_605427-MCO40692754279_022020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=3152591803&phones=57%203182544463&vertical=MOT&primary_attribute=2015%20-%2035.000%20Km&title=Audi%20A3%20Ambition%20Stronic%20At%201.8cc%20T%20Ct&price=63000000&id=MCO576514967&seller_id=523876645&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-ambition-stronic-at-18cc-t-ct-D_NQ_NP_605427-MCO40692754279_022020-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-576514967-audi-a3-ambition-stronic-at-18cc-t-ct-_JM&currency_id=COP&status=active#position=7&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-576514967-audi-a3-ambition-stronic-at-18cc-t-ct-_JM"
+        },
+        "fav": {
+          "item_id": "MCO576514967"
+        }
+      },
+      "primary_attribute": "2015 - 35.000 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2015",
+        "kilometers": "35.000"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO574624154",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 72000000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 3321025,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+          "normal",
+          "messages_as_seller",
+          "messages_as_buyer"
+        ],
+        "address": {
+          "id": 1070303455,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1VTQTY3MTQ1",
+            "name": "Usaquén"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-574624154-audi-a3-cara-nueva-sb-ambition-2017-12-turbo-full-equipo-_JM#position=8&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.78",
+      "vertical": "MOT",
+      "title": "Audi A3 A3 Sb Ambition 1.2t 2017 Full Equipo",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 9,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 128,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-cara-nueva-sb-ambition-2017-12-turbo-full-equipo-S_708386-MCO41846809298_052020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 280,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-cara-nueva-sb-ambition-2017-12-turbo-full-equipo-S_708386-MCO41846809298_052020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 280,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-cara-nueva-sb-ambition-2017-12-turbo-full-equipo-D_NQ_NP_708386-MCO41846809298_052020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=318%207440306&phones=57%203187440306&vertical=MOT&primary_attribute=2017%20-%2032.000%20Km&title=Audi%20A3%20A3%20Sb%20Ambition%201.2t%202017%20Full%20Equipo&price=72000000&id=MCO574624154&seller_id=3321025&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-cara-nueva-sb-ambition-2017-12-turbo-full-equipo-D_NQ_NP_708386-MCO41846809298_052020-O.jpg&max_size=500x280&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-574624154-audi-a3-cara-nueva-sb-ambition-2017-12-turbo-full-equipo-_JM&currency_id=COP&status=active#position=8&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-574624154-audi-a3-cara-nueva-sb-ambition-2017-12-turbo-full-equipo-_JM"
+        },
+        "fav": {
+          "item_id": "MCO574624154"
+        }
+      },
+      "primary_attribute": "2017 - 32.000 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2017",
+        "kilometers": "32.000"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO568892793",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 84900000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 593399418,
+        "car_dealer": true,
+        "real_estate_agency": false,
+        "tags": [
+          "car_dealer",
+          "brand",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 1114664554,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "city": {
+            "id": "TUNPQ1VTQTY3MTQ1",
+            "name": "Usaquén"
+          }
+        },
+        "official_store_id": "1271",
+        "official_store_name": "Audi Colwagen",
+        "official_store_text": "por Audi Colwagen",
+        "official_store_verbose_text": "Vendido por Audi Colwagen"
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-568892793-audi-a3-sportback-30-tfsi-110-hp-st-ambition-_JM#position=9&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.51",
+      "vertical": "MOT",
+      "title": "Audi A3 Sportback 30 Tfsi 110 Hp St Ambition  / Colwagen Bella Suiza",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 6,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 150,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-sportback-30-tfsi-110-hp-st-ambition-S_603197-MCO42456458083_072020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 331,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sportback-30-tfsi-110-hp-st-ambition-S_603197-MCO42456458083_072020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 331,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sportback-30-tfsi-110-hp-st-ambition-D_NQ_NP_603197-MCO42456458083_072020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=310%202603177&phones=57%203203744090&vertical=MOT&primary_attribute=2020%20-%200%20Km&title=Audi%20A3%20Sportback%2030%20Tfsi%20110%20Hp%20St%20Ambition%20%20%2F%20Colwagen%20Bella%20Suiza&price=84900000&id=MCO568892793&seller_id=593399418&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-sportback-30-tfsi-110-hp-st-ambition-D_NQ_NP_603197-MCO42456458083_072020-O.jpg&max_size=500x331&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-568892793-audi-a3-sportback-30-tfsi-110-hp-st-ambition-_JM&currency_id=COP&status=active#position=9&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-568892793-audi-a3-sportback-30-tfsi-110-hp-st-ambition-_JM"
+        },
+        "fav": {
+          "item_id": "MCO568892793"
+        }
+      },
+      "primary_attribute": "2020 - 0 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2020",
+        "kilometers": "0"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO568762588",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 94900000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 274575496,
+        "car_dealer": true,
+        "real_estate_agency": false,
+        "tags": [
+          "car_dealer",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 285179218,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1NVQjUzNzQ4",
+            "name": "Suba"
+          }
+        },
+        "car_dealer_logo": "https://resources.mlstatic.com/classifieds_accounts/MCO_car_dealer/274575496_vip.jpg"
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-568762588-audi-a3-sportback-_JM#position=10&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 Ambition",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 6,
+      "logo": "https://resources.mlstatic.com/classifieds_accounts/MCO_car_dealer/274575496_vip.jpg",
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-sportback-S_750651-MCO42437201043_072020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sportback-S_750651-MCO42437201043_072020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sportback-D_NQ_NP_750651-MCO42437201043_072020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=316%207412150&phones=57%203167412150&vertical=MOT&primary_attribute=2020%20-%200%20Km&title=Audi%20A3%20Ambition&price=94900000&id=MCO568762588&seller_id=274575496&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-sportback-D_NQ_NP_750651-MCO42437201043_072020-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-568762588-audi-a3-sportback-_JM&currency_id=COP&status=active#position=10&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-568762588-audi-a3-sportback-_JM"
+        },
+        "fav": {
+          "item_id": "MCO568762588"
+        }
+      },
+      "primary_attribute": "2020 - 0 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2020",
+        "kilometers": "0"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO568428089",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 94900000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 274575496,
+        "car_dealer": true,
+        "real_estate_agency": false,
+        "tags": [
+          "car_dealer",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 285179218,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1NVQjUzNzQ4",
+            "name": "Suba"
+          }
+        },
+        "car_dealer_logo": "https://resources.mlstatic.com/classifieds_accounts/MCO_car_dealer/274575496_vip.jpg"
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-568428089-audi-a3-sportback-12t-_JM#position=11&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 Ambition",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 6,
+      "logo": "https://resources.mlstatic.com/classifieds_accounts/MCO_car_dealer/274575496_vip.jpg",
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-sportback-12t-S_651450-MCO42393059916_062020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sportback-12t-S_651450-MCO42393059916_062020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sportback-12t-D_NQ_NP_651450-MCO42393059916_062020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=316%207412150&phones=57%203167412150&vertical=MOT&primary_attribute=2020%20-%200%20Km&title=Audi%20A3%20Ambition&price=94900000&id=MCO568428089&seller_id=274575496&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-sportback-12t-D_NQ_NP_651450-MCO42393059916_062020-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-568428089-audi-a3-sportback-12t-_JM&currency_id=COP&status=active#position=11&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-568428089-audi-a3-sportback-12t-_JM"
+        },
+        "fav": {
+          "item_id": "MCO568428089"
+        }
+      },
+      "primary_attribute": "2020 - 0 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2020",
+        "kilometers": "0"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO572533195",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 51000000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 224661264,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+          "franchise",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 192172378,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1NVQjUzNzQ4",
+            "name": "Suba"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-572533195-audi-a3-18-turbo-_JM#position=12&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 1.8 Turbo",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 8,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-18-turbo-S_800917-MCO40475676861_012020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-18-turbo-S_800917-MCO40475676861_012020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-18-turbo-D_NQ_NP_800917-MCO40475676861_012020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=316%208656638&phones=57%203168656638&vertical=MOT&primary_attribute=2015%20-%2061.000%20Km&title=Audi%20A3%201.8%20Turbo&price=51000000&id=MCO572533195&seller_id=224661264&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-18-turbo-D_NQ_NP_800917-MCO40475676861_012020-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-572533195-audi-a3-18-turbo-_JM&currency_id=COP&status=active#position=12&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-572533195-audi-a3-18-turbo-_JM"
+        },
+        "fav": {
+          "item_id": "MCO572533195"
+        }
+      },
+      "primary_attribute": "2015 - 61.000 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2015",
+        "kilometers": "61.000"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO578780749",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 72900000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 131871505,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+          "branch",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 168079571,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1NVQjUzNzQ4",
+            "name": "Suba"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-578780749-audi-a3-sedan-18-at-turbo-_JM#position=13&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 Sedan 1.8 At Turbo",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 8,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-sedan-18-at-turbo-S_893280-MCO40903445742_022020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sedan-18-at-turbo-S_893280-MCO40903445742_022020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sedan-18-at-turbo-D_NQ_NP_893280-MCO40903445742_022020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=3002197482&phones=57%203015680239&vertical=MOT&primary_attribute=2017%20-%2022.000%20Km&title=Audi%20A3%20Sedan%201.8%20At%20Turbo&price=72900000&id=MCO578780749&seller_id=131871505&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-sedan-18-at-turbo-D_NQ_NP_893280-MCO40903445742_022020-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-578780749-audi-a3-sedan-18-at-turbo-_JM&currency_id=COP&status=active#position=13&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-578780749-audi-a3-sedan-18-at-turbo-_JM"
+        },
+        "fav": {
+          "item_id": "MCO578780749"
+        }
+      },
+      "primary_attribute": "2017 - 22.000 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2017",
+        "kilometers": "22.000"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO580372552",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 68000000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 533286273,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+          "normal",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 1090637521,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1NVQjUzNzQ4",
+            "name": "Suba"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-580372552-audi-a3-sport-back-_JM#position=14&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 Sport Back",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 14,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-sport-back-S_653092-MCO41014830993_032020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sport-back-S_653092-MCO41014830993_032020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sport-back-D_NQ_NP_653092-MCO41014830993_032020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=3002717778&phones=57%203002717778&vertical=MOT&primary_attribute=2017%20-%2030.000%20Km&title=Audi%20A3%20Sport%20Back&price=68000000&id=MCO580372552&seller_id=533286273&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-sport-back-D_NQ_NP_653092-MCO41014830993_032020-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-580372552-audi-a3-sport-back-_JM&currency_id=COP&status=active#position=14&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-580372552-audi-a3-sport-back-_JM"
+        },
+        "fav": {
+          "item_id": "MCO580372552"
+        }
+      },
+      "primary_attribute": "2017 - 30.000 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2017",
+        "kilometers": "30.000"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO582219362",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 70000000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 147091293,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+          "branch",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 156201420,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1NVQjUzNzQ4",
+            "name": "Suba"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-582219362-audi-a3-sedan-ambition-18t-stronic-_JM#position=15&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 Sedan Ambition 1.8t Stronic",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 13,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-sedan-ambition-18t-stronic-S_665778-MCO31981517232_082019-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sedan-ambition-18t-stronic-S_665778-MCO31981517232_082019-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sedan-ambition-18t-stronic-D_NQ_NP_665778-MCO31981517232_082019-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=305%203219480&phones=57%203053219480&vertical=MOT&primary_attribute=2015%20-%2026.900%20Km&title=Audi%20A3%20Sedan%20Ambition%201.8t%20Stronic&price=70000000&id=MCO582219362&seller_id=147091293&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-sedan-ambition-18t-stronic-D_NQ_NP_665778-MCO31981517232_082019-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-582219362-audi-a3-sedan-ambition-18t-stronic-_JM&currency_id=COP&status=active#position=15&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-582219362-audi-a3-sedan-ambition-18t-stronic-_JM"
+        },
+        "fav": {
+          "item_id": "MCO582219362"
+        }
+      },
+      "primary_attribute": "2015 - 26.900 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2015",
+        "kilometers": "26.900"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO576053963",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 78000000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 147091037,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+          "branch",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 1028806882,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1BVRTg0NTU0",
+            "name": "Puente Aranda"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-576053963-audi-a3-new-a3-18-t-_JM#position=16&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 New A3 1.8 T",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 14,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-new-a3-18-t-S_889508-MCO31754255303_082019-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-new-a3-18-t-S_889508-MCO31754255303_082019-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-new-a3-18-t-D_NQ_NP_889508-MCO31754255303_082019-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=310%202277107&phones=57%203102277107&vertical=MOT&primary_attribute=2017%20-%209.500%20Km&title=Audi%20A3%20New%20A3%201.8%20T&price=78000000&id=MCO576053963&seller_id=147091037&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-new-a3-18-t-D_NQ_NP_889508-MCO31754255303_082019-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-576053963-audi-a3-new-a3-18-t-_JM&currency_id=COP&status=active#position=16&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-576053963-audi-a3-new-a3-18-t-_JM"
+        },
+        "fav": {
+          "item_id": "MCO576053963"
+        }
+      },
+      "primary_attribute": "2017 - 9.500 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2017",
+        "kilometers": "9.500"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO578802801",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 58500000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 131871505,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+          "branch",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 168079571,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1NVQjUzNzQ4",
+            "name": "Suba"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-578802801-audi-a3-18-t-ambition-_JM#position=17&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 1.8 T Ambition",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 8,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-18-t-ambition-S_879808-MCO40874461461_022020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-18-t-ambition-S_879808-MCO40874461461_022020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-18-t-ambition-D_NQ_NP_879808-MCO40874461461_022020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=310%202156065&phones=57%203102156065&vertical=MOT&primary_attribute=2015%20-%2020.250%20Km&title=Audi%20A3%201.8%20T%20Ambition&price=58500000&id=MCO578802801&seller_id=131871505&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-18-t-ambition-D_NQ_NP_879808-MCO40874461461_022020-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-578802801-audi-a3-18-t-ambition-_JM&currency_id=COP&status=active#position=17&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-578802801-audi-a3-18-t-ambition-_JM"
+        },
+        "fav": {
+          "item_id": "MCO578802801"
+        }
+      },
+      "primary_attribute": "2015 - 20.250 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2015",
+        "kilometers": "20.250"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO575307960",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 45000000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 150323537,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+          "branch",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 128376892,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "name": "Usaquén"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-575307960-audi-a3-ambition-12-t-_JM#position=18&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 Ambition 1.2 T",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 8,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-ambition-12-t-S_693186-MCO40701574539_022020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-ambition-12-t-S_693186-MCO40701574539_022020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-ambition-12-t-D_NQ_NP_693186-MCO40701574539_022020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=317%206468659&phones=57%203176468659&vertical=MOT&primary_attribute=2015%20-%2032.000%20Km&title=Audi%20A3%20Ambition%201.2%20T&price=45000000&id=MCO575307960&seller_id=150323537&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-ambition-12-t-D_NQ_NP_693186-MCO40701574539_022020-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-575307960-audi-a3-ambition-12-t-_JM&currency_id=COP&status=active#position=18&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-575307960-audi-a3-ambition-12-t-_JM"
+        },
+        "fav": {
+          "item_id": "MCO575307960"
+        }
+      },
+      "primary_attribute": "2015 - 32.000 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2015",
+        "kilometers": "32.000"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO578691775",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 97000000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 131871505,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+          "branch",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 168079571,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1NVQjUzNzQ4",
+            "name": "Suba"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-578691775-audi-a3-sline-progressive-20-at-turbo-_JM#position=19&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 Sline Progressive 2.0 At Turbo",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 8,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-sline-progressive-20-at-turbo-S_999578-MCO40918286279_022020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sline-progressive-20-at-turbo-S_999578-MCO40918286279_022020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-sline-progressive-20-at-turbo-D_NQ_NP_999578-MCO40918286279_022020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=311%203841510&phones=57%203113841510&vertical=MOT&primary_attribute=2018%20-%206.300%20Km&title=Audi%20A3%20Sline%20Progressive%202.0%20At%20Turbo&price=97000000&id=MCO578691775&seller_id=131871505&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-sline-progressive-20-at-turbo-D_NQ_NP_999578-MCO40918286279_022020-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-578691775-audi-a3-sline-progressive-20-at-turbo-_JM&currency_id=COP&status=active#position=19&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-578691775-audi-a3-sline-progressive-20-at-turbo-_JM"
+        },
+        "fav": {
+          "item_id": "MCO578691775"
+        }
+      },
+      "primary_attribute": "2018 - 6.300 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2018",
+        "kilometers": "6.300"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    },
+    {
+      "id": "MCO571121828",
+      "buying_mode": "classified",
+      "price": {
+        "amount": 55000000,
+        "currency_id": "COP",
+        "discount_rate": 0
+      },
+      "category_id": "MCO1744",
+      "seller_info": {
+        "id": 131871505,
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": [
+          "branch",
+          "messages_as_seller"
+        ],
+        "address": {
+          "id": 168079571,
+          "comment": "",
+          "address_line": "",
+          "country": {
+            "id": "CO",
+            "name": "Colombia"
+          },
+          "state": {
+            "id": "CO-DC",
+            "name": "Bogotá D.C."
+          },
+          "city": {
+            "id": "TUNPQ1NVQjUzNzQ4",
+            "name": "Suba"
+          }
+        }
+      },
+      "permalink": "https://carro.mercadolibre.com.co/MCO-571121828-audi-a3-a3-sedan-mt-1800cc-_JM#position=20&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "image_ratio": "1.33",
+      "vertical": "MOT",
+      "title": "Audi A3 A3 Sedan Mt 1800cc",
+      "tags": [],
+      "available_quantity": 1,
+      "pictures_qty": 14,
+      "is_interactive": false,
+      "list_picture": {
+        "height": 171,
+        "width": 228,
+        "url": "https://http2.mlstatic.com/audi-a3-a3-sedan-mt-1800cc-S_933786-MCO41166445514_032020-UB.jpg"
+      },
+      "gallery_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-a3-sedan-mt-1800cc-S_933786-MCO41166445514_032020-O.jpg"
+      },
+      "mosaic_picture": {
+        "height": 375,
+        "width": 500,
+        "url": "https://http2.mlstatic.com/audi-a3-a3-sedan-mt-1800cc-D_NQ_NP_933786-MCO41166445514_032020-LA.jpg"
+      },
+      "url": "meli://item?buying_mode=classified&phones=316%204313483&phones=57%203164313483&vertical=MOT&primary_attribute=2015%20-%2053.000%20Km&title=Audi%20A3%20A3%20Sedan%20Mt%201800cc&price=55000000&id=MCO571121828&seller_id=131871505&currency_symbol=%24&picture=https%3A%2F%2Fhttp2.mlstatic.com%2Faudi-a3-a3-sedan-mt-1800cc-D_NQ_NP_933786-MCO41166445514_032020-O.jpg&max_size=500x375&permalink=https%3A%2F%2Fcarro.mercadolibre.com.co%2FMCO-571121828-audi-a3-a3-sedan-mt-1800cc-_JM&currency_id=COP&status=active#position=20&type=item&tracking_id=14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+      "actions": {
+        "share": {
+          "permalink": "https://carro.mercadolibre.com.co/MCO-571121828-audi-a3-a3-sedan-mt-1800cc-_JM"
+        },
+        "fav": {
+          "item_id": "MCO571121828"
+        }
+      },
+      "primary_attribute": "2015 - 53.000 Km",
+      "location": "Bogotá D.C.",
+      "attributes": {
+        "year": "2015",
+        "kilometers": "53.000"
+      },
+      "secondary_attribute": "Bogotá D.C.",
+      "address_title": "Bogotá D.C."
+    }
+  ],
+  "billboard_results": [],
+  "filters": [
+    {
+      "id": "sort",
+      "name": "Ordenar por:",
+      "type": "sort",
+      "values": [
+        {
+          "id": "relevance",
+          "name": "Más relevantes",
+          "results": 82
+        }
+      ],
+      "position": {
+        "segment": 0,
+        "row": 5000,
+        "index": 0
+      },
+      "cacheable": false,
+      "expanded": false,
+      "could_be_multiple": false,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "category",
+      "name": "Elegir categoría",
+      "type": "category",
+      "values": [
+        {
+          "id": "MCO1744",
+          "name": "Carros y Camionetas",
+          "path_from_root": [
+            {
+              "id": "MCO1743",
+              "name": "Carros, Motos y Otros"
+            },
+            {
+              "id": "MCO1744",
+              "name": "Carros y Camionetas"
+            }
+          ]
+        }
+      ],
+      "position": {
+        "segment": 0,
+        "row": 5010,
+        "index": 0
+      },
+      "cacheable": false,
+      "expanded": false,
+      "could_be_multiple": false,
+      "above_the_fold": 5,
+      "collapsed": false
+    },
+    {
+      "id": "BRAND",
+      "name": "Marca",
+      "type": "checkbox",
+      "values": [
+        {
+          "id": "40661",
+          "name": "Audi"
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 21070,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": true,
+      "above_the_fold": 5,
+      "collapsed": false
+    },
+    {
+      "id": "MODEL",
+      "name": "Modelo",
+      "type": "checkbox",
+      "values": [
+        {
+          "id": "59350",
+          "name": "A3"
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 21072,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": true,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "years",
+      "name": "Año",
+      "type": "list",
+      "values": [
+        {
+          "id": "2015-2020",
+          "name": "2015 a 2020"
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25070,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": false,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "categoryHidden",
+      "name": "CategoryHidden",
+      "type": "hidden",
+      "values": [
+        {
+          "id": "MCO1744",
+          "name": "Carros y Camionetas",
+          "path_from_root": [
+            {
+              "id": "MCO1743",
+              "name": "Carros, Motos y Otros"
+            },
+            {
+              "id": "MCO1744",
+              "name": "Carros y Camionetas"
+            }
+          ]
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 35030,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": false,
+      "above_the_fold": 10,
+      "collapsed": false
+    }
+  ],
+  "available_filters": [
+    {
+      "id": "sort",
+      "name": "Ordenar por:",
+      "type": "sort",
+      "values": [
+        {
+          "id": "relevance",
+          "name": "Más relevantes",
+          "results": 82
+        },
+        {
+          "id": "price_asc",
+          "name": "Menor precio",
+          "results": 82
+        },
+        {
+          "id": "price_desc",
+          "name": "Mayor precio",
+          "results": 82
+        }
+      ],
+      "position": {
+        "segment": 0,
+        "row": 5000,
+        "index": 0
+      },
+      "cacheable": false,
+      "expanded": false,
+      "could_be_multiple": false,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "state",
+      "name": "Ubicación",
+      "type": "location",
+      "values": [
+        {
+          "id": "TUNPUEFOVGFiZWI3",
+          "name": "Antioquia",
+          "results": 12
+        },
+        {
+          "id": "TUNPUEFUTG9mNDk5",
+          "name": "Atlántico",
+          "results": 4
+        },
+        {
+          "id": "TUNPUEJPR1gxMDljZA",
+          "name": "Bogotá D.C.",
+          "results": 50
+        },
+        {
+          "id": "TUNPUFNBTnJlMjMw",
+          "name": "Santander",
+          "results": 8
+        },
+        {
+          "id": "TUNPUFZBTGExNmNjNg",
+          "name": "Valle Del Cauca",
+          "results": 3
+        },
+        {
+          "id": "TUNPUENBTHNjODY4",
+          "name": "Caldas",
+          "results": 1
+        },
+        {
+          "id": "TUNPUENVTmE3NmQ4",
+          "name": "Cundinamarca",
+          "results": 1
+        },
+        {
+          "id": "TUNPUFFVSW9kYmZm",
+          "name": "Quindio",
+          "results": 1
+        },
+        {
+          "id": "TUNPUFJJU2ExMWIyYg",
+          "name": "Risaralda",
+          "results": 2
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 15110,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": false,
+      "above_the_fold": 5,
+      "collapsed": false
+    },
+    {
+      "id": "VEHICLE_YEAR",
+      "name": "Año",
+      "type": "years",
+      "values": [
+        {
+          "id": "2020-2020",
+          "name": "2020",
+          "results": 8
+        },
+        {
+          "id": "2019-2019",
+          "name": "2019",
+          "results": 11
+        },
+        {
+          "id": "2018-2018",
+          "name": "2018",
+          "results": 5
+        },
+        {
+          "id": "2017-2017",
+          "name": "2017",
+          "results": 17
+        },
+        {
+          "id": "2016-2016",
+          "name": "2016",
+          "results": 2
+        },
+        {
+          "id": "2015-2015",
+          "name": "2015",
+          "results": 39
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25020,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": false,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "KILOMETERS",
+      "name": "Kilómetros",
+      "type": "kilometers",
+      "values": [
+        {
+          "id": "[0km-0km]",
+          "name": "0 km",
+          "results": 7
+        },
+        {
+          "id": "[0.001km-15000km]",
+          "name": "0 a 15.000 km",
+          "results": 18
+        },
+        {
+          "id": "[15000km-35000km]",
+          "name": "15.000 a 35.000 km",
+          "results": 24
+        },
+        {
+          "id": "[35000km-45000km]",
+          "name": "35.000 a 45.000 km",
+          "results": 17
+        },
+        {
+          "id": "[45000km-100000km]",
+          "name": "45.000 a 100.000 km",
+          "results": 19
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25028,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": false,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "seller_type",
+      "name": "Vendedor",
+      "type": "list",
+      "values": [
+        {
+          "id": "private_seller",
+          "name": "Directo",
+          "results": 48
+        },
+        {
+          "id": "car_dealer",
+          "name": "Concesionario",
+          "results": 34
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25029,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": false,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "ITEM_CONDITION",
+      "name": "Condición",
+      "type": "checkbox",
+      "values": [
+        {
+          "id": "2230284",
+          "name": "Nuevo",
+          "results": 7
+        },
+        {
+          "id": "2230581",
+          "name": "Usado",
+          "results": 75
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25030,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": true,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "VEHICLE_BODY_TYPE",
+      "name": "Tipo de carrocería",
+      "type": "checkbox",
+      "values": [
+        {
+          "id": "452758",
+          "name": "Sedán",
+          "results": 27
+        },
+        {
+          "id": "479344",
+          "name": "Hatchback",
+          "results": 13
+        },
+        {
+          "id": "452749",
+          "name": "Coupé",
+          "results": 7
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25035,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": true,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "FUEL_TYPE",
+      "name": "Tipo de combustible",
+      "type": "checkbox",
+      "values": [
+        {
+          "id": "64364",
+          "name": "Gasolina",
+          "results": 81
+        },
+        {
+          "id": "372590",
+          "name": "Gasolina y gas",
+          "results": 1
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25040,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": true,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "DOORS",
+      "name": "Puertas",
+      "type": "list",
+      "values": [
+        {
+          "id": "2-2",
+          "name": "2",
+          "results": 2
+        },
+        {
+          "id": "3-3",
+          "name": "3",
+          "results": 13
+        },
+        {
+          "id": "4-4",
+          "name": "4",
+          "results": 31
+        },
+        {
+          "id": "5-5",
+          "name": "5",
+          "results": 36
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25045,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": false,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "TRANSMISSION",
+      "name": "Transmisión",
+      "type": "checkbox",
+      "values": [
+        {
+          "id": "370876",
+          "name": "Automática",
+          "results": 73
+        },
+        {
+          "id": "370877",
+          "name": "Mecánica",
+          "results": 7
+        },
+        {
+          "id": "1244809",
+          "name": "Automática secuencial",
+          "results": 2
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25050,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": true,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "STEERING",
+      "name": "Dirección",
+      "type": "checkbox",
+      "values": [
+        {
+          "id": "370874",
+          "name": "Hidráulica",
+          "results": 30
+        },
+        {
+          "id": "405719",
+          "name": "Electroasistida",
+          "results": 23
+        },
+        {
+          "id": "370873",
+          "name": "Asistida",
+          "results": 6
+        },
+        {
+          "id": "370875",
+          "name": "Mecánica",
+          "results": 1
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25055,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": true,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "COLOR",
+      "name": "Color",
+      "type": "checkbox",
+      "values": [
+        {
+          "id": "283165",
+          "name": "Gris",
+          "results": 11
+        },
+        {
+          "id": "52055",
+          "name": "Blanco",
+          "results": 6
+        },
+        {
+          "id": "52049",
+          "name": "Negro",
+          "results": 6
+        },
+        {
+          "id": "51993",
+          "name": "Rojo",
+          "results": 5
+        },
+        {
+          "id": "52028",
+          "name": "Azul",
+          "results": 3
+        },
+        {
+          "id": "52053",
+          "name": "Plateado",
+          "results": 1
+        },
+        {
+          "id": "52051",
+          "name": "Gris oscuro",
+          "results": 1
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25060,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": false,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "group_1",
+      "name": "Otras características",
+      "type": "checkbox",
+      "values": [
+        {
+          "id": "HAS_ABS_BRAKES:242085",
+          "name": "Con frenos ABS",
+          "results": 60
+        },
+        {
+          "id": "HAS_AIR_CONDITIONING:242085",
+          "name": "Con aire acondicionado",
+          "results": 62
+        },
+        {
+          "id": "HAS_ALARM:242085",
+          "name": "Con alarma",
+          "results": 42
+        },
+        {
+          "id": "HAS_POWER_WINDOWS:242085",
+          "name": "Con vidrios eléctricos",
+          "results": 57
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25070,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": false,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "LICENSE_PLATE_LAST_DIGIT",
+      "name": "Último dígito de la placa",
+      "type": "list",
+      "values": [
+        {
+          "id": "0-0",
+          "name": "0",
+          "results": 5
+        },
+        {
+          "id": "1-1",
+          "name": "1",
+          "results": 6
+        },
+        {
+          "id": "2-2",
+          "name": "2",
+          "results": 3
+        },
+        {
+          "id": "3-3",
+          "name": "3",
+          "results": 5
+        },
+        {
+          "id": "4-4",
+          "name": "4",
+          "results": 3
+        },
+        {
+          "id": "5-5",
+          "name": "5",
+          "results": 2
+        },
+        {
+          "id": "6-6",
+          "name": "6",
+          "results": 1
+        },
+        {
+          "id": "7-7",
+          "name": "7",
+          "results": 4
+        },
+        {
+          "id": "8-8",
+          "name": "8",
+          "results": 3
+        },
+        {
+          "id": "9-9",
+          "name": "9",
+          "results": 2
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25070,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": false,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "LICENSE_PLATE_PARITY",
+      "name": "Paridad de la placa",
+      "type": "checkbox",
+      "values": [
+        {
+          "id": "6832187",
+          "name": "Impar",
+          "results": 19
+        },
+        {
+          "id": "6832186",
+          "name": "Par",
+          "results": 15
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25070,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": true,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "TRACTION_CONTROL",
+      "name": "Control de tracción",
+      "type": "checkbox",
+      "values": [
+        {
+          "id": "370879",
+          "name": "4x2",
+          "results": 42
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25070,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": true,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "WITH_MECHANICAL_WARRANTY",
+      "name": "Con garantía mecánica",
+      "type": "switch",
+      "values": [
+        {
+          "id": "242085",
+          "name": "Con garantía mecánica",
+          "results": 2
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 25080,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": false,
+      "above_the_fold": 10,
+      "collapsed": false
+    },
+    {
+      "id": "official_store",
+      "name": "Solo tiendas oficiales",
+      "type": "switch",
+      "values": [
+        {
+          "id": "all",
+          "name": "Solo tiendas oficiales",
+          "results": 4
+        }
+      ],
+      "position": {
+        "segment": 1,
+        "row": 35060,
+        "index": 0
+      },
+      "cacheable": true,
+      "expanded": false,
+      "could_be_multiple": false,
+      "above_the_fold": 10,
+      "collapsed": false
+    }
+  ],
+  "render_options": {
+    "view_mode": {
+      "force": true,
+      "value": "list"
+    },
+    "search_filter": {
+      "id": "category",
+      "value": "MCO1744",
+      "name": "Carros y Camionetas"
+    },
+    "views_with_reviews": [
+      "GALLERY",
+      "GALLERY"
+    ]
+  },
+  "currency": {
+    "id": "COP",
+    "symbol": "$",
+    "description": "Peso colombiano",
+    "decimal_places": 0
+  },
+  "experiments_data": [
+    {
+      "path": "/search",
+      "variant_id": "4717",
+      "name": "search/backend-buybox-integration"
+    },
+    {
+      "path": "/search",
+      "variant_id": "4581",
+      "name": "search/multiple-filters-all-mot"
+    }
+  ],
+  "sort": {
+    "id": "relevance",
+    "name": "Más relevantes"
+  },
+  "available_sorts": [
+    {
+      "id": "price_asc",
+      "name": "Menor precio"
+    },
+    {
+      "id": "price_desc",
+      "name": "Mayor precio"
+    }
+  ],
+  "vertical": "MOT",
+  "loyal_level": 0,
+  "pads": [],
+  "landing": {
+    "type": "BASE",
+    "show_item_shipping_info": true,
+    "show_item_installments": true,
+    "show_item_product": true,
+    "show_item_reviews": true,
+    "show_item_attributes": true,
+    "show_item_brand_logo": true,
+    "show_item_official_store": true,
+    "show_item_variations": true,
+    "show_view_change_buttons": true,
+    "show_product_header": true
+  },
+  "geo_search": true,
+  "visibility_res_location": "BOTH",
+  "show_free_shipping_progress": false,
+  "app_indexing": {
+    "web_url": "https://carros.mercadolibre.com.co/audi/a3/",
+    "app_url": "android-app://com.mercadolibre/meli/search?",
+    "title": "Carros y Camionetas"
+  },
+  "app_bar": {
+    "id": "MAIN",
+    "show_divider": false,
+    "elements": [
+      {
+        "type": "label",
+        "title": "82 resultados",
+        "width": "fill"
+      },
+      {
+        "type": "button",
+        "title": "Filtrar",
+        "width": "fixed"
+      }
+    ]
+  },
+  "app_bars": [
+    {
+      "id": "MAIN",
+      "show_divider": false,
+      "elements": [
+        {
+          "type": "label",
+          "title": "82 resultados",
+          "width": "fill"
+        },
+        {
+          "type": "button",
+          "title": "Filtrar",
+          "width": "fixed"
+        }
+      ]
+    }
+  ],
+  "filters_metadata": {
+    "applied_filters_qty": 4
+  },
+  "melidata_info": {
+    "query": "",
+    "limit": 20,
+    "offset": 0,
+    "total": 82,
+    "category_id": "MCO1744",
+    "category_path": [
+      "MCO1743",
+      "MCO1744"
+    ],
+    "sort_id": "relevance",
+    "filters": {
+      "categoryHidden": "MCO1744",
+      "MODEL": "59350",
+      "category": "MCO1744",
+      "years": "2015-2020",
+      "BRAND": "40661"
+    },
+    "available_filters": {},
+    "autoselected_filters": [
+      "categoryHidden"
+    ],
+    "view_mode": "LIST",
+    "results": [
+      "MCO574128847",
+      "MCO579890391",
+      "MCO576548487",
+      "MCO577676547",
+      "MCO571967316",
+      "MCO573161856",
+      "MCO576514967",
+      "MCO574624154",
+      "MCO568892793",
+      "MCO568762588",
+      "MCO568428089",
+      "MCO572533195",
+      "MCO578780749",
+      "MCO580372552",
+      "MCO582219362",
+      "MCO576053963",
+      "MCO578802801",
+      "MCO575307960",
+      "MCO578691775",
+      "MCO571121828"
+    ],
+    "billboards": [],
+    "catalog_product_id": "",
+    "promise_items": {
+      "nextday": [],
+      "sameday": []
+    },
+    "official_stores_carousel_shown": [],
+    "user_zone": "Zona_3",
+    "pdp_rows": [],
+    "carousel_filters": [],
+    "show_supermarket_carousel": false,
+    "show_apparel_carousel": false,
+    "carousel_categories_shown": false,
+    "tracking_id": "14c013b7-7e8f-4bf7-86fd-d8dc9d5dff5b",
+    "pdp_grouped_search": true,
+    "tag_tracking_info": {
+      "best_seller": [],
+      "lightning_deal": [],
+      "shipping_guaranteed": [],
+      "deal_of_the_day": []
+    },
+    "pdp_info": [],
+    "location_info": {
+      "zipcode": "CO-DC_TUNPQ0ZPTjcyNzAz",
+      "default_zipcode": false,
+      "user_zone": "Zona_3"
+    },
+    "geo_search": "true"
+  },
+  "analytics_track": {
+    "custom_dimensions": [
+      {
+        "id": 49,
+        "name": "itemId",
+        "value": "MCO574128847,MCO579890391,MCO576548487,MCO577676547,MCO571967316,MCO573161856,MCO576514967,MCO574624154,MCO568892793,MCO568762588,MCO568428089,MCO572533195,MCO578780749,MCO580372552,MCO582219362,MCO576053963,MCO578802801,MCO575307960,MCO578691775,MCO571121828"
+      },
+      {
+        "id": 86,
+        "name": "CategoryDomain",
+        "value": "MCO-CARS_AND_VANS"
+      },
+      {
+        "id": 117,
+        "name": "context",
+        "value": "officialStore"
+      },
+      {
+        "id": 22,
+        "name": "searchResults",
+        "value": 82
+      },
+      {
+        "id": 50,
+        "name": "searchFilters",
+        "value": "YES"
+      },
+      {
+        "id": 8,
+        "name": "pageVertical",
+        "value": "MOT"
+      }
+    ],
+    "page": "/SEARCH/LISTING/",
+    "page_vertical": "MOT"
+  }
+}
