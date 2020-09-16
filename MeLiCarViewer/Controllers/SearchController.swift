@@ -17,7 +17,7 @@ class SearchController {
   init(loader: DataLoader = DataLoader()) {
       self.dataLoader = loader
   }
-  
+
   func fetchPorscheModels(_ completion: @escaping (_ success: Bool) -> Void) {
     // Just one request at a time
     guard !isFetchInProgress else {
@@ -34,12 +34,11 @@ class SearchController {
         completion(true)
         break
       case .failure(let error):
-        print(error.localizedDescription)
+        self?.isFetchInProgress = false
+        print(error.errorInfo ?? DataLoader.noErrorDescription)
         completion(false)
         break
       }
     })
   }
-  
-  
 }
