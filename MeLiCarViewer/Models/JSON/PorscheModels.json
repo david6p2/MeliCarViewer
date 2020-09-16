@@ -28,50 +28,5 @@
         "id": "60354",
         "name": "Panamera",
         "metric": 4
-    },
-    {
-        "id": "462950",
-        "name": "718 boxster",
-        "metric": 3
-    },
-    {
-        "id": "2220962",
-        "name": "Boxter S ii",
-        "metric": 2
-    },
-    {
-        "id": "2251651",
-        "name": "Cayenne Turbo",
-        "metric": 0
-    },
-    {
-        "id": "13441",
-        "name": "968",
-        "metric": 0
-    },
-    {
-        "id": "3487192",
-        "name": "Cayenne iii",
-        "metric": 0
-    },
-    {
-        "id": "13680",
-        "name": "928",
-        "metric": 0
-    },
-    {
-        "id": "463752",
-        "name": "718 cayman",
-        "metric": 0
-    },
-    {
-        "id": "1007086",
-        "name": "911 Targa",
-        "metric": 0
-    },
-    {
-        "id": "2251644",
-        "name": "911 Let",
-        "metric": 0
     }
 ]
