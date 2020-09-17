@@ -57,7 +57,8 @@ class CarResultsViewController: UIViewController {
   }
   
   func searchPorscheModel() {
-    controller.searchPorscheModel(selectedCarModel?.id) { (result) in
+    controller.searchPorscheModel(selectedCarModel?.id) { [weak self] (result) in
+      guard let self = self else { return }
       switch result {
       case .success(let carResults):
         guard let carModelResult = carResults else {
