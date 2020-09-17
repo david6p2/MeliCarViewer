@@ -28,7 +28,7 @@ class CarViewCell: UICollectionViewCell {
     configure()
   }
   
-  func set(car: CarResult) {
+  func set(_ car: CarResult) {
     carTitleLabel.text = car.title
     priceLabel.text = String(car.price)
     yearKmLabel.text = createYearKmText(car)

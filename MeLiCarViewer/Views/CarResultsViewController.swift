@@ -9,8 +9,15 @@
 import UIKit
 
 class CarResultsViewController: UIViewController {
+  enum Section {
+    case main
+  }
+  
   var selectedCarModel: CarModel?
-  var collectionView: UICollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+  var carsResults: [CarResult] = []
+  
+  var collectionView: UICollectionView!
+  var dataSource: UICollectionViewDiffableDataSource<Section, CarResult>!
   
   var controller: CarResultsController = .init(carModel: nil)
   
@@ -18,7 +25,6 @@ class CarResultsViewController: UIViewController {
     super.init(nibName: nil, bundle: nil)
     self.selectedCarModel = selectedCarModel
     self.controller = CarResultsController(carModel: selectedCarModel)
-    collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewFlowLayout())
   }
   
   required init?(coder: NSCoder) {
@@ -30,12 +36,12 @@ class CarResultsViewController: UIViewController {
     configureViewController()
     configureCollectionView()
     searchPorscheModel()
+    configureDataSource()
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     navigationController?.setNavigationBarHidden(false, animated: true)
-    navigationController?.navigationBar.prefersLargeTitles = true
   }
   
   func configureViewController() {
@@ -46,7 +52,7 @@ class CarResultsViewController: UIViewController {
   func configureCollectionView() {
     collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createThreeColumnFlowLayout())
     view.addSubview(collectionView)
-    collectionView.backgroundColor = .systemPink
+    collectionView.backgroundColor = .systemBackground
     collectionView.register(CarViewCell.self, forCellWithReuseIdentifier: CarViewCell.reuseID)
   }
   
@@ -68,13 +74,34 @@ class CarResultsViewController: UIViewController {
     controller.searchPorscheModel(selectedCarModel?.id) { (result) in
       switch result {
       case .success(let carResults):
-        print(carResults)
-        break
+        guard let carModelResult = carResults else {
+          // TODO: Show an Alert with the error to the user
+          return
+        }
+        // TODO: This should be done in the controller
+        self.carsResults = carModelResult.results
+        self.updateData()
       case .failure(let error):
         // TODO: Show an Alert with the error to the user
         print(error.errorInfo ?? DataLoader.noErrorDescription)
-        break
       }
+    }
+  }
+  
+  func configureDataSource() {
+    dataSource = UICollectionViewDiffableDataSource<Section, CarResult>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, car) -> UICollectionViewCell? in
+      let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CarViewCell.reuseID, for: indexPath) as! CarViewCell
+      cell.set(car)
+      return cell
+    })
+  }
+  
+  func updateData() {
+    var snapshot = NSDiffableDataSourceSnapshot<Section, CarResult>()
+    snapshot.appendSections([.main])
+    snapshot.appendItems(carsResults)
+    DispatchQueue.main.async {
+      self.dataSource.apply(snapshot, animatingDifferences: true)
     }
   }
 }
