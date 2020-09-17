@@ -32,6 +32,10 @@
 		63DAE77E2511248700C64D83 /* DCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE77D2511248700C64D83 /* DCError.swift */; };
 		63DAE78125113E4F00C64D83 /* CarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE78025113E4E00C64D83 /* CarViewCell.swift */; };
 		63DAE783251171B200C64D83 /* DCCarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE782251171B200C64D83 /* DCCarImageView.swift */; };
+		63DAE785251305C100C64D83 /* DCTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE784251305C100C64D83 /* DCTitleLabel.swift */; };
+		63DAE7872513076900C64D83 /* DCBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE7862513076900C64D83 /* DCBodyLabel.swift */; };
+		63DAE7892513082800C64D83 /* DCAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE7882513082800C64D83 /* DCAlertViewController.swift */; };
+		63DAE78B25130EE700C64D83 /* UIViewController+ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,10 @@
 		63DAE77D2511248700C64D83 /* DCError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCError.swift; sourceTree = "<group>"; };
 		63DAE78025113E4E00C64D83 /* CarViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewCell.swift; sourceTree = "<group>"; };
 		63DAE782251171B200C64D83 /* DCCarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCCarImageView.swift; sourceTree = "<group>"; };
+		63DAE784251305C100C64D83 /* DCTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCTitleLabel.swift; sourceTree = "<group>"; };
+		63DAE7862513076900C64D83 /* DCBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCBodyLabel.swift; sourceTree = "<group>"; };
+		63DAE7882513082800C64D83 /* DCAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCAlertViewController.swift; sourceTree = "<group>"; };
+		63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowAlert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,10 +157,10 @@
 		6394576F250E9BB600661244 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				63DAE775251073A300C64D83 /* CustomViews */,
 				63945752250E9B8800661244 /* Main.storyboard */,
 				63945750250E9B8800661244 /* SearchViewController.swift */,
 				63DAE7732510705000C64D83 /* CarResultsViewController.swift */,
+				63DAE775251073A300C64D83 /* CustomViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,10 +201,13 @@
 		63DAE775251073A300C64D83 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				63DAE78C251311C700C64D83 /* CustomAlert */,
 				63DAE77F25113E0700C64D83 /* Cells */,
 				63DAE776251073C100C64D83 /* DCButton.swift */,
 				63DAE77825107A4700C64D83 /* DCTextField.swift */,
 				63DAE782251171B200C64D83 /* DCCarImageView.swift */,
+				63DAE784251305C100C64D83 /* DCTitleLabel.swift */,
+				63DAE7862513076900C64D83 /* DCBodyLabel.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -215,6 +226,15 @@
 				63DAE78025113E4E00C64D83 /* CarViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		63DAE78C251311C700C64D83 /* CustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				63DAE7882513082800C64D83 /* DCAlertViewController.swift */,
+				63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */,
+			);
+			path = CustomAlert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,17 +346,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				63945784250EE09600661244 /* DataLoader.swift in Sources */,
+				63DAE7872513076900C64D83 /* DCBodyLabel.swift in Sources */,
 				63DAE7722510668E00C64D83 /* CarResultsController.swift in Sources */,
 				63945786250EE63100661244 /* SearchController.swift in Sources */,
 				63945782250EDF8200661244 /* CarModel.swift in Sources */,
 				63DAE78125113E4F00C64D83 /* CarViewCell.swift in Sources */,
 				63945751250E9B8800661244 /* SearchViewController.swift in Sources */,
 				63DAE783251171B200C64D83 /* DCCarImageView.swift in Sources */,
+				63DAE78B25130EE700C64D83 /* UIViewController+ShowAlert.swift in Sources */,
 				6394574D250E9B8800661244 /* AppDelegate.swift in Sources */,
 				63DAE7702510264F00C64D83 /* CarResult.swift in Sources */,
+				63DAE785251305C100C64D83 /* DCTitleLabel.swift in Sources */,
 				63DAE77925107A4700C64D83 /* DCTextField.swift in Sources */,
 				63DAE7742510705100C64D83 /* CarResultsViewController.swift in Sources */,
 				63DAE77E2511248700C64D83 /* DCError.swift in Sources */,
+				63DAE7892513082800C64D83 /* DCAlertViewController.swift in Sources */,
 				63DAE777251073C100C64D83 /* DCButton.swift in Sources */,
 				6394574F250E9B8800661244 /* SceneDelegate.swift in Sources */,
 			);
