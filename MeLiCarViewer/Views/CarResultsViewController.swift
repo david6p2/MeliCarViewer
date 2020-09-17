@@ -68,7 +68,8 @@ class CarResultsViewController: UIViewController {
         self.carsResults = carModelResult.results
         self.updateData()
       case .failure(let error):
-        // TODO: Show an Alert with the error to the user
+        self.presentDCAlertOnMainThread(title: "Something went wrong", message: error.errorInfo ?? DataLoader.noErrorDescription, buttonTitle: "OK")
+        // TODO: Replace this with os_log
         print(error.errorInfo ?? DataLoader.noErrorDescription)
       }
     }
