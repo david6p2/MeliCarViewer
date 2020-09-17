@@ -11,12 +11,12 @@ import UIKit
 class CarViewCell: UICollectionViewCell {
   static let reuseID = "CarViewCell"
   
-  let padding: CGFloat = 8
+  let padding: CGFloat = 4
   
   let carImageView = DCCarImageView(frame: .zero)
-  let carTitleLabel = UILabel()
-  let priceLabel = UILabel()
-  let yearKmLabel = UILabel()
+  let carTitleLabel = DCTitleLabel(textAlignment: .left, fontSize: 10)
+  let priceLabel = DCSubtitleLabel(textAlignment: .left, fontSize: 14)
+  let yearKmLabel = DCSubtitleLabel(textAlignment: .left, fontSize: 8, fontWeight: .regular)
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -67,11 +67,13 @@ class CarViewCell: UICollectionViewCell {
   private func configureCarTitleLabel() {
     addSubview(carTitleLabel)
     
+    carTitleLabel.numberOfLines = 2
+    
     NSLayoutConstraint.activate([
       carTitleLabel.topAnchor.constraint(equalTo: carImageView.bottomAnchor, constant: padding),
       carTitleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
       carTitleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
-      carTitleLabel.heightAnchor.constraint(equalToConstant: 20)
+      carTitleLabel.heightAnchor.constraint(equalToConstant: 24)
     ])
   }
   
@@ -82,7 +84,7 @@ class CarViewCell: UICollectionViewCell {
       priceLabel.topAnchor.constraint(equalTo: carTitleLabel.bottomAnchor, constant: padding),
       priceLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
       priceLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
-      priceLabel.heightAnchor.constraint(equalToConstant: 20)
+      priceLabel.heightAnchor.constraint(equalToConstant: 18)
     ])
   }
   
@@ -93,7 +95,7 @@ class CarViewCell: UICollectionViewCell {
       yearKmLabel.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: padding),
       yearKmLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
       yearKmLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
-      yearKmLabel.heightAnchor.constraint(equalToConstant: 20)
+      yearKmLabel.heightAnchor.constraint(equalToConstant: 10)
     ])
   }
 }

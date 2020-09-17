@@ -36,6 +36,7 @@
 		63DAE7872513076900C64D83 /* DCBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE7862513076900C64D83 /* DCBodyLabel.swift */; };
 		63DAE7892513082800C64D83 /* DCAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE7882513082800C64D83 /* DCAlertViewController.swift */; };
 		63DAE78B25130EE700C64D83 /* UIViewController+ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */; };
+		63DAE78E251317D000C64D83 /* DCSubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE78D251317D000C64D83 /* DCSubtitleLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		63DAE7862513076900C64D83 /* DCBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCBodyLabel.swift; sourceTree = "<group>"; };
 		63DAE7882513082800C64D83 /* DCAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCAlertViewController.swift; sourceTree = "<group>"; };
 		63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowAlert.swift"; sourceTree = "<group>"; };
+		63DAE78D251317D000C64D83 /* DCSubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCSubtitleLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 				63DAE77825107A4700C64D83 /* DCTextField.swift */,
 				63DAE782251171B200C64D83 /* DCCarImageView.swift */,
 				63DAE784251305C100C64D83 /* DCTitleLabel.swift */,
+				63DAE78D251317D000C64D83 /* DCSubtitleLabel.swift */,
 				63DAE7862513076900C64D83 /* DCBodyLabel.swift */,
 			);
 			path = CustomViews;
@@ -357,6 +360,7 @@
 				6394574D250E9B8800661244 /* AppDelegate.swift in Sources */,
 				63DAE7702510264F00C64D83 /* CarResult.swift in Sources */,
 				63DAE785251305C100C64D83 /* DCTitleLabel.swift in Sources */,
+				63DAE78E251317D000C64D83 /* DCSubtitleLabel.swift in Sources */,
 				63DAE77925107A4700C64D83 /* DCTextField.swift in Sources */,
 				63DAE7742510705100C64D83 /* CarResultsViewController.swift in Sources */,
 				63DAE77E2511248700C64D83 /* DCError.swift in Sources */,
