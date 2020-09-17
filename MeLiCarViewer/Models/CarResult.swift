@@ -67,7 +67,7 @@ struct Paging: Codable {
   }
 }
 
-struct CarResult: Codable {
+struct CarResult: Codable, Hashable {
   let id: String
   let siteID: SiteID
   let title: String
@@ -118,6 +118,14 @@ struct CarResult: Codable {
     case domainID = "domain_id"
     case catalogProductID = "catalog_product_id"
     case tags
+  }
+  
+  func hash(into hasher: inout Hasher) {
+    hasher.combine(id)
+  }
+  
+  static func == (lhs: CarResult, rhs: CarResult) -> Bool {
+    return lhs.id == rhs.id
   }
 }
 
