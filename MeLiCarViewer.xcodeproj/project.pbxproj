@@ -37,6 +37,7 @@
 		63DAE7892513082800C64D83 /* DCAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE7882513082800C64D83 /* DCAlertViewController.swift */; };
 		63DAE78B25130EE700C64D83 /* UIViewController+ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */; };
 		63DAE78E251317D000C64D83 /* DCSubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE78D251317D000C64D83 /* DCSubtitleLabel.swift */; };
+		63DAE7902513267700C64D83 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE78F2513267700C64D83 /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		63DAE7882513082800C64D83 /* DCAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCAlertViewController.swift; sourceTree = "<group>"; };
 		63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowAlert.swift"; sourceTree = "<group>"; };
 		63DAE78D251317D000C64D83 /* DCSubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCSubtitleLabel.swift; sourceTree = "<group>"; };
+		63DAE78F2513267700C64D83 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				63DAE77D2511248700C64D83 /* DCError.swift */,
+				63DAE78F2513267700C64D83 /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				63945784250EE09600661244 /* DataLoader.swift in Sources */,
 				63DAE7872513076900C64D83 /* DCBodyLabel.swift in Sources */,
 				63DAE7722510668E00C64D83 /* CarResultsController.swift in Sources */,
+				63DAE7902513267700C64D83 /* UIHelper.swift in Sources */,
 				63945786250EE63100661244 /* SearchController.swift in Sources */,
 				63945782250EDF8200661244 /* CarModel.swift in Sources */,
 				63DAE78125113E4F00C64D83 /* CarViewCell.swift in Sources */,
