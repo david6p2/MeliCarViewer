@@ -20,7 +20,7 @@ class SearchViewController: UIViewController {
   
   @IBAction func searchAction(_ sender: UIButton) {
     guard let selectedCarModel = selectedCarModel else {
-      print("No Model Selected")
+      presentDCAlertOnMainThread(title: "Empty Model", message: "Please select a Model. 😀", buttonTitle: "OK")
       return
     }
     
