@@ -202,17 +202,25 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		63D3C1052514703F00B230D9 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				63DAE784251305C100C64D83 /* DCTitleLabel.swift */,
+				63DAE78D251317D000C64D83 /* DCSubtitleLabel.swift */,
+				63DAE7862513076900C64D83 /* DCBodyLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
 		63DAE775251073A300C64D83 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				63D3C1052514703F00B230D9 /* Labels */,
 				63DAE78C251311C700C64D83 /* CustomAlert */,
 				63DAE77F25113E0700C64D83 /* Cells */,
 				63DAE776251073C100C64D83 /* DCButton.swift */,
 				63DAE77825107A4700C64D83 /* DCTextField.swift */,
 				63DAE782251171B200C64D83 /* DCCarImageView.swift */,
-				63DAE784251305C100C64D83 /* DCTitleLabel.swift */,
-				63DAE78D251317D000C64D83 /* DCSubtitleLabel.swift */,
-				63DAE7862513076900C64D83 /* DCBodyLabel.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
