@@ -32,6 +32,7 @@ class CarViewCell: UICollectionViewCell {
     carTitleLabel.text = car.title
     priceLabel.text = String(car.price)
     yearKmLabel.text = createYearKmText(car)
+    carImageView.setImage(from: car.thumbnail)
   }
   
   private func createYearKmText(_ car: CarResult) -> String {

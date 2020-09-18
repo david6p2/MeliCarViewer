@@ -13,6 +13,9 @@ class CarResultsController {
   public var porscheModelToSearch: CarModel?
   public var porscheModelsResult: CarModelResult? = nil
   
+  var page = 1
+  var hasMoreResults = true
+  
   private var isFetchInProgress = false
   var dataLoader: DataLoader
   
@@ -25,17 +28,20 @@ class CarResultsController {
   /// - Parameters:
   ///   - model: The model id code for the MCO site in Mercado Libre
   ///   - completion: Will return a completion closure with the result having the CarModelResult if it succed or the Error if it fails
-  func searchPorscheModel(_ model: String?, completion: @escaping (Result<CarModelResult?, DCError>) -> Void) {
+  func searchPorscheModel(_ model: String?, page: Int = 1, completion: @escaping (Result<CarModelResult?, DCError>) -> Void) {
     guard !isFetchInProgress else {
       return
     }
     
     isFetchInProgress = true
     
-    dataLoader.searchResultsForCarModel(model, withPage: 0) { [weak self] (result) in
+    dataLoader.searchResultsForCarModel(model, withPage: page) { [weak self] (result) in
       switch result {
       case .success(let carModelsResult):
         self?.isFetchInProgress = false
+        if carModelsResult.paging.total < carModelsResult.paging.offset + carModelsResult.paging.limit {
+          self?.hasMoreResults = false
+        }
         self?.porscheModelsResult = carModelsResult
         completion(.success(self?.porscheModelsResult))
         break

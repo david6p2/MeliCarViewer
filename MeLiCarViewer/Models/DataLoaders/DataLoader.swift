@@ -6,12 +6,15 @@
 //  Copyright © 2020 David A Cespedes R. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 
 class DataLoader {
+  static let cache = NSCache<NSString, UIImage>()
+  
   let baseEndPoint = "https://api.mercadolibre.com/"
-  let limit = 20
+  let limit = 10
+  let offset = 10
   let searchEndpoint = "sites/MCO/search"
   let defaultSession = URLSession(configuration: .default)
   var dataTask: URLSessionDataTask? = nil
@@ -23,12 +26,12 @@ class DataLoader {
     dataTask?.cancel()
     
     var urlComponents = URLComponents(string: baseEndPoint+searchEndpoint )
-    //    let offset = (page - 1) * limit
+    let offset = (page - 1) * limit
     var queryParameter = "BRAND=56870"
     if let carModel = carModel, !carModel.isEmpty {
       queryParameter = "MODEL=\(carModel)"
     }
-    urlComponents?.query = "category=MCO1744&\(queryParameter)"
+    urlComponents?.query = "category=MCO1744&limit=\(limit)&offset=\(offset)&\(queryParameter)"
     
     guard let url = urlComponents?.url else {
       handler(.failure(DCError(type: .invalidCarModel, errorInfo: "The search URL was not valid. Check your parameters. (\(queryParameter)")))
@@ -89,5 +92,47 @@ class DataLoader {
         handler(.failure(error))
       }
     }
+  }
+  
+  public func downloadImage(from urlString: String, handler: @escaping (Result<UIImage, DCError>) -> Void) {
+    let cacheKey = NSString(string: urlString)
+    if let image = Self.cache.object(forKey: cacheKey) {
+      handler(.success(image))
+      return
+    }
+    
+    guard let url = URL(string: urlString) else {
+      handler(.failure(DCError(type: .unableToComplete, errorInfo: "Can't convert urlString: \(urlString) to a URL")))
+      return
+    }
+    
+    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+      if error != nil {
+        handler(.failure(DCError(type: .unableToComplete, errorInfo: "Can't download image for: \(urlString) there was an error (\(error.debugDescription))")))
+        return
+      }
+      
+      guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+        handler(.failure(DCError(type: .invalidResponse, errorInfo: error.debugDescription)))
+        return
+      }
+      
+      guard let data = data else {
+        handler(.failure(DCError(type: .invalidData, errorInfo: error.debugDescription)))
+        return
+      }
+      
+      guard let image = UIImage(data: data) else {
+        handler(.failure(DCError(type: .unableToComplete, errorInfo: error.debugDescription)))
+        return
+      }
+      
+      Self.cache.setObject(image, forKey: cacheKey)
+      
+      DispatchQueue.main.async {
+        handler(.success(image))
+      }
+    }
+    task.resume()
   }
 }

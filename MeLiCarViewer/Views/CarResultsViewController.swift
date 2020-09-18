@@ -35,7 +35,7 @@ class CarResultsViewController: UIViewController {
     super.viewDidLoad()
     configureViewController()
     configureCollectionView()
-    searchPorscheModel()
+    searchPorscheModel(withPage: self.controller.page)
     configureDataSource()
   }
   
@@ -52,12 +52,13 @@ class CarResultsViewController: UIViewController {
   func configureCollectionView() {
     collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createThreeColumnFlowLayout(in: view))
     view.addSubview(collectionView)
+    collectionView.delegate = self
     collectionView.backgroundColor = .systemBackground
     collectionView.register(CarViewCell.self, forCellWithReuseIdentifier: CarViewCell.reuseID)
   }
   
-  func searchPorscheModel() {
-    controller.searchPorscheModel(selectedCarModel?.id) { [weak self] (result) in
+  func searchPorscheModel(withPage page: Int) {
+    controller.searchPorscheModel(selectedCarModel?.id, page: page) { [weak self] (result) in
       guard let self = self else { return }
       switch result {
       case .success(let carResults):
@@ -65,8 +66,8 @@ class CarResultsViewController: UIViewController {
           // TODO: Show an Alert with the error to the user
           return
         }
-        // TODO: This should be done in the controller
-        self.carsResults = carModelResult.results
+        // TODO: This should be done in the controller?
+        self.carsResults.append(contentsOf: carModelResult.results)
         self.updateData()
       case .failure(let error):
         self.presentDCAlertOnMainThread(title: "Something went wrong", message: error.errorInfo ?? DataLoader.noErrorDescription, buttonTitle: "OK")
@@ -90,6 +91,22 @@ class CarResultsViewController: UIViewController {
     snapshot.appendItems(carsResults)
     DispatchQueue.main.async {
       self.dataSource.apply(snapshot, animatingDifferences: true)
+    }
+  }
+}
+
+extension CarResultsViewController: UICollectionViewDelegate {
+  func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    let offsetY = scrollView.contentOffset.y
+    let contentHeight = scrollView.contentSize.height
+    let height = scrollView.frame.size.height
+    
+    if offsetY > contentHeight - height {
+      guard self.controller.hasMoreResults else {
+        return
+      }
+      self.controller.page += 1
+      searchPorscheModel(withPage: self.controller.page)
     }
   }
 }
