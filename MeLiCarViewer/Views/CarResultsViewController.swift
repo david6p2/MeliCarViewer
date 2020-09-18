@@ -58,8 +58,11 @@ class CarResultsViewController: UIViewController {
   }
   
   func searchPorscheModel(withPage page: Int) {
+    showLoadingView()
     controller.searchPorscheModel(selectedCarModel?.id, page: page) { [weak self] (result) in
       guard let self = self else { return }
+      self.dismissLoadingView()
+      
       switch result {
       case .success(let carResults):
         guard let carModelResult = carResults else {
