@@ -15,6 +15,7 @@ class CarResultsViewController: UIViewController {
   
   var selectedCarModel: CarModel?
   var carsResults: [CarResult] = []
+  var filteredCarsResults: [CarResult] = []
   
   var collectionView: UICollectionView!
   var dataSource: UICollectionViewDiffableDataSource<Section, CarResult>!
@@ -34,6 +35,7 @@ class CarResultsViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     configureViewController()
+    configureSearchController()
     configureCollectionView()
     searchPorscheModel(withPage: self.controller.page)
     configureDataSource()
@@ -57,6 +59,16 @@ class CarResultsViewController: UIViewController {
     collectionView.register(CarViewCell.self, forCellWithReuseIdentifier: CarViewCell.reuseID)
   }
   
+  func configureSearchController() {
+    let searchController = UISearchController()
+    searchController.searchResultsUpdater = self
+    searchController.searchBar.delegate = self
+    searchController.searchBar.placeholder = "Search for a Porsche"
+    searchController.obscuresBackgroundDuringPresentation = false
+    navigationItem.searchController = searchController
+    
+  }
+  
   func searchPorscheModel(withPage page: Int) {
     showLoadingView()
     controller.searchPorscheModel(selectedCarModel?.id, page: page) { [weak self] (result) in
@@ -71,7 +83,17 @@ class CarResultsViewController: UIViewController {
         }
         // TODO: This should be done in the controller?
         self.carsResults.append(contentsOf: carModelResult.results)
-        self.updateData()
+        
+        if self.carsResults.isEmpty {
+          let message = "There are no Porsche \(self.selectedCarModel?.name ?? "of the selected model") for sale right now 😢."
+          DispatchQueue.main.async {
+            self.showEmptyStateView(with: message, in: self.view)
+          }
+          return
+        }
+        
+        self.updateData(on: self.carsResults)
+        
       case .failure(let error):
         self.presentDCAlertOnMainThread(title: "Something went wrong", message: error.errorInfo ?? DataLoader.noErrorDescription, buttonTitle: "OK")
         // TODO: Replace this with os_log
@@ -88,10 +110,10 @@ class CarResultsViewController: UIViewController {
     })
   }
   
-  func updateData() {
+  func updateData(on results: [CarResult]) {
     var snapshot = NSDiffableDataSourceSnapshot<Section, CarResult>()
     snapshot.appendSections([.main])
-    snapshot.appendItems(carsResults)
+    snapshot.appendItems(results)
     DispatchQueue.main.async {
       self.dataSource.apply(snapshot, animatingDifferences: true)
     }
@@ -111,5 +133,25 @@ extension CarResultsViewController: UICollectionViewDelegate {
       self.controller.page += 1
       searchPorscheModel(withPage: self.controller.page)
     }
+  }
+}
+
+extension CarResultsViewController: UISearchResultsUpdating, UISearchBarDelegate {
+  func updateSearchResults(for searchController: UISearchController) {
+    guard let filter = searchController.searchBar.text, !filter.isEmpty else {
+      filteredCarsResults.removeAll()
+      updateData(on: carsResults)
+      return
+      
+    }
+    
+    filteredCarsResults = carsResults.filter{ $0.title.lowercased().contains(filter.lowercased()) }
+    print(filteredCarsResults.count)
+    updateData(on: filteredCarsResults)
+  }
+  
+  func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+    filteredCarsResults.removeAll()
+    updateData(on: carsResults)
   }
 }
