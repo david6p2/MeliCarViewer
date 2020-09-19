@@ -16,6 +16,7 @@ class CarResultsViewController: UIViewController {
   var selectedCarModel: CarModel?
   var carsResults: [CarResult] = []
   var filteredCarsResults: [CarResult] = []
+  var isSearching = false
   
   var collectionView: UICollectionView!
   var dataSource: UICollectionViewDiffableDataSource<Section, CarResult>!
@@ -134,6 +135,16 @@ extension CarResultsViewController: UICollectionViewDelegate {
       searchPorscheModel(withPage: self.controller.page)
     }
   }
+  
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let activeArray = isSearching ? filteredCarsResults : carsResults
+    let car = activeArray[indexPath.item]
+    
+    let destinationViewController = CarDetailViewController()
+    destinationViewController.car = car
+    let navigationController = UINavigationController(rootViewController: destinationViewController)
+    present(navigationController, animated: true)
+  }
 }
 
 extension CarResultsViewController: UISearchResultsUpdating, UISearchBarDelegate {
@@ -145,12 +156,15 @@ extension CarResultsViewController: UISearchResultsUpdating, UISearchBarDelegate
       
     }
     
+    isSearching = true
+    
     filteredCarsResults = carsResults.filter{ $0.title.lowercased().contains(filter.lowercased()) }
     print(filteredCarsResults.count)
     updateData(on: filteredCarsResults)
   }
   
   func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+    isSearching = false
     filteredCarsResults.removeAll()
     updateData(on: carsResults)
   }
