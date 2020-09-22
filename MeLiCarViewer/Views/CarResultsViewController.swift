@@ -140,8 +140,7 @@ extension CarResultsViewController: UICollectionViewDelegate {
     let activeArray = isSearching ? filteredCarsResults : carsResults
     let car = activeArray[indexPath.item]
     
-    let destinationViewController = CarDetailViewController()
-    destinationViewController.car = car
+    let destinationViewController = CarDetailViewController(carResult: car)
     let navigationController = UINavigationController(rootViewController: destinationViewController)
     present(navigationController, animated: true)
   }
