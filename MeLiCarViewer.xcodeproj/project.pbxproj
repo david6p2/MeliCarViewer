@@ -172,11 +172,11 @@
 		6394576F250E9BB600661244 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				63945752250E9B8800661244 /* Main.storyboard */,
-				63945750250E9B8800661244 /* SearchViewController.swift */,
-				63DAE7732510705000C64D83 /* CarResultsViewController.swift */,
-				63D3C10925166B3800B230D9 /* CarDetailViewController.swift */,
+				63D3C1132519B04B00B230D9 /* SearchViewController */,
+				63D3C1122519AFD400B230D9 /* CarResultsViewController */,
+				63D3C1112519AF3B00B230D9 /* CarDetailViewController */,
 				63DAE775251073A300C64D83 /* CustomViews */,
+				63945752250E9B8800661244 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,16 +234,38 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		63D3C1112519AF3B00B230D9 /* CarDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63D3C10925166B3800B230D9 /* CarDetailViewController.swift */,
+			);
+			path = CarDetailViewController;
+			sourceTree = "<group>";
+		};
+		63D3C1122519AFD400B230D9 /* CarResultsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63DAE77F25113E0700C64D83 /* Cells */,
+				63DAE7732510705000C64D83 /* CarResultsViewController.swift */,
+			);
+			path = CarResultsViewController;
+			sourceTree = "<group>";
+		};
+		63D3C1132519B04B00B230D9 /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63945750250E9B8800661244 /* SearchViewController.swift */,
+				63DAE77825107A4700C64D83 /* DCTextField.swift */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
 		63DAE775251073A300C64D83 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
 				63DAE78C251311C700C64D83 /* CustomAlert */,
-				63DAE77F25113E0700C64D83 /* Cells */,
-				63D3C1052514703F00B230D9 /* Labels */,
 				63D3C1062514711B00B230D9 /* Views */,
 				63DAE776251073C100C64D83 /* DCButton.swift */,
-				63DAE77825107A4700C64D83 /* DCTextField.swift */,
-				63DAE782251171B200C64D83 /* DCCarImageView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -260,6 +282,7 @@
 		63DAE77F25113E0700C64D83 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				63DAE782251171B200C64D83 /* DCCarImageView.swift */,
 				63DAE78025113E4E00C64D83 /* CarViewCell.swift */,
 			);
 			path = Cells;
@@ -268,6 +291,7 @@
 		63DAE78C251311C700C64D83 /* CustomAlert */ = {
 			isa = PBXGroup;
 			children = (
+				63D3C1052514703F00B230D9 /* Labels */,
 				63DAE7882513082800C64D83 /* DCAlertViewController.swift */,
 				63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */,
 			);
