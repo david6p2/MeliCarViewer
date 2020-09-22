@@ -11,6 +11,9 @@ import UIKit
 class CarDetailViewController: UIViewController {
   
   let headerView = UIView()
+  let itemViewOne = UIView()
+  let itemViewTwo = UIView()
+  var itemViews: [UIView] = []
   
   var car: CarResult!
   
@@ -28,31 +31,65 @@ class CarDetailViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    view.backgroundColor = .systemBackground
-    
-    let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
-    navigationItem.rightBarButtonItem = doneButton
-    
+    configureViewController()
     layoutUI()
-    
-    configurePagedImage()
-    print(car.title)
+    getPorschePictures()
   }
   
-  @objc func dismissVC() {
-    dismiss(animated: true)
+  func configureViewController() {
+    view.backgroundColor = .systemBackground
+    let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
+    navigationItem.rightBarButtonItem = doneButton
+  }
+  
+  func getPorschePictures() {
+    controller.searchPorschePictures(forPorscheId: car.id) { [weak self] (result) in
+      guard let self = self else { return }
+      
+      switch result {
+      case .success(let pictures):
+        self.controller.startDownload(for: pictures) {
+          DispatchQueue.main.async {
+            let carInfoHeaderVC = DCCarInfoHeaderViewController(porscheResult: self.controller.porscheResult)
+            carInfoHeaderVC.porschePicturesInformation = self.controller.porschePicturesInformation
+            self.add(childViewController: carInfoHeaderVC, to: self.headerView)
+          }
+        }
+      case .failure(let error):
+        self.presentDCAlertOnMainThread(title: "Something went wrong", message: error.errorInfo ?? DataLoader.noErrorDescription, buttonTitle: "OK")
+        // TODO: Replace this with os_log
+        print(error.errorInfo ?? DataLoader.noErrorDescription)
+      }
+    }
   }
   
   func layoutUI() {
-    view.addSubview(headerView)
-    headerView.translatesAutoresizingMaskIntoConstraints = false
+    let padding: CGFloat = 20
+    let itemHeight: CGFloat = 140
+    itemViews = [headerView, itemViewOne, itemViewTwo]
+    
+    for itemView in itemViews {
+      view.addSubview(itemView)
+      itemView.translatesAutoresizingMaskIntoConstraints = false
+      
+      NSLayoutConstraint.activate([
+        itemView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+        itemView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+      ])
+    }
+    
+    itemViewOne.backgroundColor = .systemPink
+    itemViewTwo.backgroundColor = .systemBlue
     
     NSLayoutConstraint.activate([
       headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-      headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-      headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-      headerView.heightAnchor.constraint(equalToConstant: view.frame.height/3 + 90)
+      headerView.heightAnchor.constraint(equalToConstant: view.frame.height/3 + 90),
+      
+      itemViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: padding),
+      itemViewOne.heightAnchor.constraint(equalToConstant: itemHeight),
+      
+      itemViewTwo.topAnchor.constraint(equalTo: itemViewOne.bottomAnchor, constant: padding),
+      itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight),
     ])
   }
   
@@ -63,39 +100,7 @@ class CarDetailViewController: UIViewController {
     childViewController.didMove(toParent: self)
   }
   
-  func configurePagedImage() {
-    //var pagedImages:[UIImage] = []
-    let pagedImageOne = UIImageView(image: UIImage(named: "CarPlaceholder"))
-    pagedImageOne.frame = view.bounds
-    //view.addSubview(pagedImageOne)
-    
-    controller.searchPorschePictures(forPorscheId: car.id) { [weak self] (result) in
-      guard let self = self else { return }
-      
-      switch result {
-      case .success(let pictures):
-        self.controller.startDownload(for: pictures) {
-          print("Downloaded \(pictures.count) pictures")
-          if let imageData = self.controller.porschePicturesInformation?.images?.first,
-            let firstImage = UIImage(data: imageData) {
-            print("First image assigned \(firstImage)")
-            pagedImageOne.image = firstImage
-            
-            DispatchQueue.main.async {
-              let carInfoHeaderVC = DCCarInfoHeaderViewController(porscheResult: self.controller.porscheResult)
-              carInfoHeaderVC.porschePicturesInformation = self.controller.porschePicturesInformation
-              self.add(childViewController: carInfoHeaderVC, to: self.headerView)
-            }
-            
-          } else {
-            print("No image assigned")
-          }
-        }
-      case .failure(let error):
-        self.presentDCAlertOnMainThread(title: "Something went wrong", message: error.errorInfo ?? DataLoader.noErrorDescription, buttonTitle: "OK")
-        // TODO: Replace this with os_log
-        print(error.errorInfo ?? DataLoader.noErrorDescription)
-      }
-    }
+  @objc func dismissVC() {
+    dismiss(animated: true)
   }
 }
