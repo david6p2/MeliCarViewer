@@ -26,6 +26,9 @@
 		63945786250EE63100661244 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63945785250EE63100661244 /* SearchController.swift */; };
 		63D3C1082514717000B230D9 /* DCEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3C1072514717000B230D9 /* DCEmptyStateView.swift */; };
 		63D3C10A25166B3800B230D9 /* CarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3C10925166B3800B230D9 /* CarDetailViewController.swift */; };
+		63D3C10C25183ACE00B230D9 /* CarPicturesInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3C10B25183ACD00B230D9 /* CarPicturesInformation.swift */; };
+		63D3C10E2519014A00B230D9 /* CarDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3C10D2519014A00B230D9 /* CarDetailController.swift */; };
+		63D3C11025192D5A00B230D9 /* ImageDownloadOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3C10F25192D5900B230D9 /* ImageDownloadOperations.swift */; };
 		63DAE7702510264F00C64D83 /* CarResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE76F2510264F00C64D83 /* CarResult.swift */; };
 		63DAE7722510668E00C64D83 /* CarResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE7712510668E00C64D83 /* CarResultsController.swift */; };
 		63DAE7742510705100C64D83 /* CarResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE7732510705000C64D83 /* CarResultsViewController.swift */; };
@@ -76,6 +79,9 @@
 		63945785250EE63100661244 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		63D3C1072514717000B230D9 /* DCEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCEmptyStateView.swift; sourceTree = "<group>"; };
 		63D3C10925166B3800B230D9 /* CarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewController.swift; sourceTree = "<group>"; };
+		63D3C10B25183ACD00B230D9 /* CarPicturesInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPicturesInformation.swift; sourceTree = "<group>"; };
+		63D3C10D2519014A00B230D9 /* CarDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailController.swift; sourceTree = "<group>"; };
+		63D3C10F25192D5900B230D9 /* ImageDownloadOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadOperations.swift; sourceTree = "<group>"; };
 		63DAE76F2510264F00C64D83 /* CarResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarResult.swift; sourceTree = "<group>"; };
 		63DAE7712510668E00C64D83 /* CarResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarResultsController.swift; sourceTree = "<group>"; };
 		63DAE7732510705000C64D83 /* CarResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarResultsViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 			children = (
 				63945785250EE63100661244 /* SearchController.swift */,
 				63DAE7712510668E00C64D83 /* CarResultsController.swift */,
+				63D3C10D2519014A00B230D9 /* CarDetailController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 				63945771250E9C0B00661244 /* DataLoaders */,
 				63945781250EDF8200661244 /* CarModel.swift */,
 				63DAE76F2510264F00C64D83 /* CarResult.swift */,
+				63D3C10B25183ACD00B230D9 /* CarPicturesInformation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				63945783250EE09600661244 /* DataLoader.swift */,
+				63D3C10F25192D5900B230D9 /* ImageDownloadOperations.swift */,
 			);
 			path = DataLoaders;
 			sourceTree = "<group>";
@@ -373,6 +382,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D3C10C25183ACE00B230D9 /* CarPicturesInformation.swift in Sources */,
+				63D3C10E2519014A00B230D9 /* CarDetailController.swift in Sources */,
 				63D3C10A25166B3800B230D9 /* CarDetailViewController.swift in Sources */,
 				63945784250EE09600661244 /* DataLoader.swift in Sources */,
 				63DAE7872513076900C64D83 /* DCBodyLabel.swift in Sources */,
@@ -382,6 +393,7 @@
 				63945782250EDF8200661244 /* CarModel.swift in Sources */,
 				63DAE78125113E4F00C64D83 /* CarViewCell.swift in Sources */,
 				63945751250E9B8800661244 /* SearchViewController.swift in Sources */,
+				63D3C11025192D5A00B230D9 /* ImageDownloadOperations.swift in Sources */,
 				63DAE783251171B200C64D83 /* DCCarImageView.swift in Sources */,
 				63D3C1082514717000B230D9 /* DCEmptyStateView.swift in Sources */,
 				63DAE78B25130EE700C64D83 /* UIViewController+ShowAlert.swift in Sources */,

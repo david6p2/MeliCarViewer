@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: - CarModelResult
 struct CarModelResult: Codable {
   let siteID: SiteID
   let paging: Paging
@@ -191,7 +192,7 @@ struct AttributeValue: Codable {
   let id: String?
   let name: String
   let valueStruct: Struct?
-  let source: Int
+  let source: Int?
   
   enum CodingKeys: String, CodingKey {
     case id, name
