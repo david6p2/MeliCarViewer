@@ -9,7 +9,7 @@
 import UIKit
 
 class CarDetailController {
-  public var porscheResult: CarResult?
+  public var porscheResult: CarResult!
   public var porschePicturesInformation: CarPicturesInformation?
   
   private var isFetchInProgress = false

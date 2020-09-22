@@ -10,6 +10,8 @@ import UIKit
 
 class CarDetailViewController: UIViewController {
   
+  let headerView = UIView()
+  
   var car: CarResult!
   
   var controller: CarDetailController = .init(porscheResult: nil)
@@ -26,10 +28,13 @@ class CarDetailViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+
     view.backgroundColor = .systemBackground
     
     let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
     navigationItem.rightBarButtonItem = doneButton
+    
+    layoutUI()
     
     configurePagedImage()
     print(car.title)
@@ -39,11 +44,30 @@ class CarDetailViewController: UIViewController {
     dismiss(animated: true)
   }
   
+  func layoutUI() {
+    view.addSubview(headerView)
+    headerView.translatesAutoresizingMaskIntoConstraints = false
+    
+    NSLayoutConstraint.activate([
+      headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+      headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+      headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+      headerView.heightAnchor.constraint(equalToConstant: view.frame.height/3 + 90)
+    ])
+  }
+  
+  func add(childViewController: UIViewController, to containerView: UIView) {
+    addChild(childViewController)
+    containerView.addSubview(childViewController.view)
+    childViewController.view.frame = containerView.bounds
+    childViewController.didMove(toParent: self)
+  }
+  
   func configurePagedImage() {
     //var pagedImages:[UIImage] = []
     let pagedImageOne = UIImageView(image: UIImage(named: "CarPlaceholder"))
     pagedImageOne.frame = view.bounds
-    view.addSubview(pagedImageOne)
+    //view.addSubview(pagedImageOne)
     
     controller.searchPorschePictures(forPorscheId: car.id) { [weak self] (result) in
       guard let self = self else { return }
@@ -56,6 +80,12 @@ class CarDetailViewController: UIViewController {
             let firstImage = UIImage(data: imageData) {
             print("First image assigned \(firstImage)")
             pagedImageOne.image = firstImage
+            
+            DispatchQueue.main.async {
+              let carInfoHeaderVC = DCCarInfoHeaderViewController(porscheResult: self.controller.porscheResult)
+              carInfoHeaderVC.porschePicturesInformation = self.controller.porschePicturesInformation
+              self.add(childViewController: carInfoHeaderVC, to: self.headerView)
+            }
             
           } else {
             print("No image assigned")
