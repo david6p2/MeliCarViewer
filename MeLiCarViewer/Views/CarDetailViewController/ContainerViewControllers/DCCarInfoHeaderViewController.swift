@@ -10,7 +10,7 @@ import UIKit
 
 class DCCarInfoHeaderViewController: UIViewController {
   
-  let carImageView = DCCarImageView(frame: .zero)
+  let carImageView = DCCarImageView(0)
   let yearKmLabel = DCSubtitleLabel(textAlignment: .left, fontSize: 12, fontWeight: .regular)
   let carTitleLabel = DCTitleLabel(textAlignment: .left, fontSize: 20)
   let priceLabel = DCSubtitleLabel(textAlignment: .left, fontSize: 28)

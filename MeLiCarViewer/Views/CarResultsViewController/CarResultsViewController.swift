@@ -56,7 +56,7 @@ class CarResultsViewController: UIViewController {
     collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createThreeColumnFlowLayout(in: view))
     view.addSubview(collectionView)
     collectionView.delegate = self
-    collectionView.backgroundColor = .systemBackground
+    collectionView.backgroundColor = .secondarySystemBackground
     collectionView.register(CarViewCell.self, forCellWithReuseIdentifier: CarViewCell.reuseID)
   }
   

@@ -48,19 +48,26 @@ class CarViewCell: UICollectionViewCell {
   }
   
   private func configure() {
+    configureCellView()
     configureCarImageView()
     configureCarTitleLabel()
     configurePriceLabel()
     configureYearKmLabel()
   }
   
+  private func configureCellView() {
+    backgroundColor = .systemBackground
+    layer.cornerRadius = 10
+    clipsToBounds = true
+  }
+  
   private func configureCarImageView() {
     addSubview(carImageView)
     
     NSLayoutConstraint.activate([
-      carImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding),
-      carImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
-      carImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
+      carImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+      carImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+      carImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
       carImageView.heightAnchor.constraint(equalTo: carImageView.widthAnchor)
     ])
   }

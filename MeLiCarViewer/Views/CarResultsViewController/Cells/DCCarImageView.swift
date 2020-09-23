@@ -19,15 +19,21 @@ class DCCarImageView: UIImageView {
     configure()
   }
   
+  convenience init(_ cornerRadius: CGFloat) {
+    self.init(frame:.zero)
+    configure(cornerRadius)
+  }
+  
   required init?(coder: NSCoder) {
     super.init(coder: coder)
     configure()
   }
   
-  private func configure() {
-    layer.cornerRadius = 10
+  private func configure(_ cornerRadius: CGFloat = 10) {
+    layer.cornerRadius = cornerRadius
     clipsToBounds = true
     image = placeholderImage
+    contentMode = .scaleAspectFill
     translatesAutoresizingMaskIntoConstraints = false
   }
   
@@ -38,7 +44,7 @@ class DCCarImageView: UIImageView {
       }
       switch result {
       case .success(let image):
-        self.image = image
+        DispatchQueue.main.async { self.image = image }
       case .failure(let error):
         print(error.errorInfo ?? DataLoader.noErrorDescription)
       }
