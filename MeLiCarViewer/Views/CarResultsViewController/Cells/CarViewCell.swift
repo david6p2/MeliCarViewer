@@ -30,7 +30,7 @@ class CarViewCell: UICollectionViewCell {
   
   func set(_ car: CarResult) {
     carTitleLabel.text = car.title
-    priceLabel.text = String(car.price)
+    priceLabel.text = car.price.convertToPriceInCOP()
     yearKmLabel.text = createYearKmText(car)
     carImageView.setImage(from: car.thumbnail)
   }

@@ -35,9 +35,10 @@ class DCCarInfoHeaderViewController: UIViewController {
   }
   
   func configueUIElements() {
+    print("Publicado el \(porschePicturesInformation.dateCreated.convertToDisplayFormat())")
     carImageView.image = UIImage(data: (porschePicturesInformation.images?.first)!)
     carTitleLabel.text = porscheResult.title
-    priceLabel.text = String(porscheResult.price)
+    priceLabel.text = porscheResult.price.convertToPriceInCOP()
     yearKmLabel.text = createYearKmText(porscheResult)
   }
   

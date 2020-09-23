@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6331FBBA251ABC3200259023 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FBB9251ABC3200259023 /* String+Ext.swift */; };
+		6331FBBC251ABFA200259023 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FBBB251ABFA200259023 /* Date+Ext.swift */; };
+		6331FBBE251AEF7400259023 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FBBD251AEF7400259023 /* Int+Ext.swift */; };
 		6394574D250E9B8800661244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6394574C250E9B8800661244 /* AppDelegate.swift */; };
 		6394574F250E9B8800661244 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6394574E250E9B8800661244 /* SceneDelegate.swift */; };
 		63945751250E9B8800661244 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63945750250E9B8800661244 /* SearchViewController.swift */; };
@@ -58,6 +61,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6331FBB9251ABC3200259023 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		6331FBBB251ABFA200259023 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		6331FBBD251AEF7400259023 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
 		63945749250E9B8800661244 /* MeLiCarViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeLiCarViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6394574C250E9B8800661244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6394574E250E9B8800661244 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +126,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6331FBB8251ABB7D00259023 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6331FBBB251ABFA200259023 /* Date+Ext.swift */,
+				6331FBBD251AEF7400259023 /* Int+Ext.swift */,
+				6331FBB9251ABC3200259023 /* String+Ext.swift */,
+				63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		63945740250E9B8800661244 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +161,7 @@
 				63945770250E9BBF00661244 /* Models */,
 				6394576F250E9BB600661244 /* Views */,
 				6394576E250E9BA200661244 /* Controllers */,
+				6331FBB8251ABB7D00259023 /* Extensions */,
 				63DAE77C2511233900C64D83 /* Utilities */,
 				6394574C250E9B8800661244 /* AppDelegate.swift */,
 				6394574E250E9B8800661244 /* SceneDelegate.swift */,
@@ -307,7 +325,6 @@
 			children = (
 				63D3C1052514703F00B230D9 /* Labels */,
 				63DAE7882513082800C64D83 /* DCAlertViewController.swift */,
-				63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */,
 			);
 			path = CustomAlert;
 			sourceTree = "<group>";
@@ -425,6 +442,7 @@
 				63D3C10A25166B3800B230D9 /* CarDetailViewController.swift in Sources */,
 				63945784250EE09600661244 /* DataLoader.swift in Sources */,
 				63DAE7872513076900C64D83 /* DCBodyLabel.swift in Sources */,
+				6331FBBE251AEF7400259023 /* Int+Ext.swift in Sources */,
 				63DAE7722510668E00C64D83 /* CarResultsController.swift in Sources */,
 				63DAE7902513267700C64D83 /* UIHelper.swift in Sources */,
 				63945786250EE63100661244 /* SearchController.swift in Sources */,
@@ -442,6 +460,8 @@
 				63DAE78E251317D000C64D83 /* DCSubtitleLabel.swift in Sources */,
 				63DAE77925107A4700C64D83 /* DCTextField.swift in Sources */,
 				63DAE7742510705100C64D83 /* CarResultsViewController.swift in Sources */,
+				6331FBBA251ABC3200259023 /* String+Ext.swift in Sources */,
+				6331FBBC251ABFA200259023 /* Date+Ext.swift in Sources */,
 				63DAE77E2511248700C64D83 /* DCError.swift in Sources */,
 				63DAE7892513082800C64D83 /* DCAlertViewController.swift in Sources */,
 				63DAE777251073C100C64D83 /* DCButton.swift in Sources */,
