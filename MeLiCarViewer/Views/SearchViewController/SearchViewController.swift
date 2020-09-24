@@ -13,7 +13,7 @@ class SearchViewController: UIViewController {
 
   @IBOutlet weak var modelTextField: DCTextField!
   @IBOutlet weak var searchButton: DCButton!
-  @IBOutlet weak var modelPicker: UIPickerView!
+  var modelPicker: UIPickerView!
   
   var controller: SearchController = .init()
   var selectedCarModel: CarModel? = nil
@@ -32,6 +32,7 @@ class SearchViewController: UIViewController {
     super.viewDidLoad()
     
     view.backgroundColor = .systemBackground
+    modelPicker = UIPickerView()
     modelPicker.delegate = self
     modelTextField.delegate = self
     modelTextField.inputView = modelPicker
