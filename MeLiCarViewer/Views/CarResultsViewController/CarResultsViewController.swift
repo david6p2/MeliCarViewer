@@ -76,7 +76,6 @@ class CarResultsViewController: DCDataLoadingViewController {
   func configureSearchController() {
     let searchController = UISearchController()
     searchController.searchResultsUpdater = self
-    searchController.searchBar.delegate = self
     searchController.searchBar.placeholder = "Search for a Porsche"
     searchController.obscuresBackgroundDuringPresentation = false
     navigationItem.searchController = searchController
@@ -167,11 +166,12 @@ extension CarResultsViewController: UICollectionViewDelegate {
   }
 }
 
-extension CarResultsViewController: UISearchResultsUpdating, UISearchBarDelegate {
+extension CarResultsViewController: UISearchResultsUpdating {
   func updateSearchResults(for searchController: UISearchController) {
     guard let filter = searchController.searchBar.text, !filter.isEmpty else {
       filteredCarsResults.removeAll()
       updateData(on: carsResults)
+      isSearching = false
       return
       
     }
@@ -181,11 +181,5 @@ extension CarResultsViewController: UISearchResultsUpdating, UISearchBarDelegate
     filteredCarsResults = carsResults.filter{ $0.title.lowercased().contains(filter.lowercased()) }
     print(filteredCarsResults.count)
     updateData(on: filteredCarsResults)
-  }
-  
-  func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-    isSearching = false
-    filteredCarsResults.removeAll()
-    updateData(on: carsResults)
   }
 }
