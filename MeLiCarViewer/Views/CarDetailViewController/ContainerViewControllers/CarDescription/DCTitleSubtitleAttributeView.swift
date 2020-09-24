@@ -38,10 +38,10 @@ class DCTitleSubtitleAttributeView: UIView {
       attributeTitleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
       attributeTitleLabel.heightAnchor.constraint(equalToConstant: 12),
       
-      attributeValueLabel.topAnchor.constraint(equalTo: attributeTitleLabel.topAnchor, constant: 8),
+      attributeValueLabel.topAnchor.constraint(equalTo: attributeTitleLabel.bottomAnchor, constant: 2),
       attributeValueLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor),
       attributeValueLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-      attributeValueLabel.heightAnchor.constraint(equalToConstant: 30),
+      attributeValueLabel.heightAnchor.constraint(greaterThanOrEqualToConstant: 14),
       attributeValueLabel.bottomAnchor.constraint(greaterThanOrEqualTo: self.bottomAnchor, constant: 8)
     ])
   }

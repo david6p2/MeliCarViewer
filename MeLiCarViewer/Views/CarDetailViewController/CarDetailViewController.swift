@@ -17,7 +17,7 @@ class CarDetailViewController: UIViewController {
   var itemViews: [UIView] = []
   
   static let padding: CGFloat = 20
-  static let itemHeight: CGFloat = 190
+  static let itemHeight: CGFloat = 200
   
   var car: CarResult!
   
