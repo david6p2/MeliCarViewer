@@ -21,7 +21,6 @@ class DCCarImageView: UIImageView {
   
   convenience init(_ cornerRadius: CGFloat) {
     self.init(frame:.zero)
-    configure(cornerRadius)
   }
   
   required init?(coder: NSCoder) {
