@@ -255,9 +255,8 @@ struct SellerReputation: Codable {
 
 // MARK: - Metrics
 struct Metrics: Codable {
-  let claims, delayedHandlingTime: Cancellations
+  let claims, delayedHandlingTime, cancellations: MetricsStruct
   let sales: Sales
-  let cancellations: Cancellations
   
   enum CodingKeys: String, CodingKey {
     case claims
@@ -266,9 +265,10 @@ struct Metrics: Codable {
   }
 }
 
-// MARK: - Cancellations
-struct Cancellations: Codable {
-  let rate, value: Int
+// MARK: - MetricsStruct
+struct MetricsStruct: Codable {
+  let rate: Float
+  let value: Int
   let period: String
 }
 
