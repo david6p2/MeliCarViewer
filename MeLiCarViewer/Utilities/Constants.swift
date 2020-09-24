@@ -6,8 +6,9 @@
 //  Copyright © 2020 David A Cespedes R. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-enum SFSymbols {
-  static let price = "pin"
+enum Images {
+  static let placeholder = UIImage(named: "CarPlaceholder")
+  static let porscheBNLogo = UIImage(named: "PorscheB&N")
 }

@@ -35,7 +35,7 @@ class DCEmptyStateView: UIView {
     messageLabel.numberOfLines = 3
     messageLabel.textColor = .secondaryLabel
     
-    logoImageView.image = UIImage(named: "PorscheB&N")
+    logoImageView.image = Images.porscheBNLogo
     logoImageView.translatesAutoresizingMaskIntoConstraints = false
     
     NSLayoutConstraint.activate([

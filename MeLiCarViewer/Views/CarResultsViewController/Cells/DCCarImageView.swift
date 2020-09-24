@@ -12,7 +12,7 @@ class DCCarImageView: UIImageView {
   
   var dataLoader = DataLoader()
 
-  let placeholderImage = UIImage(named: "CarPlaceholder")
+  let placeholderImage = Images.placeholder
   
   override init(frame: CGRect) {
     super.init(frame: frame)

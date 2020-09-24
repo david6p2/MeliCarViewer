@@ -20,7 +20,7 @@ class PendingOperations {
 
 class ImageDownloader: Operation {
   var picture: Picture
-  var image: UIImage = UIImage(named: "CarPlaceholder")!
+  var image: UIImage = Images.placeholder!
   
   init(_ picture: Picture) {
     self.picture = picture
@@ -43,7 +43,7 @@ class ImageDownloader: Operation {
     if !imageData.isEmpty, let image = UIImage(data: imageData) {
       self.image = image
     } else {
-      self.image = UIImage(named: "CarPlaceholder")!
+      self.image = Images.placeholder!
     }
     
   }
