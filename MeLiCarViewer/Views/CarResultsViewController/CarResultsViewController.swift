@@ -17,6 +17,7 @@ class CarResultsViewController: DCDataLoadingViewController {
   var carsResults: [CarResult] = []
   var filteredCarsResults: [CarResult] = []
   var isSearching = false
+  var isLoadingMoreCars = false
   
   var collectionView: UICollectionView!
   var dataSource: UICollectionViewDiffableDataSource<Section, CarResult>!
@@ -84,6 +85,8 @@ class CarResultsViewController: DCDataLoadingViewController {
   
   func searchPorscheModel(withPage page: Int) {
     showLoadingView()
+    isLoadingMoreCars = true
+
     controller.searchPorscheModel(selectedCarModel?.id, page: page) { [weak self] (result) in
       guard let self = self else { return }
       self.dismissLoadingView()
@@ -112,6 +115,8 @@ class CarResultsViewController: DCDataLoadingViewController {
         // TODO: Replace this with os_log
         print(error.errorInfo ?? DataLoader.noErrorDescription)
       }
+
+      self.isLoadingMoreCars = false
     }
   }
   
@@ -148,7 +153,7 @@ extension CarResultsViewController: UICollectionViewDelegate {
     let height = scrollView.frame.size.height
     
     if offsetY > contentHeight - height {
-      guard controller.hasMoreResults else {
+      guard controller.hasMoreResults, !isLoadingMoreCars else {
         return
       }
       controller.page += 1
