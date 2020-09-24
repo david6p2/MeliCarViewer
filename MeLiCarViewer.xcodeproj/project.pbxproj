@@ -13,6 +13,7 @@
 		6331FBC0251B13A100259023 /* DCCarDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FBBF251B13A100259023 /* DCCarDescriptionViewController.swift */; };
 		6331FBC3251B15CB00259023 /* DCTitleSubtitleAttributeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FBC2251B15CB00259023 /* DCTitleSubtitleAttributeView.swift */; };
 		6348E7CB251C5F8C008387E4 /* DCSellerDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348E7CA251C5F8C008387E4 /* DCSellerDescriptionViewController.swift */; };
+		6348E7CE251CF525008387E4 /* DCAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348E7CD251CF525008387E4 /* DCAlertContainerView.swift */; };
 		6394574D250E9B8800661244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6394574C250E9B8800661244 /* AppDelegate.swift */; };
 		6394574F250E9B8800661244 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6394574E250E9B8800661244 /* SceneDelegate.swift */; };
 		63945751250E9B8800661244 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63945750250E9B8800661244 /* SearchViewController.swift */; };
@@ -70,6 +71,7 @@
 		6331FBBF251B13A100259023 /* DCCarDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCCarDescriptionViewController.swift; sourceTree = "<group>"; };
 		6331FBC2251B15CB00259023 /* DCTitleSubtitleAttributeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCTitleSubtitleAttributeView.swift; sourceTree = "<group>"; };
 		6348E7CA251C5F8C008387E4 /* DCSellerDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCSellerDescriptionViewController.swift; sourceTree = "<group>"; };
+		6348E7CD251CF525008387E4 /* DCAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCAlertContainerView.swift; sourceTree = "<group>"; };
 		63945749250E9B8800661244 /* MeLiCarViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeLiCarViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6394574C250E9B8800661244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6394574E250E9B8800661244 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,14 @@
 				63D3C1152519B2A000B230D9 /* DCCarInfoHeaderViewController.swift */,
 			);
 			path = CarInfoHeader;
+			sourceTree = "<group>";
+		};
+		6348E7CC251CF4FD008387E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6348E7CD251CF525008387E4 /* DCAlertContainerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		63945740250E9B8800661244 = {
@@ -357,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				63D3C1052514703F00B230D9 /* Labels */,
+				6348E7CC251CF4FD008387E4 /* Views */,
 				63DAE7882513082800C64D83 /* DCAlertViewController.swift */,
 			);
 			path = CustomAlert;
@@ -474,6 +485,7 @@
 				63D3C10E2519014A00B230D9 /* CarDetailController.swift in Sources */,
 				63D3C10A25166B3800B230D9 /* CarDetailViewController.swift in Sources */,
 				63945784250EE09600661244 /* DataLoader.swift in Sources */,
+				6348E7CE251CF525008387E4 /* DCAlertContainerView.swift in Sources */,
 				63DAE7872513076900C64D83 /* DCBodyLabel.swift in Sources */,
 				6331FBC3251B15CB00259023 /* DCTitleSubtitleAttributeView.swift in Sources */,
 				6331FBBE251AEF7400259023 /* Int+Ext.swift in Sources */,
