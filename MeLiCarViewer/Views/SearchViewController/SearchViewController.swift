@@ -25,7 +25,6 @@ class SearchViewController: UIViewController {
     }
     
     let carResultsVC = CarResultsViewController(selectedCarModel: selectedCarModel)
-    carResultsVC.title = "Porsche " + selectedCarModel.name
     navigationController?.pushViewController(carResultsVC, animated: true)
   }
   

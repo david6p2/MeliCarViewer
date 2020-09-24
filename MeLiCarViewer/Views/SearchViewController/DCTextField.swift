@@ -35,7 +35,6 @@ class DCTextField: UITextField {
     
     backgroundColor = .tertiarySystemBackground
     autocorrectionType = .no
-    
     placeholder = "Touch to select a Porsche Model"
   }
 }

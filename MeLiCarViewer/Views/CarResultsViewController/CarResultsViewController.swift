@@ -26,6 +26,10 @@ class CarResultsViewController: UIViewController {
   init(selectedCarModel: CarModel?) {
     super.init(nibName: nil, bundle: nil)
     self.selectedCarModel = selectedCarModel
+    self.title = "All Porsche Models"
+    if let modelName = selectedCarModel?.name, !modelName.isEmpty {
+      self.title = "Porsche " + modelName
+    }
     self.controller = CarResultsController(carModel: selectedCarModel)
   }
   
