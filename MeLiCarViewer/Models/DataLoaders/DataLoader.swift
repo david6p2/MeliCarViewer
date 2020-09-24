@@ -43,7 +43,7 @@ class DataLoader {
       return
     }
     
-    self.dataTask = defaultSession.dataTask(with: url, completionHandler: { [weak self] (data, response, error) in
+    dataTask = defaultSession.dataTask(with: url, completionHandler: { [weak self] (data, response, error) in
       defer { self?.dataTask = nil }
       
       if let error = error {
@@ -69,7 +69,7 @@ class DataLoader {
         handler(.failure(DCError(type: .unableToDecode, errorInfo: errorDesc.debugDescription)))
       }
     })
-    self.dataTask?.resume()
+    dataTask?.resume()
   }
   
   
@@ -87,7 +87,7 @@ class DataLoader {
       return
     }
     
-    self.dataTask = defaultSession.dataTask(with: url, completionHandler: { [weak self] (data, response, error) in
+    dataTask = defaultSession.dataTask(with: url, completionHandler: { [weak self] (data, response, error) in
       defer { self?.dataTask = nil }
       
       if let error = error {
@@ -115,7 +115,7 @@ class DataLoader {
         handler(.failure(DCError(type: .unableToDecode, errorInfo: errorDesc.debugDescription)))
       }
     })
-    self.dataTask?.resume()
+    dataTask?.resume()
   }
   
   
@@ -143,7 +143,7 @@ class DataLoader {
   /// - Parameter handler: Will return a handler closure with the result having the CarModels result in an array if it succed or the Error if it fails
   public func getPorscheModels(handler: @escaping (Result<[CarModel], DCError>) -> Void) {
     // Loading from JSON File
-    self.loadCarModelJSON(fileName: "PorscheModels") { (result) in
+    loadCarModelJSON(fileName: "PorscheModels") { (result) in
       switch result {
       case .success(let carModels):
         handler(.success(carModels))

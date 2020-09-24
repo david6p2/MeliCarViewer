@@ -72,7 +72,7 @@ class SearchViewController: UIViewController {
   }
   
   @objc func donePicker() {
-    let selectedRow = self.modelPicker.selectedRow(inComponent: 0)
+    let selectedRow = modelPicker.selectedRow(inComponent: 0)
     updateSelectedCarModel(withPickerRow: selectedRow)
     view.endEditing(true)
   }
@@ -103,8 +103,8 @@ extension SearchViewController: UIPickerViewDelegate {
 
 extension SearchViewController: UITextFieldDelegate {
   func textFieldDidBeginEditing(_ textField: UITextField) {
-    if textField == self.modelTextField {
-      let selectedRow = self.modelPicker.selectedRow(inComponent: 0)
+    if textField == modelTextField {
+      let selectedRow = modelPicker.selectedRow(inComponent: 0)
       updateSelectedCarModel(withPickerRow: selectedRow)
     }
   }

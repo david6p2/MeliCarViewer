@@ -81,14 +81,14 @@ class CarDetailViewController: UIViewController {
   }
   
   func configureUIElements(with porscheResult: CarResult, and porschePicturesInformation: CarPicturesInformation?) {
-    let carInfoHeaderVC = DCCarInfoHeaderViewController(porscheResult: self.controller.porscheResult)
-    carInfoHeaderVC.porschePicturesInformation = self.controller.porschePicturesInformation
+    let carInfoHeaderVC = DCCarInfoHeaderViewController(porscheResult: controller.porscheResult)
+    carInfoHeaderVC.porschePicturesInformation = controller.porschePicturesInformation
     let carDescriptionVC = DCCarDescriptionViewController(porscheResult: porscheResult)
     let sellerDescriptionVC = DCSellerDescriptionViewController(porscheResult: porscheResult)
     
-    self.add(childViewController: carInfoHeaderVC, to: self.headerView)
-    self.add(childViewController: carDescriptionVC, to: self.itemViewOne)
-    self.add(childViewController: sellerDescriptionVC, to: self.itemViewTwo)
+    add(childViewController: carInfoHeaderVC, to: headerView)
+    add(childViewController: carDescriptionVC, to: itemViewOne)
+    add(childViewController: sellerDescriptionVC, to: itemViewTwo)
   }
   
   func layoutUI() {

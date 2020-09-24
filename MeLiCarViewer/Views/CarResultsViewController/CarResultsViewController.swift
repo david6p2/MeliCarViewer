@@ -38,7 +38,7 @@ class CarResultsViewController: UIViewController {
     configureViewController()
     configureSearchController()
     configureCollectionView()
-    searchPorscheModel(withPage: self.controller.page)
+    searchPorscheModel(withPage: controller.page)
     configureDataSource()
   }
   
@@ -145,11 +145,11 @@ extension CarResultsViewController: UICollectionViewDelegate {
     let height = scrollView.frame.size.height
     
     if offsetY > contentHeight - height {
-      guard self.controller.hasMoreResults else {
+      guard controller.hasMoreResults else {
         return
       }
-      self.controller.page += 1
-      searchPorscheModel(withPage: self.controller.page)
+      controller.page += 1
+      searchPorscheModel(withPage: controller.page)
     }
   }
   
