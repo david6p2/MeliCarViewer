@@ -10,10 +10,14 @@ import UIKit
 
 class CarDetailViewController: UIViewController {
   
+  let scrollView = UIScrollView()
   let headerView = UIView()
   let itemViewOne = UIView()
   let itemViewTwo = UIView()
   var itemViews: [UIView] = []
+  
+  static let padding: CGFloat = 20
+  static let itemHeight: CGFloat = 190
   
   var car: CarResult!
   
@@ -33,7 +37,13 @@ class CarDetailViewController: UIViewController {
     super.viewDidLoad()
     configureViewController()
     layoutUI()
+    calculateScrollViewContentSize()
     getPorschePictures()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    calculateScrollViewContentSize()
   }
   
   func configureViewController() {
@@ -51,6 +61,7 @@ class CarDetailViewController: UIViewController {
         self.controller.startDownload(for: pictures) {
           DispatchQueue.main.async {
             self.configureUIElements(with: self.car, and: self.controller.porschePicturesInformation)
+            self.calculateScrollViewContentSize()
           }
         }
       case .failure(let error):
@@ -71,35 +82,55 @@ class CarDetailViewController: UIViewController {
   }
   
   func layoutUI() {
-    let padding: CGFloat = 20
-    let itemHeight: CGFloat = 190
     itemViews = [headerView, itemViewOne, itemViewTwo]
     
+    layoutScrollView()
+    
     for itemView in itemViews {
-      view.addSubview(itemView)
+      scrollView.addSubview(itemView)
       itemView.translatesAutoresizingMaskIntoConstraints = false
       var cardPadding: CGFloat = 8
+      
       if itemView === headerView {
         cardPadding = 0
       }
+      
       NSLayoutConstraint.activate([
-        itemView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: cardPadding),
-        itemView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -cardPadding)
+        itemView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: cardPadding),
+        itemView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -cardPadding),
+        itemView.widthAnchor.constraint(equalTo: scrollView.widthAnchor, constant: -cardPadding*2)
       ])
     }
     
     itemViewTwo.backgroundColor = .systemBlue
     
     NSLayoutConstraint.activate([
-      headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+      headerView.topAnchor.constraint(equalTo: scrollView.topAnchor),
       headerView.heightAnchor.constraint(equalToConstant: view.frame.height/3 + 90),
       
-      itemViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: padding),
-      itemViewOne.heightAnchor.constraint(equalToConstant: itemHeight),
+      itemViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: Self.padding),
+      itemViewOne.heightAnchor.constraint(equalToConstant: Self.itemHeight),
       
-      itemViewTwo.topAnchor.constraint(equalTo: itemViewOne.bottomAnchor, constant: padding),
-      itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight),
+      itemViewTwo.topAnchor.constraint(equalTo: itemViewOne.bottomAnchor, constant: Self.padding),
+      itemViewTwo.heightAnchor.constraint(equalToConstant: Self.itemHeight),
     ])
+  }
+  
+  func layoutScrollView() {
+    view.addSubview(scrollView)
+    scrollView.translatesAutoresizingMaskIntoConstraints = false
+    
+    NSLayoutConstraint.activate([
+      scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+      scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+      scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+      scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+    ])
+  }
+  
+  func calculateScrollViewContentSize() {
+    let scrollViewHeight = headerView.frame.height + Self.padding + itemViewOne.frame.height + Self.padding + itemViewTwo.frame.height + Self.padding
+    scrollView.contentSize = CGSize(width: view.frame.width, height: scrollViewHeight)
   }
   
   func add(childViewController: UIViewController, to containerView: UIView) {
