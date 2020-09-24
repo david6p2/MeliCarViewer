@@ -85,22 +85,12 @@ class DCCarDescriptionViewController: UIViewController {
     
     let arrayOfHStacks = [firstHStack,secondHStack,thirdHStack,fourthHStack]
     
-    
-    let borderWidth: CGFloat = 0
-    
-    brandAttributeView.layer.borderWidth = borderWidth
-    modelAttributeView.layer.borderWidth = borderWidth
     firstHStack.addArrangedSubview(brandAttributeView)
     firstHStack.addArrangedSubview(modelAttributeView)
     
-//    versionAttributeView.attributeValueLabel.numberOfLines = 2
-    versionAttributeView.layer.borderWidth = borderWidth
-    vehicleYearAttributeView.layer.borderWidth = borderWidth
     secondHStack.addArrangedSubview(versionAttributeView)
     secondHStack.addArrangedSubview(vehicleYearAttributeView)
     
-    engineDisplacementAttributeView.layer.borderWidth = borderWidth
-    kilometersAttributeView.layer.borderWidth = borderWidth
     thirdHStack.addArrangedSubview(engineDisplacementAttributeView)
     thirdHStack.addArrangedSubview(kilometersAttributeView)
     

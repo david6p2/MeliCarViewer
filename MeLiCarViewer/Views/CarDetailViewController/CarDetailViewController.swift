@@ -76,9 +76,11 @@ class CarDetailViewController: UIViewController {
     let carInfoHeaderVC = DCCarInfoHeaderViewController(porscheResult: self.controller.porscheResult)
     carInfoHeaderVC.porschePicturesInformation = self.controller.porschePicturesInformation
     let carDescriptionVC = DCCarDescriptionViewController(porscheResult: porscheResult)
+    let sellerDescriptionVC = DCSellerDescriptionViewController(porscheResult: porscheResult)
     
     self.add(childViewController: carInfoHeaderVC, to: self.headerView)
     self.add(childViewController: carDescriptionVC, to: self.itemViewOne)
+    self.add(childViewController: sellerDescriptionVC, to: self.itemViewTwo)
   }
   
   func layoutUI() {
@@ -101,8 +103,6 @@ class CarDetailViewController: UIViewController {
         itemView.widthAnchor.constraint(equalTo: scrollView.widthAnchor, constant: -cardPadding*2)
       ])
     }
-    
-    itemViewTwo.backgroundColor = .systemBlue
     
     NSLayoutConstraint.activate([
       headerView.topAnchor.constraint(equalTo: scrollView.topAnchor),
