@@ -45,6 +45,14 @@ class CarDetailViewController: UIViewController {
     super.viewWillAppear(animated)
     calculateScrollViewContentSize()
   }
+
+  override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+    scrollView.invalidateIntrinsicContentSize()
+    DispatchQueue.main.async {
+      self.scrollView.setNeedsLayout()
+      self.calculateScrollViewContentSize()
+    }
+  }
   
   func configureViewController() {
     view.backgroundColor = .systemBackground

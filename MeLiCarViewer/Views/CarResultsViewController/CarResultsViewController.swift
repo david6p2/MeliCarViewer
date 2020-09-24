@@ -58,6 +58,15 @@ class CarResultsViewController: UIViewController {
     collectionView.delegate = self
     collectionView.backgroundColor = .secondarySystemBackground
     collectionView.register(CarViewCell.self, forCellWithReuseIdentifier: CarViewCell.reuseID)
+
+    collectionView.translatesAutoresizingMaskIntoConstraints = false
+
+    NSLayoutConstraint.activate([
+      collectionView.topAnchor.constraint(equalTo: view.topAnchor),
+      collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+      collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+      collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+    ])
   }
   
   func configureSearchController() {
@@ -109,6 +118,14 @@ class CarResultsViewController: UIViewController {
       cell.set(car)
       return cell
     })
+  }
+
+  override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+    collectionView.collectionViewLayout.invalidateLayout()
+    DispatchQueue.main.async {
+      self.collectionView.setNeedsLayout()
+      self.collectionView.reloadData()
+    }
   }
   
   func updateData(on results: [CarResult]) {
