@@ -10,6 +10,8 @@
 		6331FBBA251ABC3200259023 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FBB9251ABC3200259023 /* String+Ext.swift */; };
 		6331FBBC251ABFA200259023 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FBBB251ABFA200259023 /* Date+Ext.swift */; };
 		6331FBBE251AEF7400259023 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FBBD251AEF7400259023 /* Int+Ext.swift */; };
+		6331FBC0251B13A100259023 /* DCCarDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FBBF251B13A100259023 /* DCCarDescriptionViewController.swift */; };
+		6331FBC3251B15CB00259023 /* DCTitleSubtitleAttributeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FBC2251B15CB00259023 /* DCTitleSubtitleAttributeView.swift */; };
 		6394574D250E9B8800661244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6394574C250E9B8800661244 /* AppDelegate.swift */; };
 		6394574F250E9B8800661244 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6394574E250E9B8800661244 /* SceneDelegate.swift */; };
 		63945751250E9B8800661244 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63945750250E9B8800661244 /* SearchViewController.swift */; };
@@ -64,6 +66,8 @@
 		6331FBB9251ABC3200259023 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		6331FBBB251ABFA200259023 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		6331FBBD251AEF7400259023 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
+		6331FBBF251B13A100259023 /* DCCarDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCCarDescriptionViewController.swift; sourceTree = "<group>"; };
+		6331FBC2251B15CB00259023 /* DCTitleSubtitleAttributeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCTitleSubtitleAttributeView.swift; sourceTree = "<group>"; };
 		63945749250E9B8800661244 /* MeLiCarViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeLiCarViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6394574C250E9B8800661244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6394574E250E9B8800661244 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +139,15 @@
 				63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6331FBC1251B157600259023 /* CarDescription */ = {
+			isa = PBXGroup;
+			children = (
+				6331FBBF251B13A100259023 /* DCCarDescriptionViewController.swift */,
+				6331FBC2251B15CB00259023 /* DCTitleSubtitleAttributeView.swift */,
+			);
+			path = CarDescription;
 			sourceTree = "<group>";
 		};
 		63945740250E9B8800661244 = {
@@ -286,6 +299,7 @@
 		63D3C1142519B13900B230D9 /* ContainerViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6331FBC1251B157600259023 /* CarDescription */,
 				63D3C1152519B2A000B230D9 /* DCCarInfoHeaderViewController.swift */,
 			);
 			path = ContainerViewControllers;
@@ -442,6 +456,7 @@
 				63D3C10A25166B3800B230D9 /* CarDetailViewController.swift in Sources */,
 				63945784250EE09600661244 /* DataLoader.swift in Sources */,
 				63DAE7872513076900C64D83 /* DCBodyLabel.swift in Sources */,
+				6331FBC3251B15CB00259023 /* DCTitleSubtitleAttributeView.swift in Sources */,
 				6331FBBE251AEF7400259023 /* Int+Ext.swift in Sources */,
 				63DAE7722510668E00C64D83 /* CarResultsController.swift in Sources */,
 				63DAE7902513267700C64D83 /* UIHelper.swift in Sources */,
@@ -453,6 +468,7 @@
 				63D3C11025192D5A00B230D9 /* ImageDownloadOperations.swift in Sources */,
 				63DAE783251171B200C64D83 /* DCCarImageView.swift in Sources */,
 				63D3C1082514717000B230D9 /* DCEmptyStateView.swift in Sources */,
+				6331FBC0251B13A100259023 /* DCCarDescriptionViewController.swift in Sources */,
 				63DAE78B25130EE700C64D83 /* UIViewController+ShowAlert.swift in Sources */,
 				6394574D250E9B8800661244 /* AppDelegate.swift in Sources */,
 				63DAE7702510264F00C64D83 /* CarResult.swift in Sources */,

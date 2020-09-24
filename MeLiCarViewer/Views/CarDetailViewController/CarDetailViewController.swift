@@ -50,9 +50,7 @@ class CarDetailViewController: UIViewController {
       case .success(let pictures):
         self.controller.startDownload(for: pictures) {
           DispatchQueue.main.async {
-            let carInfoHeaderVC = DCCarInfoHeaderViewController(porscheResult: self.controller.porscheResult)
-            carInfoHeaderVC.porschePicturesInformation = self.controller.porschePicturesInformation
-            self.add(childViewController: carInfoHeaderVC, to: self.headerView)
+            self.configureUIElements(with: self.car, and: self.controller.porschePicturesInformation)
           }
         }
       case .failure(let error):
@@ -63,22 +61,33 @@ class CarDetailViewController: UIViewController {
     }
   }
   
+  func configureUIElements(with porscheResult: CarResult, and porschePicturesInformation: CarPicturesInformation?) {
+    let carInfoHeaderVC = DCCarInfoHeaderViewController(porscheResult: self.controller.porscheResult)
+    carInfoHeaderVC.porschePicturesInformation = self.controller.porschePicturesInformation
+    let carDescriptionVC = DCCarDescriptionViewController(porscheResult: porscheResult)
+    
+    self.add(childViewController: carInfoHeaderVC, to: self.headerView)
+    self.add(childViewController: carDescriptionVC, to: self.itemViewOne)
+  }
+  
   func layoutUI() {
     let padding: CGFloat = 20
-    let itemHeight: CGFloat = 140
+    let itemHeight: CGFloat = 190
     itemViews = [headerView, itemViewOne, itemViewTwo]
     
     for itemView in itemViews {
       view.addSubview(itemView)
       itemView.translatesAutoresizingMaskIntoConstraints = false
-      
+      var cardPadding: CGFloat = 8
+      if itemView === headerView {
+        cardPadding = 0
+      }
       NSLayoutConstraint.activate([
-        itemView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-        itemView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        itemView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: cardPadding),
+        itemView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -cardPadding)
       ])
     }
     
-    itemViewOne.backgroundColor = .systemPink
     itemViewTwo.backgroundColor = .systemBlue
     
     NSLayoutConstraint.activate([
