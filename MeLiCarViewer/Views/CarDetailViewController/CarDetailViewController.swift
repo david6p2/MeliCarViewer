@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CarDetailViewController: UIViewController {
+class CarDetailViewController: DCDataLoadingViewController {
   
   let scrollView = UIScrollView()
   let headerView = UIView()

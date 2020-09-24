@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CarResultsViewController: UIViewController {
+class CarResultsViewController: DCDataLoadingViewController {
   enum Section {
     case main
   }
