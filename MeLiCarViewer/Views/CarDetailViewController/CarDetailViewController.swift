@@ -106,7 +106,7 @@ class CarDetailViewController: UIViewController {
     
     NSLayoutConstraint.activate([
       headerView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-      headerView.heightAnchor.constraint(equalToConstant: view.frame.height/3 + 90),
+      headerView.heightAnchor.constraint(equalToConstant: view.frame.height/3 + 112),
       
       itemViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: Self.padding),
       itemViewOne.heightAnchor.constraint(equalToConstant: Self.itemHeight),

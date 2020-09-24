@@ -13,6 +13,7 @@ class DCCarInfoHeaderViewController: UIViewController {
   let carImageView = DCCarImageView(0)
   let yearKmLabel = DCSubtitleLabel(textAlignment: .left, fontSize: 12, fontWeight: .regular)
   let carTitleLabel = DCTitleLabel(textAlignment: .left, fontSize: 20)
+  let publishedLabel = DCSubtitleLabel(textAlignment: .left, fontSize: 12, fontWeight: .regular)
   let priceLabel = DCSubtitleLabel(textAlignment: .left, fontSize: 28)
   
   public var porscheResult: CarResult!
@@ -35,11 +36,11 @@ class DCCarInfoHeaderViewController: UIViewController {
   }
   
   func configueUIElements() {
-    print("Publicado el \(porschePicturesInformation.dateCreated.convertToDisplayFormat())")
     carImageView.image = UIImage(data: (porschePicturesInformation.images?.first)!)
-    carTitleLabel.text = porscheResult.title
-    priceLabel.text = porscheResult.price.convertToPriceInCOP()
     yearKmLabel.text = createYearKmText(porscheResult)
+    carTitleLabel.text = porscheResult.title
+    publishedLabel.text = "Publicado el \(porschePicturesInformation.dateCreated.convertToDisplayFormat())"
+    priceLabel.text = porscheResult.price.convertToPriceInCOP()
   }
   
   private func createYearKmText(_ car: CarResult) -> String {
@@ -58,6 +59,7 @@ class DCCarInfoHeaderViewController: UIViewController {
     view.addSubview(carImageView)
     view.addSubview(yearKmLabel)
     view.addSubview(carTitleLabel)
+    view.addSubview(publishedLabel)
     view.addSubview(priceLabel)
   }
   
@@ -80,7 +82,12 @@ class DCCarInfoHeaderViewController: UIViewController {
       carTitleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
       carTitleLabel.heightAnchor.constraint(equalToConstant: 22),
       
-      priceLabel.topAnchor.constraint(equalTo: carTitleLabel.bottomAnchor, constant: padding),
+      publishedLabel.topAnchor.constraint(equalTo: carTitleLabel.bottomAnchor, constant: padding),
+      publishedLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+      publishedLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+      publishedLabel.heightAnchor.constraint(equalToConstant: 14),
+      
+      priceLabel.topAnchor.constraint(equalTo: publishedLabel.bottomAnchor, constant: padding),
       priceLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
       priceLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
       priceLabel.heightAnchor.constraint(equalToConstant: 30),
