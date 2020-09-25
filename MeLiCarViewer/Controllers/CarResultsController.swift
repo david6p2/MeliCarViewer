@@ -12,6 +12,8 @@ import UIKit
 class CarResultsController {
   public var porscheModelToSearch: CarModel?
   public var porscheModelsResult: CarModelResult? = nil
+  public var carsResults: [CarResult] = []
+  var filteredCarsResults: [CarResult] = []
 
   var page = 1
   var hasMoreResults = true
@@ -39,6 +41,7 @@ class CarResultsController {
           self?.hasMoreResults = false
         }
         self?.porscheModelsResult = carModelsResult
+        self?.carsResults.append(contentsOf: carModelsResult.results)
         completion(.success(self?.porscheModelsResult))
         break
       case .failure(let error):

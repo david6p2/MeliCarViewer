@@ -12,10 +12,7 @@ class CarResultsViewController: DCDataLoadingViewController {
   enum Section {
     case main
   }
-  
-  var selectedCarModel: CarModel?
-  var carsResults: [CarResult] = []
-  var filteredCarsResults: [CarResult] = []
+
   var isSearching = false
   var isLoadingMoreCars = false
   
@@ -26,7 +23,6 @@ class CarResultsViewController: DCDataLoadingViewController {
   
   init(selectedCarModel: CarModel?) {
     super.init(nibName: nil, bundle: nil)
-    self.selectedCarModel = selectedCarModel
     self.title = "All Porsche Models"
     if let modelName = selectedCarModel?.name, !modelName.isEmpty {
       self.title = "Porsche " + modelName
@@ -86,13 +82,13 @@ class CarResultsViewController: DCDataLoadingViewController {
     showLoadingView()
     isLoadingMoreCars = true
 
-    controller.searchPorscheModel(selectedCarModel?.id, page: page) { [weak self] (result) in
+    controller.searchPorscheModel(controller.porscheModelToSearch?.id, page: page) { [weak self] (result) in
       guard let self = self else { return }
       self.dismissLoadingView()
       
       switch result {
-      case .success(let carResults):
-        self.updateUI(with: carResults)
+      case .success(_):
+        self.updateUI(with: self.controller.porscheModelsResult)
       case .failure(let error):
         self.presentDCAlertOnMainThread(title: "Something went wrong", message: error.type.rawValue, buttonTitle: "OK")
         // TODO: Replace this with os_log
@@ -104,23 +100,20 @@ class CarResultsViewController: DCDataLoadingViewController {
   }
 
   func updateUI(with carResults:CarModelResult?) {
-    guard let carModelResult = carResults else {
+    guard let _ = carResults else {
       presentDCAlertOnMainThread(title: "No cars", message: "There are no cars to show. Verify your internet connection and try again.", buttonTitle: "OK")
       return
     }
 
-    // TODO: This should be done in the controller?
-    self.carsResults.append(contentsOf: carModelResult.results)
-
-    if self.carsResults.isEmpty {
-      let message = "There are no Porsche \(self.selectedCarModel?.name ?? "of the selected model") for sale right now 😢."
+    if self.controller.carsResults.isEmpty {
+      let message = "There are no Porsche \(controller.porscheModelToSearch?.name ?? "of the selected model") for sale right now 😢."
       DispatchQueue.main.async {
         self.showEmptyStateView(with: message, in: self.view)
       }
       return
     }
 
-    self.updateData(on: self.carsResults)
+    self.updateData(on: self.controller.carsResults)
   }
   
   func configureDataSource() {
@@ -165,7 +158,7 @@ extension CarResultsViewController: UICollectionViewDelegate {
   }
   
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let activeArray = isSearching ? filteredCarsResults : carsResults
+    let activeArray = isSearching ? controller.filteredCarsResults : controller.carsResults
     let car = activeArray[indexPath.item]
     
     let destinationViewController = CarDetailViewController(carResult: car)
@@ -177,8 +170,8 @@ extension CarResultsViewController: UICollectionViewDelegate {
 extension CarResultsViewController: UISearchResultsUpdating {
   func updateSearchResults(for searchController: UISearchController) {
     guard let filter = searchController.searchBar.text, !filter.isEmpty else {
-      filteredCarsResults.removeAll()
-      updateData(on: carsResults)
+      controller.filteredCarsResults.removeAll()
+      updateData(on: controller.carsResults)
       isSearching = false
       return
       
@@ -186,8 +179,8 @@ extension CarResultsViewController: UISearchResultsUpdating {
     
     isSearching = true
     
-    filteredCarsResults = carsResults.filter{ $0.title.lowercased().contains(filter.lowercased()) }
-    print(filteredCarsResults.count)
-    updateData(on: filteredCarsResults)
+    controller.filteredCarsResults = controller.carsResults.filter{ $0.title.lowercased().contains(filter.lowercased()) }
+    print(controller.filteredCarsResults.count)
+    updateData(on: controller.filteredCarsResults)
   }
 }
