@@ -8,9 +8,11 @@
 
 import UIKit
 
-
+/// This class manage all the network requests
 class DataLoader {
   static let cache = NSCache<NSString, UIImage>()
+
+  static let porscheModelsFilename = "PorscheModels"
   
   let baseEndPoint = "https://api.mercadolibre.com/"
   let limit = 10
@@ -23,8 +25,9 @@ class DataLoader {
   
   /// Create a Request to GET the search results of Porsche Cars giving a Model. If  no model is given, it will return all Porsche cars available.
   /// - Parameters:
-  ///   - model: The model id code for the MCO site in Mercado Libre
-  ///   - completion: Will return a completion closure with the result having the CarModelResult if it succed or the Error if it fails
+  ///   - carModel: The model id code of the porsche car for the MCO site in Mercado Libre
+  ///   - page: the page results you want to bring. By default it will bring just 10 results.
+  ///   - handler: Will return a completion closure with the result having the CarModelResult if it succed or the Error if it fails
   public func searchResultsForCarModel(_ carModel: String?,
                                        withPage page: Int,
                                        handler: @escaping (Result<CarModelResult, DCError>) -> Void) {
@@ -72,10 +75,9 @@ class DataLoader {
     dataTask?.resume()
   }
   
-  
   /// Create a Request to GET  all the detail information of a given car Id, including the pictures
   /// - Parameters:
-  ///   - carId: item id (the car id in this case). Ex MCO578263412
+  ///   - carId: Item id (the car id in this case). Ex MCO578263412
   ///   - handler: Will return a handler closure with the result having the CarPicturesInformation if it succed or the Error if it fails
   public func loadCarPicturesInformation(withCarId carId: String, handler: @escaping (Result<CarPicturesInformation, DCError>) -> Void) {
     dataTask?.cancel()
@@ -117,11 +119,10 @@ class DataLoader {
     })
     dataTask?.resume()
   }
-  
-  
+
   /// Load the car Models from a JSON file
   /// - Parameters:
-  ///   - fileName: the filename of the JSON where the car models are stored
+  ///   - fileName: The filename of the JSON where the car models are stored
   ///   - handler: Will return a handler closure with the result having the CarModels in an array if it succed or the Error if it fails
   private func loadCarModelJSON(fileName: String, handler: @escaping (Result<[CarModel], DCError>) -> Void) {
     if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
@@ -137,13 +138,12 @@ class DataLoader {
       }
     }
   }
-  
-  
+
   /// Call to get the Porsche Models from a JSON file called "PorscheModels"
   /// - Parameter handler: Will return a handler closure with the result having the CarModels result in an array if it succed or the Error if it fails
   public func getPorscheModels(handler: @escaping (Result<[CarModel], DCError>) -> Void) {
     // Loading from JSON File
-    loadCarModelJSON(fileName: "PorscheModels") { (result) in
+    loadCarModelJSON(fileName: Self.porscheModelsFilename) { (result) in
       switch result {
       case .success(let carModels):
         handler(.success(carModels))
@@ -152,8 +152,7 @@ class DataLoader {
       }
     }
   }
-  
-  
+
   /// Create a Request to GET an image from the passed urlString
   /// - Parameters:
   ///   - urlString: The URL String of the image
