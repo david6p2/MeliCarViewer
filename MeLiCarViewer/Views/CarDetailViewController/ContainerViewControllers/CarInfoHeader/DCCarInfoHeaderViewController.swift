@@ -30,7 +30,7 @@ class DCCarInfoHeaderViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    addSubviews()
+    view.addSubviews(carImageView, yearKmLabel, carTitleLabel, publishedLabel, priceLabel)
     layoutUI()
     configueUIElements()
   }
@@ -53,14 +53,6 @@ class DCCarInfoHeaderViewController: UIViewController {
     }
     
     return (yearAttribute?.valueName ?? " ") + " - " + (kmAttribute?.valueName ?? " ")
-  }
-  
-  func addSubviews() {
-    view.addSubview(carImageView)
-    view.addSubview(yearKmLabel)
-    view.addSubview(carTitleLabel)
-    view.addSubview(publishedLabel)
-    view.addSubview(priceLabel)
   }
   
   func layoutUI() {
@@ -91,11 +83,6 @@ class DCCarInfoHeaderViewController: UIViewController {
       priceLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
       priceLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
       priceLabel.heightAnchor.constraint(equalToConstant: 30),
-      
-      
-      
     ])
-    
   }
-  
 }

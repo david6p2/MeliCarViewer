@@ -43,8 +43,7 @@ class DCSellerDescriptionViewController: UIViewController {
   }
   
   private func layoutUI() {
-    view.addSubview(descriptionTitleLabel)
-    view.addSubview(completeStackView)
+    view.addSubviews(descriptionTitleLabel, completeStackView)
     
     descriptionTitleLabel.text = "Información de Venta:"
     descriptionTitleLabel.translatesAutoresizingMaskIntoConstraints = false

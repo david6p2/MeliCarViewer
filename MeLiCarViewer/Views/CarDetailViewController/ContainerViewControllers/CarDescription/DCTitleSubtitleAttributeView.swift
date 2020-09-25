@@ -24,13 +24,8 @@ class DCTitleSubtitleAttributeView: UIView {
 
   private func configure() {
     attributeTitleLabel.numberOfLines = 0
-//    attributeTitleLabel.layer.borderWidth = 1
-//    attributeTitleLabel.layer.borderColor = UIColor.blue.cgColor
     attributeValueLabel.numberOfLines = 0
-//    attributeValueLabel.layer.borderWidth = 1
-//    attributeValueLabel.layer.borderColor = UIColor.red.cgColor
-    addSubview(attributeTitleLabel)
-    addSubview(attributeValueLabel)
+    addSubviews(attributeTitleLabel, attributeValueLabel)
     
     NSLayoutConstraint.activate([
       attributeTitleLabel.topAnchor.constraint(equalTo: self.topAnchor),

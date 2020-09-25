@@ -93,23 +93,7 @@ class CarResultsViewController: DCDataLoadingViewController {
       
       switch result {
       case .success(let carResults):
-        guard let carModelResult = carResults else {
-          // TODO: Show an Alert with the error to the user
-          return
-        }
-        // TODO: This should be done in the controller?
-        self.carsResults.append(contentsOf: carModelResult.results)
-        
-        if self.carsResults.isEmpty {
-          let message = "There are no Porsche \(self.selectedCarModel?.name ?? "of the selected model") for sale right now 😢."
-          DispatchQueue.main.async {
-            self.showEmptyStateView(with: message, in: self.view)
-          }
-          return
-        }
-        
-        self.updateData(on: self.carsResults)
-        
+        self.updateUI(with: carResults)
       case .failure(let error):
         self.presentDCAlertOnMainThread(title: "Something went wrong", message: error.errorInfo ?? DataLoader.noErrorDescription, buttonTitle: "OK")
         // TODO: Replace this with os_log
@@ -118,6 +102,26 @@ class CarResultsViewController: DCDataLoadingViewController {
 
       self.isLoadingMoreCars = false
     }
+  }
+
+  func updateUI(with carResults:CarModelResult?) {
+    guard let carModelResult = carResults else {
+      // TODO: Show an Alert with the error to the user
+      return
+    }
+
+    // TODO: This should be done in the controller?
+    self.carsResults.append(contentsOf: carModelResult.results)
+
+    if self.carsResults.isEmpty {
+      let message = "There are no Porsche \(self.selectedCarModel?.name ?? "of the selected model") for sale right now 😢."
+      DispatchQueue.main.async {
+        self.showEmptyStateView(with: message, in: self.view)
+      }
+      return
+    }
+
+    self.updateData(on: self.carsResults)
   }
   
   func configureDataSource() {

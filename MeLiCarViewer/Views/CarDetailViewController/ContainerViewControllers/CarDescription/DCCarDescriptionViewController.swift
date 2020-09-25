@@ -50,8 +50,7 @@ class DCCarDescriptionViewController: UIViewController {
   }
   
   private func layoutUI() {
-    view.addSubview(descriptionTitleLabel)
-    view.addSubview(completeStackView)
+    view.addSubviews(descriptionTitleLabel, completeStackView)
     
     descriptionTitleLabel.text = "Descripción:"
     descriptionTitleLabel.translatesAutoresizingMaskIntoConstraints = false

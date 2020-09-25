@@ -59,11 +59,10 @@ class CarViewCell: UICollectionViewCell {
     backgroundColor = .systemBackground
     layer.cornerRadius = 10
     clipsToBounds = true
+    addSubviews(carImageView, carTitleLabel, priceLabel, yearKmLabel)
   }
   
   private func configureCarImageView() {
-    addSubview(carImageView)
-    
     NSLayoutConstraint.activate([
       carImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
       carImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
@@ -73,8 +72,6 @@ class CarViewCell: UICollectionViewCell {
   }
   
   private func configureCarTitleLabel() {
-    addSubview(carTitleLabel)
-    
     carTitleLabel.numberOfLines = 2
     
     NSLayoutConstraint.activate([
@@ -86,8 +83,6 @@ class CarViewCell: UICollectionViewCell {
   }
   
   private func configurePriceLabel() {
-    addSubview(priceLabel)
-    
     NSLayoutConstraint.activate([
       priceLabel.topAnchor.constraint(equalTo: carTitleLabel.bottomAnchor, constant: padding),
       priceLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
@@ -97,8 +92,6 @@ class CarViewCell: UICollectionViewCell {
   }
   
   private func configureYearKmLabel() {
-    addSubview(yearKmLabel)
-    
     NSLayoutConstraint.activate([
       yearKmLabel.topAnchor.constraint(equalTo: priceLabel.bottomAnchor, constant: padding),
       yearKmLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),

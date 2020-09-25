@@ -36,6 +36,7 @@ class DCAlertViewController: UIViewController {
     super.viewDidLoad()
     view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
     configureContainerView()
+    containerView.addSubviews(titleLabel, actionButton, messageLabel)
     configureTitleLabel()
     configureActionButton()
     configureMessageLabel()
@@ -53,7 +54,6 @@ class DCAlertViewController: UIViewController {
   }
   
   func configureTitleLabel() {
-    containerView.addSubview(titleLabel)
     titleLabel.text = alertTitle ?? "Something went wrong"
     
     NSLayoutConstraint.activate([
@@ -65,7 +65,6 @@ class DCAlertViewController: UIViewController {
   }
   
   func configureActionButton() {
-    containerView.addSubview(actionButton)
     actionButton.setTitle(buttonTitle ?? "OK", for: .normal)
     actionButton.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
     
@@ -80,8 +79,6 @@ class DCAlertViewController: UIViewController {
   }
   
   func configureMessageLabel() {
-    containerView.addSubview(messageLabel)
-    
     messageLabel.text = message ?? "Unable to complete Request"
     messageLabel.numberOfLines = 4
     
