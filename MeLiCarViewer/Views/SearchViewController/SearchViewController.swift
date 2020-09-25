@@ -37,8 +37,9 @@ class SearchViewController: UIViewController {
     createToolbar()
     
     controller.fetchPorscheModels {[weak self] success in
-      print("Success: \(success)")
-      print(self?.controller.porscheModels! ?? "No models")
+      if !success {
+        self?.presentDCAlertOnMainThread(title: "Invalid Models", message: "We were unable to load the Porsche models you selected. Please try again.", buttonTitle: "OK")
+      }
     }
   }
   
