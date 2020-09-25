@@ -14,9 +14,9 @@ struct DCError: Error {
 }
 
 enum ErrorType: String {
-  case invalidCarModel
-  case unableToComplete
-  case invalidResponse
-  case invalidData
-  case unableToDecode
+  case invalidCarModel = "The selected car model is invalid"
+  case unableToComplete = "We were unable to complete the task. Please try again."
+  case invalidResponse = "The response received was invalid. Please try again."
+  case invalidData = "The received data was invalid. Please try again or contact support for help."
+  case unableToDecode = "We could not read the received data to be shown. Please try again or contact support for help."
 }
