@@ -13,7 +13,7 @@ struct CarPicturesInformation: Codable {
   let id, siteId, title: String
   let dateCreated, lastUpdated: String
   let pictures: [Picture]
-  var images: [Data]? = []
+  var images: [Data]?
 }
 
 // MARK: - Picture

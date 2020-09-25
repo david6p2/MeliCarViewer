@@ -1,0 +1,3578 @@
+{
+    "id": "MCO577780128",
+    "site_id": "MCO",
+    "title": "Porsche 911 Carrera Gts 3.0 Automático",
+    "subtitle": null,
+    "seller_id": 27740163,
+    "category_id": "MCO1744",
+    "official_store_id": null,
+    "price": 625000000,
+    "base_price": 625000000,
+    "original_price": null,
+    "currency_id": "COP",
+    "initial_quantity": 1,
+    "available_quantity": 1,
+    "sold_quantity": 0,
+    "sale_terms": [],
+    "buying_mode": "classified",
+    "listing_type_id": "gold_premium",
+    "start_time": "2020-08-18T17:27:56.000Z",
+    "stop_time": "2020-10-19T18:15:37.000Z",
+    "condition": "used",
+    "permalink": "https://carro.mercadolibre.com.co/MCO-577780128-porsche-911-carrera-gts-30-automatico-_JM",
+    "thumbnail_id": "621503-MCO42790393667_072020",
+    "thumbnail": "http://mco-s1-p.mlstatic.com/621503-MCO42790393667_072020-I.jpg",
+    "secure_thumbnail": "https://mco-s1-p.mlstatic.com/621503-MCO42790393667_072020-I.jpg",
+    "pictures": [
+        {
+            "id": "621503-MCO42790393667_072020",
+            "url": "http://mco-s1-p.mlstatic.com/621503-MCO42790393667_072020-O.jpg",
+            "secure_url": "https://mco-s1-p.mlstatic.com/621503-MCO42790393667_072020-O.jpg",
+            "size": "500x375",
+            "max_size": "961x721",
+            "quality": ""
+        },
+        {
+            "id": "824336-MCO42790428140_072020",
+            "url": "http://mco-s1-p.mlstatic.com/824336-MCO42790428140_072020-O.jpg",
+            "secure_url": "https://mco-s1-p.mlstatic.com/824336-MCO42790428140_072020-O.jpg",
+            "size": "500x375",
+            "max_size": "1280x960",
+            "quality": ""
+        },
+        {
+            "id": "677213-MCO42790380888_072020",
+            "url": "http://mco-s1-p.mlstatic.com/677213-MCO42790380888_072020-O.jpg",
+            "secure_url": "https://mco-s1-p.mlstatic.com/677213-MCO42790380888_072020-O.jpg",
+            "size": "500x375",
+            "max_size": "1280x960",
+            "quality": ""
+        },
+        {
+            "id": "646462-MCO42790411520_072020",
+            "url": "http://mco-s1-p.mlstatic.com/646462-MCO42790411520_072020-O.jpg",
+            "secure_url": "https://mco-s1-p.mlstatic.com/646462-MCO42790411520_072020-O.jpg",
+            "size": "500x375",
+            "max_size": "1280x960",
+            "quality": ""
+        },
+        {
+            "id": "671166-MCO42790491215_072020",
+            "url": "http://mco-s1-p.mlstatic.com/671166-MCO42790491215_072020-O.jpg",
+            "secure_url": "https://mco-s1-p.mlstatic.com/671166-MCO42790491215_072020-O.jpg",
+            "size": "500x375",
+            "max_size": "1280x960",
+            "quality": ""
+        },
+        {
+            "id": "776156-MCO42790418253_072020",
+            "url": "http://mco-s1-p.mlstatic.com/776156-MCO42790418253_072020-O.jpg",
+            "secure_url": "https://mco-s1-p.mlstatic.com/776156-MCO42790418253_072020-O.jpg",
+            "size": "500x375",
+            "max_size": "1280x960",
+            "quality": ""
+        },
+        {
+            "id": "704734-MCO42790428203_072020",
+            "url": "http://mco-s1-p.mlstatic.com/704734-MCO42790428203_072020-O.jpg",
+            "secure_url": "https://mco-s1-p.mlstatic.com/704734-MCO42790428203_072020-O.jpg",
+            "size": "500x375",
+            "max_size": "1280x960",
+            "quality": ""
+        },
+        {
+            "id": "818989-MCO42790418354_072020",
+            "url": "http://mco-s1-p.mlstatic.com/818989-MCO42790418354_072020-O.jpg",
+            "secure_url": "https://mco-s1-p.mlstatic.com/818989-MCO42790418354_072020-O.jpg",
+            "size": "500x375",
+            "max_size": "1280x960",
+            "quality": ""
+        },
+        {
+            "id": "721192-MCO42790387811_072020",
+            "url": "http://mco-s1-p.mlstatic.com/721192-MCO42790387811_072020-O.jpg",
+            "secure_url": "https://mco-s1-p.mlstatic.com/721192-MCO42790387811_072020-O.jpg",
+            "size": "500x375",
+            "max_size": "1280x960",
+            "quality": ""
+        },
+        {
+            "id": "613108-MCO42790393658_072020",
+            "url": "http://mco-s1-p.mlstatic.com/613108-MCO42790393658_072020-O.jpg",
+            "secure_url": "https://mco-s1-p.mlstatic.com/613108-MCO42790393658_072020-O.jpg",
+            "size": "500x373",
+            "max_size": "1280x957",
+            "quality": ""
+        },
+        {
+            "id": "860312-MCO42790386777_072020",
+            "url": "http://mco-s1-p.mlstatic.com/860312-MCO42790386777_072020-O.jpg",
+            "secure_url": "https://mco-s1-p.mlstatic.com/860312-MCO42790386777_072020-O.jpg",
+            "size": "500x373",
+            "max_size": "1280x957",
+            "quality": ""
+        },
+        {
+            "id": "861302-MCO42790411391_072020",
+            "url": "http://mco-s1-p.mlstatic.com/861302-MCO42790411391_072020-O.jpg",
+            "secure_url": "https://mco-s1-p.mlstatic.com/861302-MCO42790411391_072020-O.jpg",
+            "size": "500x373",
+            "max_size": "1280x957",
+            "quality": ""
+        },
+        {
+            "id": "665633-MCO42790387819_072020",
+            "url": "http://mco-s1-p.mlstatic.com/665633-MCO42790387819_072020-O.jpg",
+            "secure_url": "https://mco-s1-p.mlstatic.com/665633-MCO42790387819_072020-O.jpg",
+            "size": "375x500",
+            "max_size": "960x1280",
+            "quality": ""
+        }
+    ],
+    "video_id": null,
+    "descriptions": [
+        {
+            "id": "MCO577780128-2863746358"
+        }
+    ],
+    "accepts_mercadopago": false,
+    "non_mercado_pago_payment_methods": [],
+    "shipping": {
+        "mode": "not_specified",
+        "methods": [],
+        "tags": [],
+        "dimensions": null,
+        "local_pick_up": false,
+        "free_shipping": false,
+        "logistic_type": "not_specified",
+        "store_pick_up": false
+    },
+    "international_delivery_mode": "none",
+    "seller_address": {
+        "city": {
+            "id": "TUNPQ01FRGRjNjc4",
+            "name": "Medellín"
+        },
+        "state": {
+            "id": "CO-ANT",
+            "name": "Antioquia"
+        },
+        "country": {
+            "id": "CO",
+            "name": "Colombia"
+        },
+        "search_location": {
+            "city": {
+                "id": "TUNPQ01FRGRjNjc4",
+                "name": "Medellín"
+            },
+            "state": {
+                "id": "TUNPUEFOVGFiZWI3",
+                "name": "Antioquia"
+            }
+        },
+        "latitude": 6.2026286,
+        "longitude": -75.57135,
+        "id": 1064261757
+    },
+    "seller_contact": {
+        "contact": "",
+        "other_info": "",
+        "country_code": "",
+        "area_code": "",
+        "phone": "",
+        "country_code2": "",
+        "area_code2": "",
+        "phone2": "",
+        "email": "",
+        "webpage": ""
+    },
+    "location": {
+        "address_line": "",
+        "zip_code": "",
+        "neighborhood": {
+            "id": "TUNPQkVMUDI3MDA0Ng",
+            "name": "El Poblado"
+        },
+        "city": {
+            "id": "TUNPQ01FRGRjNjc4",
+            "name": "Medellín"
+        },
+        "state": {
+            "id": "TUNPUEFOVGFiZWI3",
+            "name": "Antioquia"
+        },
+        "country": {
+            "id": "CO",
+            "name": "Colombia"
+        },
+        "latitude": 6.2132868,
+        "longitude": -75.5762572
+    },
+    "geolocation": {
+        "latitude": 6.2132868,
+        "longitude": -75.5762572
+    },
+    "coverage_areas": [],
+    "attributes": [
+        {
+            "id": "ITEM_CONDITION",
+            "name": "Condición del ítem",
+            "value_id": "2230581",
+            "value_name": "Usado",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "2230581",
+                    "name": "Usado",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "",
+            "attribute_group_name": ""
+        },
+        {
+            "id": "COLOR",
+            "name": "Color",
+            "value_id": "51993",
+            "value_name": "Rojo",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "51993",
+                    "name": "Rojo",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "ADICIONALES",
+            "attribute_group_name": "Características generales"
+        },
+        {
+            "id": "SINGLE_OWNER",
+            "name": "Único dueño",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "ADICIONALES",
+            "attribute_group_name": "Características generales"
+        },
+        {
+            "id": "HAS_AIR_CONDITIONING",
+            "name": "Aire acondicionado",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_AUTOPILOT",
+            "name": "Piloto automático",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_CENTRAL_POWER_DOOR_LOCKS",
+            "name": "Cierre centralizado de puertas",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_CLIMATE_CONTROL",
+            "name": "Climatizador",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_COASTERS",
+            "name": "Porta vasos",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_CRUISE_CONTROL",
+            "name": "Control de velocidad crucero",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_ELECTRIC_MIRRORS",
+            "name": "Retrovisores eléctricos",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_ELECTRIC_SEATS",
+            "name": "Asientos eléctricos",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_GPS",
+            "name": "GPS",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_HEADLIGHT_CONTROL",
+            "name": "Luces con regulación automática",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_HEIGHT_ADJUSTABLE_DRIVER_SEAT",
+            "name": "Asiento conductor regulable en altura",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_LEATHER_UPHOLSTERY",
+            "name": "Tapizado de cuero",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_LIGHT_ON_REMINDER",
+            "name": "Alarma de luces encendidas",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_LIGHT_SENSOR",
+            "name": "Sensor de luz",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_ONBOARD_COMPUTER",
+            "name": "Computadora de abordo",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_PARKING_SENSOR",
+            "name": "Sensor de parqueo",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_POWER_WINDOWS",
+            "name": "Vidrios eléctricos",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_RAIN_SENSOR",
+            "name": "Sensor de lluvia",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_REAR_BACKREST",
+            "name": "Respaldo trasero",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_REAR_FOLDING_SEAT",
+            "name": "Asiento trasero abatible",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_REMOTE_TRUNK_RELEASE",
+            "name": "Apertura remota de baúl",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_SLIDING_ROOF",
+            "name": "Techo corredizo",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "CONFORT",
+            "attribute_group_name": "Confort"
+        },
+        {
+            "id": "HAS_BULL_BAR",
+            "name": "Defensa delantera",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "EXTERIOR",
+            "attribute_group_name": "Exterior"
+        },
+        {
+            "id": "HAS_PAINTED_BUMPER",
+            "name": "Paragolpes pintados",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "EXTERIOR",
+            "attribute_group_name": "Exterior"
+        },
+        {
+            "id": "HAS_ROLL_BAR",
+            "name": "Barra anti vuelco",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "EXTERIOR",
+            "attribute_group_name": "Exterior"
+        },
+        {
+            "id": "HAS_SPARE_TYRE_SUPPORT",
+            "name": "Soporte para llanta de repuesto",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "EXTERIOR",
+            "attribute_group_name": "Exterior"
+        },
+        {
+            "id": "HAS_TRAY_COVER",
+            "name": "Cubierta de platón",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "EXTERIOR",
+            "attribute_group_name": "Exterior"
+        },
+        {
+            "id": "HAS_TRAY_MAT",
+            "name": "Cobertor de caja",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "EXTERIOR",
+            "attribute_group_name": "Exterior"
+        },
+        {
+            "id": "HAS_WINDSCREEN_WIPER",
+            "name": "Limpia/lava luneta",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "EXTERIOR",
+            "attribute_group_name": "Exterior"
+        },
+        {
+            "id": "BRAND",
+            "name": "Marca",
+            "value_id": "56870",
+            "value_name": "Porsche",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "56870",
+                    "name": "Porsche",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "FIND",
+            "attribute_group_name": "Ficha técnica"
+        },
+        {
+            "id": "DOORS",
+            "name": "Puertas",
+            "value_id": null,
+            "value_name": "2",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": null,
+                    "name": "2",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "FIND",
+            "attribute_group_name": "Ficha técnica"
+        },
+        {
+            "id": "FUEL_TYPE",
+            "name": "Tipo de combustible",
+            "value_id": "64364",
+            "value_name": "Gasolina",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "64364",
+                    "name": "Gasolina",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "FIND",
+            "attribute_group_name": "Ficha técnica"
+        },
+        {
+            "id": "KILOMETERS",
+            "name": "Kilómetros",
+            "value_id": null,
+            "value_name": "8129 km",
+            "value_struct": {
+                "number": 8129,
+                "unit": "km"
+            },
+            "values": [
+                {
+                    "id": null,
+                    "name": "8129 km",
+                    "struct": {
+                        "number": 8129,
+                        "unit": "km"
+                    }
+                }
+            ],
+            "attribute_group_id": "FIND",
+            "attribute_group_name": "Ficha técnica"
+        },
+        {
+            "id": "MODEL",
+            "name": "Modelo",
+            "value_id": "60259",
+            "value_name": "911",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "60259",
+                    "name": "911",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "FIND",
+            "attribute_group_name": "Ficha técnica"
+        },
+        {
+            "id": "STEERING",
+            "name": "Dirección",
+            "value_id": "370873",
+            "value_name": "Asistida",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "370873",
+                    "name": "Asistida",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "FIND",
+            "attribute_group_name": "Ficha técnica"
+        },
+        {
+            "id": "TRANSMISSION",
+            "name": "Transmisión",
+            "value_id": "370876",
+            "value_name": "Automática",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "370876",
+                    "name": "Automática",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "FIND",
+            "attribute_group_name": "Ficha técnica"
+        },
+        {
+            "id": "TRIM",
+            "name": "Versión",
+            "value_id": null,
+            "value_name": "PORSCHE 911 CARRERA GTS AUTOMÁTICO",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": null,
+                    "name": "PORSCHE 911 CARRERA GTS AUTOMÁTICO",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "FIND",
+            "attribute_group_name": "Ficha técnica"
+        },
+        {
+            "id": "VEHICLE_BODY_TYPE",
+            "name": "Tipo de carrocería",
+            "value_id": "452749",
+            "value_name": "Coupé",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "452749",
+                    "name": "Coupé",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "FIND",
+            "attribute_group_name": "Ficha técnica"
+        },
+        {
+            "id": "VEHICLE_TYPE",
+            "name": "Tipo de vehículo",
+            "value_id": "398351",
+            "value_name": "Carros y camionetas",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "398351",
+                    "name": "Carros y camionetas",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "FIND",
+            "attribute_group_name": "Ficha técnica"
+        },
+        {
+            "id": "VEHICLE_YEAR",
+            "name": "Año",
+            "value_id": null,
+            "value_name": "2018",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": null,
+                    "name": "2018",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "FIND",
+            "attribute_group_name": "Ficha técnica"
+        },
+        {
+            "id": "ADMINISTRATIVE_MANAGEMENT",
+            "name": "Traspaso a domicilio",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "CAR_DELIVERY",
+            "name": "Entrega a domicilio",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "ENGINE_DISPLACEMENT",
+            "name": "Cilindrada",
+            "value_id": null,
+            "value_name": "3000 cc",
+            "value_struct": {
+                "number": 3000,
+                "unit": "cc"
+            },
+            "values": [
+                {
+                    "id": null,
+                    "name": "3000 cc",
+                    "struct": {
+                        "number": 3000,
+                        "unit": "cc"
+                    }
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_ALUMINIUM_ACCENT_PANEL",
+            "name": "Tablero con detalles en aluminio",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_ANDROID_AUTO",
+            "name": "Android auto",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_APPLE_CARPLAY",
+            "name": "Apple CarPlay",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_ASR_TRACTION",
+            "name": "Tracción ASR",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_AUTO_WINDOW_CLOSER",
+            "name": "Cierre automático de vidrios",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_BLIND_SIDE_ZONE_ALERT",
+            "name": "Aviso de punto ciego",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_CENTRAL_ARMREST_REAR_SEAT",
+            "name": "Asiento trasero con apoyabrazo central",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_CHROME_ACCENT_PANEL",
+            "name": "Tablero con detalles cromados",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_CHROME_HANDLES",
+            "name": "Manijas externas de puertas cromadas",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_COASTERS_CENTRAL_REAR",
+            "name": "Posavasos en apoyabrazos central trasero",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_DUALPART_BACKREST_REAR_SEAT",
+            "name": "Asiento trasero con respaldo bipartido",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_ELECTRIC_SEATS_BACKREST_TILT_DRIVER",
+            "name": "Asiento delantero conductor con regulación eléctrica de la inclinación del respaldo",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_ELECTRIC_SEATS_BACKREST_TILT_PASSENGER",
+            "name": "Asiento delantero pasajero con regulación eléctrica de la inclinación del respaldo",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_ELECTRIC_SEATS_HEIGHT_PASSENGER",
+            "name": "Asiento delantero pasajero con regulación eléctrica de altura",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_ELECTRIC_SEATS_LENGTH_DRIVER",
+            "name": "Asiento delantero conductor con regulación eléctrica longitudinal",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_ELECTRIC_SEATS_LENGTH_PASSENGER",
+            "name": "Asiento delantero pasajero con regulación eléctrica longitudinal",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_ELECTRIC_SEATS_TILT_DRIVER",
+            "name": "Asiento delantero conductor con regulación eléctrica de inclinación",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_ELECTRIC_SEATS_TILT_PASSENGER",
+            "name": "Asiento delantero pasajero con regulación eléctrica de inclinación",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_FABRIC_UPHOLSTERY",
+            "name": "Tapizado de tela",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_FRONT_INTEGRAL_DUALPART_SEATS",
+            "name": "Asiento delantero integral bipartido",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_FRONT_INTEGRAL_SEATS",
+            "name": "Asiento delantero integral",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_FRONT_PARKING_SENSOR",
+            "name": "Sensor delantero de distancia para estacionamiento",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_HEATED_FRONT_SEATS",
+            "name": "Asientos delanteros calefaccionados",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_HEIGHT_ADJUSTABLE_PASSENGER_SEAT",
+            "name": "Asiento acompañante regulable en altura",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_HEIGHT_ADJUSTABLE_STEERING_WHEEL",
+            "name": "Regulación de altura del volante",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_INDIVIDUAL_FRONT_SEATS",
+            "name": "Asientos delanteros individuales",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_ISOFIX",
+            "name": "Sistema ISOFIX",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_LENGHT_ADJUSTABLE_REAR_SEAT",
+            "name": "Asiento trasero con regulación longitudinal",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_LENGTH_ADJUSTABLE_STEERING_WHEEL",
+            "name": "Regulación longitudinal del volante",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_LUGGAGE_ROOF_RACK",
+            "name": "Porta equipaje en techo",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_PAINTED_FRONT_BUMPER",
+            "name": "Paragolpe delantero del color del vehículo",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_PAINTED_REAR_BUMPER",
+            "name": "Paragolpe trasero del color del vehículo",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_POWER_FRONT_WINDOWS",
+            "name": "Levantavidrios eléctricos delanteros",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_POWER_REAR_WINDOWS",
+            "name": "Levantavidrios eléctricos traseros",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_REAR_PARKING_SENSOR",
+            "name": "Sensor trasero de distancia para estacionamiento",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_REMOTE_DOOR_OPENER",
+            "name": "Apertura remota de puertas",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_SEMI_LEATHER_UPHOLSTERY",
+            "name": "Tapizado de semicuero",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_SIDE_IMPACT_FRONT_AIRBAG",
+            "name": "Airbag laterales delanteros",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_SIDE_IMPACT_REAR_AIRBAG",
+            "name": "Airbag laterales traseros",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_SPECIAL_COLOR_ACCENT_PANEL",
+            "name": "Tablero con detalles en color especial",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_SPECIAL_PAINTED_BACK_BUMPER",
+            "name": "Paragolpe trasero pintados de color especial",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_SPECIAL_PAINTED_FRONT_BUMPER",
+            "name": "Paragolpe delantero pintados de color especial",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_STEERING_WHEEL_LEATHER",
+            "name": "Volante revestido en cuero",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_VEHICLE_INSPECTION",
+            "name": "Inspección vehicular",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HAS_WOOD_ACCENT_PANEL",
+            "name": "Tablero con detalles en madera",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "HOME_TEST_DRIVE",
+            "name": "Test drive a domicilio",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "IS_INSURED_VEHICLE",
+            "name": "Vehículo asegurado",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "SALE_WITH_EXCHANGE",
+            "name": "Venpermuta",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "SANITIZATION_POLICY",
+            "name": "Política de sanitización",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "VIRTUAL_TOURS",
+            "name": "Tours virtual",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_ACTIVE_LANE_CHANGING_SENSOR",
+            "name": "Sensor de cambio de carril activo",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_AIR_CONDITIONING_WITH_AUTOMATIC_TEMPERATURE_CONTROL",
+            "name": "Aire acondicionado con control automático de la temperatura",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_AIR_CONDITIONING_WITH_INDIVIDUAL_CONTROLS",
+            "name": "Aire acondicionado con controles individuales",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_ALLOY_SPARE_WHEEL",
+            "name": "Rueda de auxilio de aleación",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_ARMREST_BETWEEN_FRONT_SEATS",
+            "name": "Apoyabrazos entre los asientos delanteros",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_AUDIO_AMPLIFIER",
+            "name": "Planta de sonido",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_AUTOMATIC_AIR_CONDITIONING_WITH_INDIVIDUAL_CONTROLS",
+            "name": "Aire acondicionado automático con controles individuales",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_AUTOMATIC_AIR_CONDITIONING_WITH_INDIVIDUAL_CONTROLS_REAR_PART_3_ZONES",
+            "name": "Aire acondicionado automático con controles individuales del/tras (3 zonas)",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_AUTOMATIC_AIR_CONDITIONING_WITH_INDIVIDUAL_CONTROLS_REAR_PART_4_ZONES",
+            "name": "Aire acondicionado automático con controles individuales del/tras (4 zonas)",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_AUTOMATIC_AIR_CONDITIONING_WITH_INDIVIDUAL_FRONT_AND_REAR_CONTROLS",
+            "name": "Aire acondicionado automático con controles individuales delanteros/traseros",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_AUTOMATIC_PARKING_SENSOR",
+            "name": "Sistema de estacionamiento automático",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_AUTOMATIC_UNLOCK_DOORS_IN_ACCIDENT",
+            "name": "Destrabamiento automático de puertas en caso de accidente",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_AUXILIARY_LIGHTS_ACTIVATION_IN_CASE_OF_SUDDEN_STOP",
+            "name": "Accionamiento de luces auxiliares en caso de frenado brusco",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_BACKUP_CAMERA",
+            "name": "Cámara de reversa",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_BED_COVER",
+            "name": "Carpa plana",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_BLUETOOTH_SPEAKER",
+            "name": "Viva-voz con sistema bluetooth",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_BLU_RAY",
+            "name": "Blu-ray",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_CHROMED_ALLOY_WHEELS",
+            "name": "Llantas de aleación cromadas",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_CHROMED_DOOR_HANDLES",
+            "name": "Manija de puertas cromadas",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_CHROMED_FRONT_BUMPER",
+            "name": "Paragolpes delantero cromado",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_CHROMED_REAR_BUMPER",
+            "name": "Paragolpes trasero cromado",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_CORNERING_BRAKE_CONTROL_SYSTEM_CBC",
+            "name": "Sistema de control de frenado en curva (CBC)",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_CRANKCASE_GUARD",
+            "name": "Protector de cárter",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_DASHBOARD_LCD",
+            "name": "LCD en panel de instrumentos",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_DAYTIME_LED_LIGHTS",
+            "name": "Con faros diurnos LED",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_DRIVER_ARMREST",
+            "name": "Apoyabrazos conductor",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_DRIVER_FRONT_SEAT_WITH_ELECTRIC_ADJUSTMENT",
+            "name": "Asiento del conductor con regulación eléctrica de altura",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_ECO_MODE",
+            "name": "Con modo Eco",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_ELECTROCHROMIC_INTERNAL_REAR_VIEW_MIRROR",
+            "name": "Espejo retrovisor interno electro crómico",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_ENGINE_WITH_EMISSION_REDUCTION_TECHNOLOGY",
+            "name": "Motor con tecnología de reducción de emisiones (Efficiency)",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_EXTERNAL_MIRRORS_WITH_AUTOMATIC_TILTING_IN_REVERSE",
+            "name": "Espejos externos con inclinación automática en marcha atrás",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_EXTERNAL_REARVIEW_MIRRORS_WITH_ELECTRICAL_FOLDING",
+            "name": "Espejos retrovisores externos rebatibles eléctricamente",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_FACTORY_WARRANTY",
+            "name": "Con garantía de fábrica",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_FRONT_SEATS_INDIVIDUAL_ARMRESTS",
+            "name": "Apoyabrazos delanteros individuales",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_FRONT_SEAT_BACKREST_LCD",
+            "name": "LCD en respaldo asiento delantero",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_FUEL_TANK_PROTECTOR",
+            "name": "Protector de tanque de combustible",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_GEARS_CHANGE_IN_STEERING_WHEEL",
+            "name": "Cambio de marchas en el volante",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_HANDS_FREE_SYSTEM",
+            "name": "Teléfono celular manos libres",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_HEADLIGHTS_IGNITION_WHEN_RAIN",
+            "name": "Faros con encendido en caso de lluvia",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_HEADLIGHTS_WITH_AUTOMATIC_ACTIVATION",
+            "name": "Faros con accionamiento automático-encendido",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_HEADLIGHT_CLEANER",
+            "name": "Limpiador de faros",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_HEADLIGHT_WASHER",
+            "name": "Lavador de faros",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_LANE_CHANGING_SENSOR",
+            "name": "Sensor de cambio de carril",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_LCD_BETWEEN_FRONT_SEATS",
+            "name": "LCD entre asientos delanteros",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_LCD_FOR_REAR_SEATS",
+            "name": "LCD para asientos traseros",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_LED_FOGLIGHTS",
+            "name": "Con faros de neblina LED",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_LED_HEADLIGHTS",
+            "name": "Con faros delanteros LED",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_LED_REAR_LIGHTS",
+            "name": "Con faros traseros LED",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_LUXURY_WHEELS",
+            "name": "Rines de lujo",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_MANUAL_GLASSES",
+            "name": "Vidrios manuales",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_MECHANICAL_WARRANTY",
+            "name": "Con garantía mecánica",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_NEGOTIABLE_PRICE",
+            "name": "Precio negociable",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_NERF_BARS",
+            "name": "Estribos",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_NEW_WHEELS",
+            "name": "Llantas nuevas",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_OFF_ROAD_LIGHTS",
+            "name": "Luces exploradoras",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_PAID_IPVA",
+            "name": "IPVA pago",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_PAINTED_DOOR_HANDLES",
+            "name": "Manija de puertas en color del vehículo",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_PANEL_LCD",
+            "name": "LCD en panel",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_PANORAMIC_GLASS_ROOF",
+            "name": "Techo de vidrio panorámico",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_PANORAMIC_SOLAR_ROOF",
+            "name": "Techo solar panorámico",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_PARKING_SENSOR_BY_FRONT_CAMERA",
+            "name": "Sensor de estacionamiento por cámara delantera",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_PARKING_SENSOR_BY_REAR_CAMERA",
+            "name": "Sensor de estacionamiento por cámara trasera",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_PARKING_SENSOR_WITH_GRAPHICS",
+            "name": "Sistema de estacionamiento con gráficos",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_PASSENGER_FRONT_SEAT_WITH_ELECTRIC_ADJUSTMENT",
+            "name": "Asiento del pasajero con regulación eléctrica de altura",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_RETRACTABLE_FRONT_SEAT_BELTS",
+            "name": "Cinturones de seguridad delanteros retráctiles",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_RETRACTABLE_FRONT_SEAT_BELTS_WITH_ELECTRIC_ADJUSTMENT",
+            "name": "Cinturones de seguridad delanteros retráctiles con regulación eléctrica de altura",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_RETRACTABLE_FRONT_SEAT_BELTS_WITH_HEIGHT_ADJUSTMENT",
+            "name": "Cinturones de seguridad delanteros retráctiles con regulación de altura",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_RETRACTABLE_REAR_SEAT_BELTS",
+            "name": "Cinturones de seguridad traseros retráctiles",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_RETRACTABLE_REAR_SEAT_BELTS_WITH_ELECTRIC_ADJUSTMENT",
+            "name": "Cinturones de seguridad traseros retráctiles con regulación eléctrica de altura",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_RETRACTABLE_REAR_SEAT_BELTS_WITH_HEIGHT_ADJUSTMENT",
+            "name": "Cinturones de seguridad traseros retráctiles con regulación de altura",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_ROOF_LCD",
+            "name": "LCD en techo",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_SAFETY_FILMS",
+            "name": "Películas de seguridad",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_SKY_WINDOW",
+            "name": "Techo solar sky window",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_SPECIAL_PAINTED_ALLOY_WHEELS",
+            "name": "Llantas de aleación en color especial",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_SPECIAL_PAINTED_DOOR_HANDLES",
+            "name": "Manija de puertas en color especial",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_SPOILER",
+            "name": "Spoiler",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_STEEL_SPARE_WHEEL",
+            "name": "Rueda de auxilio de acero",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_STEEL_WHEELS",
+            "name": "Llantas de acero",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_TECHNOMECHANICAL_REVIEW",
+            "name": "Revisión tecnomecánica",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_TEMPORARY_SPARE_WHEEL",
+            "name": "Rueda de auxilio temporal",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_THIRD_ROW",
+            "name": "Tercera banca",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_TOUCH_SCREEN_LCD",
+            "name": "LCD con sistema touch screen",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_VOICE_ACTIVATED_GPS",
+            "name": "Sistema de GPS con indicación por voz",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "WITH_VOICE_COMMAND_SYSTEM",
+            "name": "Sistema de comando de voz",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "OTHERS",
+            "attribute_group_name": "Otros"
+        },
+        {
+            "id": "ARMORED",
+            "name": "Blindado",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_ABS_BRAKES",
+            "name": "Frenos ABS",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_ALARM",
+            "name": "Alarma",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_ALLOY_WHEELS",
+            "name": "Llantas de aleación",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_CURTAIN_AIRBAG",
+            "name": "Airbag de cortina",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_DRIVER_AIRBAG",
+            "name": "Airbag conductor",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_ELECTRONIC_BRAKE_ASSIST",
+            "name": "Repartidor electrónico de fuerza de frenado",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_ENGINE_INMOVILIZER",
+            "name": "Sistema de bloqueo de encendido",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_FOG_LIGHT",
+            "name": "Luces antiniebla",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_FRONT_FOGLIGHTS",
+            "name": "Faros antinieblas delanteros",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_HEADREST_REAR_SEAT",
+            "name": "Apoya cabeza en asientos traseros",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_PASSENGER_AIRBAG",
+            "name": "Airbag para conductor y pasajero",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_REAR_FOGLIGHTS",
+            "name": "Faros antinieblas traseros",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_REAR_WINDOW_DEFOGGER",
+            "name": "Desempañador trasero",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_SIDE_IMPACT_AIRBAG",
+            "name": "Airbag laterales",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_STABILITY_CONTROL",
+            "name": "Control de estabilidad",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_THIRD_STOP",
+            "name": "Tercera luz de freno led",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_XENON_HEADLIGHTS",
+            "name": "Faros de xenón",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "TRACTION_CONTROL",
+            "name": "Control de tracción",
+            "value_id": "370879",
+            "value_name": "4x2",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "370879",
+                    "name": "4x2",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SECURITY",
+            "attribute_group_name": "Seguridad"
+        },
+        {
+            "id": "HAS_AMFM_RADIO",
+            "name": "AM/FM",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SONIDO",
+            "attribute_group_name": "Sonido"
+        },
+        {
+            "id": "HAS_AUXILIARY_PORT",
+            "name": "Entrada auxiliar",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SONIDO",
+            "attribute_group_name": "Sonido"
+        },
+        {
+            "id": "HAS_BLUETOOTH",
+            "name": "Bluetooth",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SONIDO",
+            "attribute_group_name": "Sonido"
+        },
+        {
+            "id": "HAS_CD_PLAYER",
+            "name": "CD",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SONIDO",
+            "attribute_group_name": "Sonido"
+        },
+        {
+            "id": "HAS_DVD",
+            "name": "DVD",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SONIDO",
+            "attribute_group_name": "Sonido"
+        },
+        {
+            "id": "HAS_MP3_PLAYER",
+            "name": "Reproductor de MP3",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SONIDO",
+            "attribute_group_name": "Sonido"
+        },
+        {
+            "id": "HAS_SD_CARD",
+            "name": "Tarjeta SD",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SONIDO",
+            "attribute_group_name": "Sonido"
+        },
+        {
+            "id": "HAS_STEERING_WHEEL_CONTROL",
+            "name": "Comando remoto para radio en el volante",
+            "value_id": "242084",
+            "value_name": "No",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242084",
+                    "name": "No",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SONIDO",
+            "attribute_group_name": "Sonido"
+        },
+        {
+            "id": "HAS_USB",
+            "name": "Entrada USB",
+            "value_id": "242085",
+            "value_name": "Sí",
+            "value_struct": null,
+            "values": [
+                {
+                    "id": "242085",
+                    "name": "Sí",
+                    "struct": null
+                }
+            ],
+            "attribute_group_id": "SONIDO",
+            "attribute_group_name": "Sonido"
+        }
+    ],
+    "warnings": [],
+    "listing_source": "",
+    "variations": [],
+    "status": "active",
+    "sub_status": [],
+    "tags": [
+        "dragged_visits"
+    ],
+    "warranty": null,
+    "catalog_product_id": null,
+    "domain_id": "MCO-CARS_AND_VANS",
+    "parent_item_id": "MCO572128947",
+    "differential_pricing": null,
+    "deal_ids": [],
+    "automatic_relist": false,
+    "date_created": "2020-08-18T17:27:57.000Z",
+    "last_updated": "2020-09-18T18:15:46.000Z",
+    "health": null,
+    "catalog_listing": false
+}

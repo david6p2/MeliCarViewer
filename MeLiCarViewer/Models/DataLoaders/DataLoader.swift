@@ -19,7 +19,7 @@ class DataLoader {
   let offset = 10
   let searchEndpoint = "sites/MCO/search"
   let pictureDetailsEndpoint = "items/"
-  let defaultSession = URLSession(configuration: .default)
+  var defaultSession = URLSession(configuration: .default)
   var dataTask: URLSessionDataTask? = nil
   static let noErrorDescription = "No error Description"
   
@@ -32,22 +32,19 @@ class DataLoader {
                                        withPage page: Int,
                                        handler: @escaping (Result<CarModelResult, DCError>) -> Void) {
     dataTask?.cancel()
-    
-    var urlComponents = URLComponents(string: baseEndPoint+searchEndpoint )
-    let offset = (page - 1) * limit
-    var queryParameter = "BRAND=56870" // The Brand ID for Porsche
-    if let carModel = carModel, !carModel.isEmpty {
-      queryParameter = "MODEL=\(carModel)"
-    }
-    urlComponents?.query = "category=MCO1744&limit=\(limit)&offset=\(offset)&\(queryParameter)"
-    
-    guard let url = urlComponents?.url else {
-      handler(.failure(DCError(type: .invalidCarModel, errorInfo: "The search URL was not valid. Check your parameters. (\(queryParameter)")))
+
+    guard let url = try? self.makeRequestForCarModel(carModel, withPage: page) else {
+      handler(.failure(DCError(type: .invalidCarModel, errorInfo: "The search URL was not valid. Check your parameters.")))
       return
     }
     
     dataTask = defaultSession.dataTask(with: url, completionHandler: { [weak self] (data, response, error) in
-      defer { self?.dataTask = nil }
+      guard let self = self else{
+        handler(.failure(DCError(type: .unableToDecode, errorInfo: "Can not create reference to self")))
+        return
+      }
+
+      defer { self.dataTask = nil }
       
       if let error = error {
         handler(.failure(DCError(type: .unableToComplete, errorInfo: error.localizedDescription)))
@@ -65,7 +62,7 @@ class DataLoader {
       }
       
       do {
-        let decodedResponse = try JSONDecoder().decode(CarModelResult.self, from: data)
+        let decodedResponse = try self.parseResponseForCarModelDataResult(data: data)
         handler(.success(decodedResponse))
       } catch {
         let errorDesc = error as NSError
@@ -73,6 +70,27 @@ class DataLoader {
       }
     })
     dataTask?.resume()
+  }
+
+  func makeRequestForCarModel(_ carModel: String?, withPage page: Int) throws -> URL? {
+    var urlComponents = URLComponents(string: baseEndPoint+searchEndpoint )
+    let offset = (page - 1) * limit
+    var queryParameter = "BRAND=56870" // The Brand ID for Porsche
+
+    if let carModel = carModel, !carModel.isEmpty {
+      queryParameter = "MODEL=\(carModel)"
+    }
+    
+    urlComponents?.query = "category=MCO1744&limit=\(limit)&offset=\(offset)&\(queryParameter)"
+
+    guard let url = urlComponents?.url else {
+      return nil
+    }
+    return url
+  }
+
+  func parseResponseForCarModelDataResult(data: Data) throws -> CarModelResult {
+    return try JSONDecoder().decode(CarModelResult.self, from: data)
   }
   
   /// Create a Request to GET  all the detail information of a given car Id, including the pictures
@@ -136,6 +154,19 @@ class DataLoader {
         let errorDesc = error as NSError
         handler(.failure(DCError(type: .unableToDecode, errorInfo: errorDesc.debugDescription)))
       }
+    }
+  }
+
+  public func loadJSON(fileName: String) throws ->  Data? {
+    guard let url = Bundle.main.url(forResource: fileName, withExtension: "json") else {
+      throw DCError(type: .unableToComplete , errorInfo: "No JSON filename found in bundle")
+    }
+    do {
+      return try Data(contentsOf: url)
+    } catch {
+      let errorDesc = error as NSError
+      throw errorDesc
+      return nil
     }
   }
 

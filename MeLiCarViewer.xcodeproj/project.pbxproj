@@ -16,13 +16,17 @@
 		6348E7CE251CF525008387E4 /* DCAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348E7CD251CF525008387E4 /* DCAlertContainerView.swift */; };
 		6348E7D1251D2B82008387E4 /* DCDataLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348E7D0251D2B82008387E4 /* DCDataLoadingViewController.swift */; };
 		6348E7D3251D66A8008387E4 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348E7D2251D66A8008387E4 /* UIView+Ext.swift */; };
+		6348E7D5251E4ADB008387E4 /* CarModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348E7D4251E4ADB008387E4 /* CarModelTests.swift */; };
+		638B38B5251E52CE002392FB /* CarResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B38B4251E52CE002392FB /* CarResultTests.swift */; };
+		638B38B7251E6B80002392FB /* CarDetailsWithPictures.json in Resources */ = {isa = PBXBuildFile; fileRef = 638B38B6251E6B7F002392FB /* CarDetailsWithPictures.json */; };
+		638B38B9251E6E88002392FB /* CarPicturesInformationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B38B8251E6E88002392FB /* CarPicturesInformationTests.swift */; };
+		638B38BC251E82DE002392FB /* DataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B38BB251E82DE002392FB /* DataLoaderTests.swift */; };
 		6394574D250E9B8800661244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6394574C250E9B8800661244 /* AppDelegate.swift */; };
 		6394574F250E9B8800661244 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6394574E250E9B8800661244 /* SceneDelegate.swift */; };
 		63945751250E9B8800661244 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63945750250E9B8800661244 /* SearchViewController.swift */; };
 		63945754250E9B8800661244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63945752250E9B8800661244 /* Main.storyboard */; };
 		63945756250E9B8B00661244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63945755250E9B8B00661244 /* Assets.xcassets */; };
 		63945759250E9B8B00661244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63945757250E9B8B00661244 /* LaunchScreen.storyboard */; };
-		63945764250E9B8B00661244 /* MeLiCarViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63945763250E9B8B00661244 /* MeLiCarViewerTests.swift */; };
 		6394577D250EDE2900661244 /* SearchByModelAndCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = 63945776250EDE2900661244 /* SearchByModelAndCategory.json */; };
 		6394577E250EDE2900661244 /* PorscheModels.json in Resources */ = {isa = PBXBuildFile; fileRef = 63945777250EDE2900661244 /* PorscheModels.json */; };
 		63945782250EDF8200661244 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63945781250EDF8200661244 /* CarModel.swift */; };
@@ -71,6 +75,11 @@
 		6348E7CD251CF525008387E4 /* DCAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCAlertContainerView.swift; sourceTree = "<group>"; };
 		6348E7D0251D2B82008387E4 /* DCDataLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCDataLoadingViewController.swift; sourceTree = "<group>"; };
 		6348E7D2251D66A8008387E4 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		6348E7D4251E4ADB008387E4 /* CarModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelTests.swift; sourceTree = "<group>"; };
+		638B38B4251E52CE002392FB /* CarResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarResultTests.swift; sourceTree = "<group>"; };
+		638B38B6251E6B7F002392FB /* CarDetailsWithPictures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CarDetailsWithPictures.json; sourceTree = "<group>"; };
+		638B38B8251E6E88002392FB /* CarPicturesInformationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPicturesInformationTests.swift; sourceTree = "<group>"; };
+		638B38BB251E82DE002392FB /* DataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderTests.swift; sourceTree = "<group>"; };
 		63945749250E9B8800661244 /* MeLiCarViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeLiCarViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6394574C250E9B8800661244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6394574E250E9B8800661244 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,7 +89,6 @@
 		63945758250E9B8B00661244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6394575A250E9B8B00661244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6394575F250E9B8B00661244 /* MeLiCarViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeLiCarViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63945763250E9B8B00661244 /* MeLiCarViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeLiCarViewerTests.swift; sourceTree = "<group>"; };
 		63945765250E9B8B00661244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63945776250EDE2900661244 /* SearchByModelAndCategory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SearchByModelAndCategory.json; sourceTree = "<group>"; };
 		63945777250EDE2900661244 /* PorscheModels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PorscheModels.json; sourceTree = "<group>"; };
@@ -181,6 +189,25 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		6348E7D6251E4AE3008387E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				638B38BA251E82B9002392FB /* DataLoaders */,
+				6348E7D4251E4ADB008387E4 /* CarModelTests.swift */,
+				638B38B4251E52CE002392FB /* CarResultTests.swift */,
+				638B38B8251E6E88002392FB /* CarPicturesInformationTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		638B38BA251E82B9002392FB /* DataLoaders */ = {
+			isa = PBXGroup;
+			children = (
+				638B38BB251E82DE002392FB /* DataLoaderTests.swift */,
+			);
+			path = DataLoaders;
+			sourceTree = "<group>";
+		};
 		63945740250E9B8800661244 = {
 			isa = PBXGroup;
 			children = (
@@ -219,7 +246,7 @@
 		63945762250E9B8B00661244 /* MeLiCarViewerTests */ = {
 			isa = PBXGroup;
 			children = (
-				63945763250E9B8B00661244 /* MeLiCarViewerTests.swift */,
+				6348E7D6251E4AE3008387E4 /* Models */,
 				63945765250E9B8B00661244 /* Info.plist */,
 			);
 			path = MeLiCarViewerTests;
@@ -238,10 +265,10 @@
 		6394576F250E9BB600661244 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				63DAE775251073A300C64D83 /* CustomViews */,
 				63D3C1132519B04B00B230D9 /* SearchViewController */,
 				63D3C1122519AFD400B230D9 /* CarResultsViewController */,
 				63D3C1112519AF3B00B230D9 /* CarDetailViewController */,
-				63DAE775251073A300C64D83 /* CustomViews */,
 				63945752250E9B8800661244 /* Main.storyboard */,
 			);
 			path = Views;
@@ -271,6 +298,7 @@
 		63945772250E9C2300661244 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				638B38B6251E6B7F002392FB /* CarDetailsWithPictures.json */,
 				63945777250EDE2900661244 /* PorscheModels.json */,
 				63945776250EDE2900661244 /* SearchByModelAndCategory.json */,
 			);
@@ -453,6 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638B38B7251E6B80002392FB /* CarDetailsWithPictures.json in Resources */,
 				63945759250E9B8B00661244 /* LaunchScreen.storyboard in Resources */,
 				6394577E250EDE2900661244 /* PorscheModels.json in Resources */,
 				63945756250E9B8B00661244 /* Assets.xcassets in Resources */,
@@ -518,7 +547,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63945764250E9B8B00661244 /* MeLiCarViewerTests.swift in Sources */,
+				638B38BC251E82DE002392FB /* DataLoaderTests.swift in Sources */,
+				6348E7D5251E4ADB008387E4 /* CarModelTests.swift in Sources */,
+				638B38B5251E52CE002392FB /* CarResultTests.swift in Sources */,
+				638B38B9251E6E88002392FB /* CarPicturesInformationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
