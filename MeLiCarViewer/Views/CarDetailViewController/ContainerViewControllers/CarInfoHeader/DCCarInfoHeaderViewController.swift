@@ -9,7 +9,7 @@
 import UIKit
 
 class DCCarInfoHeaderViewController: UIViewController {
-  let carImageView = DCCarImageView(0)
+  let carImageView = DCCarImageView(cornerRadius: 0)
   let yearKmLabel = DCSubtitleLabel(textAlignment: .left, fontSize: 12, fontWeight: .regular)
   let carTitleLabel = DCTitleLabel(textAlignment: .left, fontSize: 20)
   let publishedLabel = DCSubtitleLabel(textAlignment: .left, fontSize: 12, fontWeight: .regular)
@@ -62,7 +62,7 @@ class DCCarInfoHeaderViewController: UIViewController {
       carImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
       carImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
       carImageView.heightAnchor.constraint(equalToConstant: view.frame.height/3),
-      
+
       yearKmLabel.topAnchor.constraint(equalTo: carImageView.bottomAnchor, constant: padding),
       yearKmLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
       yearKmLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),

@@ -17,9 +17,9 @@ class DCCarImageView: UIImageView {
     configure()
   }
   
-  convenience init(_ cornerRadius: CGFloat) {
+  convenience init(cornerRadius: CGFloat) {
     self.init(frame:.zero)
-    configure(cornerRadius)
+    configure(cornerRadius: cornerRadius)
   }
   
   required init?(coder: NSCoder) {
@@ -27,7 +27,7 @@ class DCCarImageView: UIImageView {
     configure()
   }
   
-  private func configure(_ cornerRadius: CGFloat = 10) {
+  private func configure(cornerRadius: CGFloat = 10) {
     layer.cornerRadius = cornerRadius
     clipsToBounds = true
     image = placeholderImage
@@ -36,7 +36,6 @@ class DCCarImageView: UIImageView {
   }
   
   func setImage(from urlString: String) {
-    // TODO: Should this be colled from the Controller?
     dataLoader.downloadImage(from: urlString) { [weak self] (result) in
       guard let self = self else {
         return
