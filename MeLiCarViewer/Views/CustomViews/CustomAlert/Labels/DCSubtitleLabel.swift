@@ -13,18 +13,18 @@ class DCSubtitleLabel: UILabel {
     super.init(frame: frame)
     configure()
   }
-  
+
   required init?(coder: NSCoder) {
     super.init(coder: coder)
     configure()
   }
-  
+
   convenience init(textAlignment: NSTextAlignment, fontSize: CGFloat, fontWeight: UIFont.Weight = .bold) {
     self.init(frame: .zero)
     self.textAlignment = textAlignment
     self.font = UIFont.systemFont(ofSize: fontSize, weight: fontWeight)
   }
-  
+
   private func configure() {
     textColor = .secondaryLabel
     adjustsFontSizeToFitWidth = true

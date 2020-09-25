@@ -12,25 +12,25 @@ import UIKit
 class CarResultsController {
   public var porscheModelToSearch: CarModel?
   public var porscheModelsResult: CarModelResult? = nil
-  
+
   var page = 1
   var hasMoreResults = true
-  
+
   private var isFetchInProgress = false
   private var dataLoader: DataLoader
-  
+
   init(loader: DataLoader = DataLoader(), carModel: CarModel?) {
     self.dataLoader = loader
     self.porscheModelToSearch = carModel
   }
-  
+
   func searchPorscheModel(_ model: String?, page: Int = 1, completion: @escaping (Result<CarModelResult?, DCError>) -> Void) {
     guard !isFetchInProgress else {
       return
     }
-    
+
     isFetchInProgress = true
-    
+
     dataLoader.searchResultsForCarModel(model, withPage: page) { [weak self] (result) in
       switch result {
       case .success(let carModelsResult):
@@ -49,5 +49,4 @@ class CarResultsController {
       }
     }
   }
-  
 }

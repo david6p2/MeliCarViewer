@@ -9,8 +9,6 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-
-
   @IBOutlet weak var modelTextField: DCTextField!
   @IBOutlet weak var searchButton: DCButton!
   var modelPicker: UIPickerView!
@@ -49,7 +47,7 @@ class SearchViewController: UIViewController {
     navigationController?.setNavigationBarHidden(true, animated: true)
   }
   
-  func createToolbar() {
+  private func createToolbar() {
     let toolBar = UIToolbar()
     toolBar.barStyle = UIBarStyle.default
     toolBar.isTranslucent = true
@@ -66,12 +64,12 @@ class SearchViewController: UIViewController {
     modelTextField.inputAccessoryView = toolBar
   }
   
-  func updateSelectedCarModel(withPickerRow row: Int) {
+  private func updateSelectedCarModel(withPickerRow row: Int) {
     selectedCarModel = controller.porscheModels?[row]
     modelTextField.text = selectedCarModel?.name
   }
   
-  @objc func donePicker() {
+  @objc private func donePicker() {
     let selectedRow = modelPicker.selectedRow(inComponent: 0)
     updateSelectedCarModel(withPickerRow: selectedRow)
     view.endEditing(true)

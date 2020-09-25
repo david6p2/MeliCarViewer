@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// This class is used to manage the pending operations when downloading the car images
 class PendingOperations {
   lazy var downloadsInProgress: [String: Operation] = [:]
   lazy var downloadQueue: OperationQueue = {
@@ -18,6 +19,7 @@ class PendingOperations {
   }()
 }
 
+/// This class is used to download all the car images
 class ImageDownloader: Operation {
   var picture: Picture
   var image: UIImage = Images.placeholder!
@@ -45,6 +47,5 @@ class ImageDownloader: Operation {
     } else {
       self.image = Images.placeholder!
     }
-    
   }
 }

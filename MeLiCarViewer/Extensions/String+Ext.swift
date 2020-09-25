@@ -14,10 +14,10 @@ extension String {
     dateFormater.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     dateFormater.locale = Locale(identifier: "es_CO")
     dateFormater.timeZone = .current
-    
+
     return dateFormater.date(from: self)
   }
-  
+
   func convertToDisplayFormat() -> String {
     guard let date = convertToDate() else { return "N/A" }
     return date.convertToDayMonthYearFormat() 

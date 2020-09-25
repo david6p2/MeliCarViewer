@@ -28,25 +28,6 @@ class CarViewCell: UICollectionViewCell {
     configure()
   }
   
-  func set(_ car: CarResult) {
-    carTitleLabel.text = car.title
-    priceLabel.text = car.price.convertToPriceInCOP()
-    yearKmLabel.text = createYearKmText(car)
-    carImageView.setImage(from: car.thumbnail)
-  }
-  
-  private func createYearKmText(_ car: CarResult) -> String {
-    let kmAttribute = car.attributes.first { (attribute) -> Bool in
-      return attribute.id == "KILOMETERS"
-    }
-    
-    let yearAttribute = car.attributes.first { (attribute) -> Bool in
-      return attribute.id == "VEHICLE_YEAR"
-    }
-    
-    return (yearAttribute?.valueName ?? " ") + " - " + (kmAttribute?.valueName ?? " ")
-  }
-  
   private func configure() {
     configureCellView()
     configureCarImageView()
@@ -98,5 +79,24 @@ class CarViewCell: UICollectionViewCell {
       yearKmLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
       yearKmLabel.heightAnchor.constraint(equalToConstant: 10)
     ])
+  }
+
+  private func createYearKmText(_ car: CarResult) -> String {
+    let kmAttribute = car.attributes.first { (attribute) -> Bool in
+      return attribute.id == "KILOMETERS"
+    }
+
+    let yearAttribute = car.attributes.first { (attribute) -> Bool in
+      return attribute.id == "VEHICLE_YEAR"
+    }
+
+    return (yearAttribute?.valueName ?? " ") + " - " + (kmAttribute?.valueName ?? " ")
+  }
+
+  func set(_ car: CarResult) {
+    carTitleLabel.text = car.title
+    priceLabel.text = car.price.convertToPriceInCOP()
+    yearKmLabel.text = createYearKmText(car)
+    carImageView.setImage(from: car.thumbnail)
   }
 }

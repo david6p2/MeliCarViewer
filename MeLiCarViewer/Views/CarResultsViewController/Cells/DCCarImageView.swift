@@ -9,9 +9,7 @@
 import UIKit
 
 class DCCarImageView: UIImageView {
-  
   var dataLoader = DataLoader()
-
   let placeholderImage = Images.placeholder
   
   override init(frame: CGRect) {
@@ -38,17 +36,19 @@ class DCCarImageView: UIImageView {
   }
   
   func setImage(from urlString: String) {
+    // TODO: Should this be colled from the Controller?
     dataLoader.downloadImage(from: urlString) { [weak self] (result) in
       guard let self = self else {
         return
       }
+
       switch result {
       case .success(let image):
         DispatchQueue.main.async { self.image = image }
       case .failure(let error):
+        // TODO: Use os_log
         print(error.errorInfo ?? DataLoader.noErrorDescription)
       }
     }
   }
-
 }

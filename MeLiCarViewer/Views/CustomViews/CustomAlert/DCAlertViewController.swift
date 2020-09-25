@@ -9,29 +9,28 @@
 import UIKit
 
 class DCAlertViewController: UIViewController {
-  
   let containerView = DCAlertContainerView()
   let titleLabel = DCTitleLabel(textAlignment: .center, fontSize: 20)
   let messageLabel = DCBodyLabel(textAlignment: .center)
   let actionButton = DCButton(backgroundColor: .systemPink, title: "OK")
-  
+
   var alertTitle: String?
   var message: String?
   var buttonTitle: String?
-  
+
   let padding: CGFloat = 20
-  
+
   init(title: String, message: String, buttonTitle: String) {
     super.init(nibName: nil, bundle: nil)
     self.alertTitle = title
     self.message = message
     self.buttonTitle = buttonTitle
   }
-  
+
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
@@ -41,7 +40,7 @@ class DCAlertViewController: UIViewController {
     configureActionButton()
     configureMessageLabel()
   }
-  
+
   func configureContainerView() {
     view.addSubview(containerView)
     
@@ -52,7 +51,7 @@ class DCAlertViewController: UIViewController {
       containerView.heightAnchor.constraint(equalToConstant: 220)
     ])
   }
-  
+
   func configureTitleLabel() {
     titleLabel.text = alertTitle ?? "Something went wrong"
     
@@ -63,7 +62,7 @@ class DCAlertViewController: UIViewController {
       titleLabel.heightAnchor.constraint(equalToConstant: 28)
     ])
   }
-  
+
   func configureActionButton() {
     actionButton.setTitle(buttonTitle ?? "OK", for: .normal)
     actionButton.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
@@ -77,7 +76,7 @@ class DCAlertViewController: UIViewController {
       
     ])
   }
-  
+
   func configureMessageLabel() {
     messageLabel.text = message ?? "Unable to complete Request"
     messageLabel.numberOfLines = 4
@@ -89,7 +88,7 @@ class DCAlertViewController: UIViewController {
       messageLabel.bottomAnchor.constraint(equalTo: actionButton.topAnchor, constant: -12)
     ])
   }
-  
+
   @objc func dismissVC() {
     dismiss(animated: true)
   }

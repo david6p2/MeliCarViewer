@@ -80,7 +80,6 @@ class CarResultsViewController: DCDataLoadingViewController {
     searchController.searchBar.placeholder = "Search for a Porsche"
     searchController.obscuresBackgroundDuringPresentation = false
     navigationItem.searchController = searchController
-    
   }
   
   func searchPorscheModel(withPage page: Int) {
@@ -95,7 +94,7 @@ class CarResultsViewController: DCDataLoadingViewController {
       case .success(let carResults):
         self.updateUI(with: carResults)
       case .failure(let error):
-        self.presentDCAlertOnMainThread(title: "Something went wrong", message: error.errorInfo ?? DataLoader.noErrorDescription, buttonTitle: "OK")
+        self.presentDCAlertOnMainThread(title: "Something went wrong", message: error.type.rawValue, buttonTitle: "OK")
         // TODO: Replace this with os_log
         print(error.errorInfo ?? DataLoader.noErrorDescription)
       }
@@ -106,7 +105,7 @@ class CarResultsViewController: DCDataLoadingViewController {
 
   func updateUI(with carResults:CarModelResult?) {
     guard let carModelResult = carResults else {
-      // TODO: Show an Alert with the error to the user
+      presentDCAlertOnMainThread(title: "No cars", message: "There are no cars to show. Verify your internet connection and try again.", buttonTitle: "OK")
       return
     }
 

@@ -9,26 +9,25 @@
 import UIKit
 
 class DCSellerDescriptionViewController: UIViewController {
-  
   let descriptionTitleLabel = DCTitleLabel(textAlignment: .left, fontSize: 16)
   let completeStackView = UIStackView()
-  
+
   let sellerNameAttributeView = DCTitleSubtitleAttributeView()
   let sellerLocationAttributeView = DCTitleSubtitleAttributeView()
   let carConditionAttributeView = DCTitleSubtitleAttributeView()
   let singleOwnerAttributeView = DCTitleSubtitleAttributeView()
-  
+
   public var porscheResult: CarResult!
-  
+
   init(porscheResult: CarResult) {
     super.init(nibName: nil, bundle: nil)
     self.porscheResult = porscheResult
   }
-  
+
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
     configureBackgroundView()
@@ -36,12 +35,12 @@ class DCSellerDescriptionViewController: UIViewController {
     configureStackView()
     configureAttributeViews()
   }
-  
+
   private func configureBackgroundView() {
     view.layer.cornerRadius = 18
     view.backgroundColor = .secondarySystemBackground
   }
-  
+
   private func layoutUI() {
     view.addSubviews(descriptionTitleLabel, completeStackView)
     
@@ -64,7 +63,7 @@ class DCSellerDescriptionViewController: UIViewController {
     ])
     
   }
-  
+
   private func configureStackView() {
     completeStackView.axis = .vertical
     completeStackView.distribution = .fillProportionally
@@ -76,7 +75,7 @@ class DCSellerDescriptionViewController: UIViewController {
       completeStackView.addArrangedSubview(view)
     }
   }
-  
+
   private func configureAttributeViews() {
     let sellerContactName = porscheResult.sellerContact.contact.isEmpty ? "No Disponible" : porscheResult.sellerContact.contact.capitalized
     let sellerNameAttribute = porscheResult.seller.carDealer ? "Concesionario" : sellerContactName

@@ -13,7 +13,7 @@ class DCTitleLabel: UILabel {
     super.init(frame: frame)
     configure()
   }
-  
+
   required init?(coder: NSCoder) {
     super.init(coder: coder)
     configure()
@@ -24,7 +24,7 @@ class DCTitleLabel: UILabel {
     self.textAlignment = textAlignment
     self.font = UIFont.systemFont(ofSize: fontSize, weight: .bold)
   }
-  
+
   private func configure() {
     textColor = .label
     adjustsFontSizeToFitWidth = true

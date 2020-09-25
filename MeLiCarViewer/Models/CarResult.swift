@@ -68,6 +68,7 @@ struct Paging: Codable {
   }
 }
 
+// MARK: - CarResult
 struct CarResult: Codable, Hashable {
   let id: String
   let siteID: SiteID
