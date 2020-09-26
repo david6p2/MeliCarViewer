@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class CarResultsViewController: DCDataLoadingViewController {
   enum Section {
@@ -91,8 +92,8 @@ class CarResultsViewController: DCDataLoadingViewController {
         self.updateUI(with: self.controller.porscheModelsResult)
       case .failure(let error):
         self.presentDCAlertOnMainThread(title: "Something went wrong", message: error.type.rawValue, buttonTitle: "OK")
-        // TODO: Replace this with os_log
-        print(error.errorInfo ?? DataLoader.noErrorDescription)
+        let errorInfo = error.errorInfo ?? DataLoader.noErrorDescription
+        os_log(.debug, log: .carResultsVC, "%{public}@", errorInfo)
       }
 
       self.isLoadingMoreCars = false
@@ -180,7 +181,11 @@ extension CarResultsViewController: UISearchResultsUpdating {
     isSearching = true
     
     controller.filteredCarsResults = controller.carsResults.filter{ $0.title.lowercased().contains(filter.lowercased()) }
-    print(controller.filteredCarsResults.count)
+    os_log(.debug, log: .carResultsVC, "%{public}@", String(controller.filteredCarsResults.count))
     updateData(on: controller.filteredCarsResults)
   }
+}
+
+extension OSLog {
+  fileprivate static let carResultsVC = OSLog.meliCarViewer("carResultsVC")
 }

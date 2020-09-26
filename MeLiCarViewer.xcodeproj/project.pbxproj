@@ -21,6 +21,7 @@
 		638B38B7251E6B80002392FB /* CarDetailsWithPictures.json in Resources */ = {isa = PBXBuildFile; fileRef = 638B38B6251E6B7F002392FB /* CarDetailsWithPictures.json */; };
 		638B38B9251E6E88002392FB /* CarPicturesInformationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B38B8251E6E88002392FB /* CarPicturesInformationTests.swift */; };
 		638B38BC251E82DE002392FB /* DataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B38BB251E82DE002392FB /* DataLoaderTests.swift */; };
+		638B38BE251EA60E002392FB /* OSLog+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B38BD251EA60E002392FB /* OSLog+Ext.swift */; };
 		6394574D250E9B8800661244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6394574C250E9B8800661244 /* AppDelegate.swift */; };
 		6394574F250E9B8800661244 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6394574E250E9B8800661244 /* SceneDelegate.swift */; };
 		63945751250E9B8800661244 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63945750250E9B8800661244 /* SearchViewController.swift */; };
@@ -80,6 +81,7 @@
 		638B38B6251E6B7F002392FB /* CarDetailsWithPictures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CarDetailsWithPictures.json; sourceTree = "<group>"; };
 		638B38B8251E6E88002392FB /* CarPicturesInformationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPicturesInformationTests.swift; sourceTree = "<group>"; };
 		638B38BB251E82DE002392FB /* DataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderTests.swift; sourceTree = "<group>"; };
+		638B38BD251EA60E002392FB /* OSLog+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Ext.swift"; sourceTree = "<group>"; };
 		63945749250E9B8800661244 /* MeLiCarViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeLiCarViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6394574C250E9B8800661244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6394574E250E9B8800661244 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				6331FBB9251ABC3200259023 /* String+Ext.swift */,
 				63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */,
 				6348E7D2251D66A8008387E4 /* UIView+Ext.swift */,
+				638B38BD251EA60E002392FB /* OSLog+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 				6348E7CB251C5F8C008387E4 /* DCSellerDescriptionViewController.swift in Sources */,
 				6394574D250E9B8800661244 /* AppDelegate.swift in Sources */,
 				63DAE7702510264F00C64D83 /* CarResult.swift in Sources */,
+				638B38BE251EA60E002392FB /* OSLog+Ext.swift in Sources */,
 				63DAE785251305C100C64D83 /* DCTitleLabel.swift in Sources */,
 				63DAE78E251317D000C64D83 /* DCSubtitleLabel.swift in Sources */,
 				63DAE77925107A4700C64D83 /* DCTextField.swift in Sources */,

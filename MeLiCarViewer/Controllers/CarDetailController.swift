@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class CarDetailController {
   static private let errorInfoMessage = "There where no pictures for this car. Confirm your internet connection  and try again or maybe the car just don't have pictures."
@@ -45,8 +46,10 @@ class CarDetailController {
         break
       case . failure(let error):
         self.isFetchInProgress = false
-        // TODO: Use os_log
-        print(error.errorInfo ?? DataLoader.noErrorDescription)
+        
+        let errorInfo = error.errorInfo ?? DataLoader.noErrorDescription
+        os_log(.debug, log: .carDetailController, "%{public}@", errorInfo)
+
         completion(.failure(error))
         break
       }
@@ -84,4 +87,8 @@ class CarDetailController {
       pendingOperations.downloadQueue.addOperation(downloader)
     }
   }
+}
+
+extension OSLog {
+  fileprivate static let carDetailController = OSLog.meliCarViewer("carDetailController")
 }

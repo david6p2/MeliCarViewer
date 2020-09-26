@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class DCCarImageView: UIImageView {
   var dataLoader = DataLoader()
@@ -45,9 +46,13 @@ class DCCarImageView: UIImageView {
       case .success(let image):
         DispatchQueue.main.async { self.image = image }
       case .failure(let error):
-        // TODO: Use os_log
-        print(error.errorInfo ?? DataLoader.noErrorDescription)
+        let errorInfo = error.errorInfo ?? DataLoader.noErrorDescription
+        os_log(.debug, log: .carImageLoad, "%{public}@", errorInfo)
       }
     }
   }
+}
+
+extension OSLog {
+  fileprivate static let carImageLoad = OSLog.meliCarViewer("carImageLoad")
 }

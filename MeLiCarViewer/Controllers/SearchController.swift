@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import os.log
 
 class SearchController {
   public var porscheModels: [CarModel]? = .init()
@@ -40,10 +41,15 @@ class SearchController {
         break
       case .failure(let error):
         self.isFetchInProgress = false
-        print(error.errorInfo ?? DataLoader.noErrorDescription)
+        let errorInfo = error.errorInfo ?? DataLoader.noErrorDescription
+        os_log(.debug, log: .searchController, "%{public}@", errorInfo)
         completion(false)
         break
       }
     })
   }
+}
+
+extension OSLog {
+  fileprivate static let searchController = OSLog.meliCarViewer("searchController")
 }

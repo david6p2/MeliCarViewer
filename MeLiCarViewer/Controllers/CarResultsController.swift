@@ -6,8 +6,8 @@
 //  Copyright © 2020 David A Cespedes R. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import os.log
 
 class CarResultsController {
   public var porscheModelToSearch: CarModel?
@@ -46,10 +46,15 @@ class CarResultsController {
         break
       case .failure(let error):
         self?.isFetchInProgress = false
-        print(error.errorInfo ?? DataLoader.noErrorDescription)
+        let errorInfo = error.errorInfo ?? DataLoader.noErrorDescription
+        os_log(.debug, log: .carResultsController, "%{public}@", errorInfo)
         completion(.failure(error))
         break
       }
     }
   }
+}
+
+extension OSLog {
+  fileprivate static let carResultsController = OSLog.meliCarViewer("carResultsController")
 }

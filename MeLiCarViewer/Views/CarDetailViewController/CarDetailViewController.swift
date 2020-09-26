@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class CarDetailViewController: DCDataLoadingViewController {
   let scrollView = UIScrollView()
@@ -75,8 +76,9 @@ class CarDetailViewController: DCDataLoadingViewController {
         }
       case .failure(let error):
         self.presentDCAlertOnMainThread(title: "Something went wrong", message: error.type.rawValue, buttonTitle: "OK")
-        // TODO: Replace this with os_log
-        print(error.errorInfo ?? DataLoader.noErrorDescription)
+
+        let errorInfo = error.errorInfo ?? DataLoader.noErrorDescription
+        os_log(.debug, log: .carDetailVC, "%{public}@", errorInfo)
       }
     }
   }
@@ -152,4 +154,8 @@ class CarDetailViewController: DCDataLoadingViewController {
   @objc func dismissVC() {
     dismiss(animated: true)
   }
+}
+
+extension OSLog {
+  fileprivate static let carDetailVC = OSLog.meliCarViewer("carDetailVC")
 }
