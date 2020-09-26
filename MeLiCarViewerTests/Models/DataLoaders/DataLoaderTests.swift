@@ -13,11 +13,9 @@ class DataLoaderTests: XCTestCase {
   let dataLoader = DataLoader()
 
   override func setUpWithError() throws {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-  }
-
-  override func tearDownWithError() throws {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    let configuration = URLSessionConfiguration.ephemeral
+    configuration.protocolClasses = [MockURLProtocol.self]
+    dataLoader.defaultSession = URLSession(configuration: configuration)
   }
 
   func testMakeRequestForCarModel() throws {
@@ -47,6 +45,43 @@ class DataLoaderTests: XCTestCase {
     let decodedFirstCarResul = response.results.first
     XCTAssertEqual(carResultId, decodedFirstCarResul?.id, "The decoded car id: \(decodedFirstCarResul?.id ?? "N/A") is not equal to \(carResultId)")
   }
+
+  func testSearchResultsForCarModel() {
+    let data: Data = .init()
+    MockURLProtocol.requestHandler = { request in
+      XCTAssertEqual(request.url, URL(string: "https://api.mercadolibre.com/sites/MCO/search?category=MCO1744&limit=10&offset=0&MODEL=MCO575110499"))
+      return (.init(), data)
+    }
+
+    let expectation = XCTestExpectation(description: "response")
+    dataLoader.searchResultsForCarModel("MCO575110499", withPage: 1) { (result) in
+      expectation.fulfill()
+    }
+    wait(for: [expectation], timeout: 1)
+  }
+
+  func testSearchResultsForCarModelWithErrorStatusCode() {
+    let urlToCompare = "https://api.mercadolibre.com/sites/MCO/search?category=MCO1744&limit=10&offset=0&MODEL=MCO575110499"
+    let data: Data = .init()
+    MockURLProtocol.requestHandler = { request in
+      XCTAssertEqual(request.url, URL(string: urlToCompare))
+      let httpResponse = HTTPURLResponse(url: request.url!, statusCode: 404, httpVersion: nil, headerFields: nil)
+      return (httpResponse!, data)
+    }
+
+    let expectation = XCTestExpectation(description: "response")
+    dataLoader.searchResultsForCarModel("MCO575110499", withPage: 1) { (result) in
+      switch result {
+      case .failure(let error):
+        XCTAssertEqual(error.type, .invalidResponse, "Type is not correct when status is not 200")
+      default:
+        XCTFail("Was expecting failure")
+        break
+      }
+      expectation.fulfill()
+    }
+    wait(for: [expectation], timeout: 1)
+  }
 }
 
 class MockURLProtocol: URLProtocol {
@@ -71,51 +106,4 @@ class MockURLProtocol: URLProtocol {
 
   override class func canInit(with request: URLRequest) -> Bool { true }
   override class func canonicalRequest(for request: URLRequest) -> URLRequest { request }
-}
-
-class URLSessionTests: XCTestCase {
-  let dataLoader = DataLoader()
-
-  override func setUp() {
-    let configuration = URLSessionConfiguration.ephemeral
-    configuration.protocolClasses = [MockURLProtocol.self]
-    dataLoader.defaultSession = URLSession(configuration: configuration)
-  }
-
-  func testSomeNetworkCall() {
-    let data: Data = .init()
-    MockURLProtocol.requestHandler = { request in
-      XCTAssertEqual(request.url, URL(string: "https://api.mercadolibre.com/sites/MCO/search?category=MCO1744&limit=10&offset=0&MODEL=MCO575110499"))
-      return (.init(), data)
-    }
-
-    let expectation = XCTestExpectation(description: "response")
-    dataLoader.searchResultsForCarModel("MCO575110499", withPage: 1) { (result) in
-      expectation.fulfill()
-    }
-    wait(for: [expectation], timeout: 1)
-  }
-
-  func testSomeNetworkCallWithErrorStatusCode() {
-    let urlToCompare = "https://api.mercadolibre.com/sites/MCO/search?category=MCO1744&limit=10&offset=0&MODEL=MCO575110499"
-    let data: Data = .init()
-    MockURLProtocol.requestHandler = { request in
-      XCTAssertEqual(request.url, URL(string: urlToCompare))
-      let httpResponse = HTTPURLResponse(url: request.url!, statusCode: 404, httpVersion: nil, headerFields: nil)
-      return (httpResponse!, data)
-    }
-
-    let expectation = XCTestExpectation(description: "response")
-    dataLoader.searchResultsForCarModel("MCO575110499", withPage: 1) { (result) in
-      switch result {
-      case .failure(let error):
-        XCTAssertEqual(error.type, .invalidResponse, "Type is not correct when status is not 200")
-      default:
-        XCTFail("Was expecting failure")
-        break
-      }
-      expectation.fulfill()
-    }
-    wait(for: [expectation], timeout: 1)
-  }
 }
