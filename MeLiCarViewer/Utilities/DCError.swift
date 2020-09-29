@@ -18,5 +18,6 @@ enum ErrorType: String {
   case unableToComplete = "We were unable to complete the task. Please try again."
   case invalidResponse = "The response received was invalid. Please try again."
   case invalidData = "The received data was invalid. Please try again or contact support for help."
+  case invalidURL = "The URL used was invalid. Please check it and fix it if necessary."
   case unableToDecode = "We could not read the received data to be shown. Please try again or contact support for help."
 }
