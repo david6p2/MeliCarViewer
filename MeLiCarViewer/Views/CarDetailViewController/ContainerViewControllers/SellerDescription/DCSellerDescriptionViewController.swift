@@ -81,10 +81,20 @@ class DCSellerDescriptionViewController: UIViewController {
     let sellerNameAttribute = porscheResult.seller.carDealer ? "Concesionario" : sellerContactName
     sellerNameAttributeView.setAttribute(title: "Vendedor", value: sellerNameAttribute)
 
-    let neighborhood = porscheResult.location.neighborhood.name.isEmpty ? "" : "\(porscheResult.location.neighborhood.name) - "
-    let city = porscheResult.location.city.name.isEmpty ? "" : "\(porscheResult.location.city.name), "
-    let state = porscheResult.location.state.name.isEmpty ? "" : "\(porscheResult.location.state.name)"
-    let sellerLocationAttribute = neighborhood + city + state
+    var sellerLocationAttribute = ""
+
+    if let neighborhood = porscheResult.location.neighborhood?.name {
+        sellerLocationAttribute += "\(neighborhood) - "
+    }
+
+    if let city = porscheResult.location.city?.name {
+        sellerLocationAttribute += "\(city), "
+    }
+
+    if let state = porscheResult.location.state?.name {
+        sellerLocationAttribute += "\(state)"
+    }
+    
     sellerLocationAttributeView.setAttribute(title: "Ubicación del vehículo", value: sellerLocationAttribute.isEmpty ? "No disponible" : sellerLocationAttribute)
     
     let carConditionAttribute = porscheResult.attributes.first(where: { $0.id == "ITEM_CONDITION" })

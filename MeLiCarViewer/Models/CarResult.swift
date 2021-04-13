@@ -186,6 +186,8 @@ struct Struct: Codable {
 enum Unit: String, Codable {
   case cc = "cc"
   case km = "km"
+  case l = "L"
+  case hp = "hp"
 }
 
 // MARK: - AttributeValue
@@ -207,7 +209,7 @@ struct Location: Codable {
   let addressLine: String
   let zipCode: String
   let subneighborhood: String?
-  let neighborhood, city, state, country: Sort
+  let neighborhood, city, state, country: Sort?
   let latitude, longitude: Double
   
   enum CodingKeys: String, CodingKey {
@@ -295,7 +297,7 @@ struct Ratings: Codable {
 // MARK: - SellerAddress
 struct SellerAddress: Codable {
   let id, comment, addressLine, zipCode: String
-  let country, state, city: Sort
+  let country, state, city: Sort?
   let latitude, longitude: String
   
   enum CodingKeys: String, CodingKey {
