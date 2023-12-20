@@ -9,12 +9,12 @@
 import Foundation
 
 extension Int {
-  func convertToPriceInCOP() -> String? {
-    let currencyFormatter = NumberFormatter()
-    currencyFormatter.usesGroupingSeparator = true
-    currencyFormatter.numberStyle = .currency
-    currencyFormatter.locale = Locale(identifier: "es_CO")
-    
-    return currencyFormatter.string(from: NSNumber(value: self))
-  }
+    func convertToPriceInCOP() -> String? {
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
+        currencyFormatter.locale = Locale(identifier: "es_CO")
+
+        return currencyFormatter.string(from: NSNumber(value: self))
+    }
 }

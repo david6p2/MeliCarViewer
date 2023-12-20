@@ -10,15 +10,15 @@ import Foundation
 import os.log
 
 extension OSLog {
-  private static let subsystem = "com.mercadolibre.davidcespedes"
+    private static let subsystem = "com.mercadolibre.davidcespedes"
 
-  static let pointsOfInterest = OSLog(subsystem: subsystem,
-                                      category: .pointsOfInterest)
-  static let meliCarViewer = OSLog(subsystem: subsystem,
-                                   category: "default")
+    static let pointsOfInterest = OSLog(subsystem: subsystem,
+                                        category: .pointsOfInterest)
+    static let meliCarViewer = OSLog(subsystem: subsystem,
+                                     category: "default")
 
-  static func meliCarViewer(_ category: String) -> OSLog {
-    if meliCarViewer == .disabled { return .disabled }
-    return OSLog(subsystem: subsystem, category: category)
-  }
+    static func meliCarViewer(_ category: String) -> OSLog {
+        if meliCarViewer == .disabled { return .disabled }
+        return OSLog(subsystem: subsystem, category: category)
+    }
 }
