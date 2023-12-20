@@ -10,46 +10,44 @@ import Foundation
 import os.log
 
 class SearchController {
-  public var porscheModels: [CarModel]? = .init()
+    public var porscheModels: [CarModel]? = .init()
 
-  private var isFetchInProgress = false
-  var dataLoader: DataLoader
+    private var isFetchInProgress = false
+    var dataLoader: DataLoader
 
-  init(loader: DataLoader = DataLoader()) {
-    self.dataLoader = loader
-  }
-
-  func fetchPorscheModels(_ completion: @escaping (_ success: Bool) -> Void) {
-    // Just one request at a time
-    guard !isFetchInProgress else {
-      return
+    init(loader: DataLoader = DataLoader()) {
+        dataLoader = loader
     }
 
-    isFetchInProgress = true
+    func fetchPorscheModels(_ completion: @escaping (_ success: Bool) -> Void) {
+        // Just one request at a time
+        guard !isFetchInProgress else {
+            return
+        }
 
-    dataLoader.getPorscheModels(handler: { [weak self] (result) in
-      guard let self = self else {
-        completion(false)
-        return
-      }
+        isFetchInProgress = true
 
-      switch result {
-      case .success(let carModels):
-        self.isFetchInProgress = false
-        self.porscheModels = carModels
-        completion(true)
-        break
-      case .failure(let error):
-        self.isFetchInProgress = false
-        let errorInfo = error.errorInfo ?? DataLoader.noErrorDescription
-        os_log(.debug, log: .searchController, "%{public}@", errorInfo)
-        completion(false)
-        break
-      }
-    })
-  }
+        dataLoader.getPorscheModels(handler: { [weak self] result in
+            guard let self = self else {
+                completion(false)
+                return
+            }
+
+            switch result {
+            case let .success(carModels):
+                self.isFetchInProgress = false
+                self.porscheModels = carModels
+                completion(true)
+            case let .failure(error):
+                self.isFetchInProgress = false
+                let errorInfo = error.errorInfo ?? DataLoader.noErrorDescription
+                os_log(.debug, log: .searchController, "%{public}@", errorInfo)
+                completion(false)
+            }
+        })
+    }
 }
 
-extension OSLog {
-  fileprivate static let searchController = OSLog.meliCarViewer("searchController")
+private extension OSLog {
+    static let searchController = OSLog.meliCarViewer("searchController")
 }

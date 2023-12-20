@@ -9,19 +9,21 @@
 import UIKit
 
 // MARK: - CarPicturesInformation
+
 struct CarPicturesInformation: Codable {
-  let id, siteId, title: String
-  let dateCreated, lastUpdated: String
-  let pictures: [Picture]
-  var images: [Data]?
+    let id, siteId, title: String
+    let dateCreated, lastUpdated: String
+    let pictures: [Picture]
+    var images: [Data]?
 }
 
 // MARK: - Picture
+
 struct Picture: Codable {
-  let id: String
-  let url: String
-  let secureUrl: String
-  let size: String
-  let maxSize: String
-  let quality: String
+    let id: String
+    let url: String
+    let secureUrl: String
+    let size: String
+    let maxSize: String
+    let quality: String
 }

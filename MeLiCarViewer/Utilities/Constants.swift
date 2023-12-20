@@ -9,6 +9,6 @@
 import UIKit
 
 enum Images {
-  static let placeholder = UIImage(named: "CarPlaceholder")
-  static let porscheBNLogo = UIImage(named: "PorscheB&N")
+    static let placeholder = UIImage(named: "CarPlaceholder")
+    static let porscheBNLogo = UIImage(named: "PorscheB&N")
 }

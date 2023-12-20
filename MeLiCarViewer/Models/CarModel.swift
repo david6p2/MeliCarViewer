@@ -9,7 +9,7 @@
 import Foundation
 
 struct CarModel: Codable {
-  let id: String
-  let name: String
-  let metric: Int
+    let id: String
+    let name: String
+    let metric: Int
 }
