@@ -12,6 +12,7 @@
 		6331FBBE251AEF7400259023 /* Int+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FBBD251AEF7400259023 /* Int+Ext.swift */; };
 		6331FBC0251B13A100259023 /* DCCarDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FBBF251B13A100259023 /* DCCarDescriptionViewController.swift */; };
 		6331FBC3251B15CB00259023 /* DCTitleSubtitleAttributeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331FBC2251B15CB00259023 /* DCTitleSubtitleAttributeView.swift */; };
+		63378CEF2B338E6900B6A8A8 /* SearchByCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = 63378CEE2B338E6900B6A8A8 /* SearchByCategory.json */; };
 		6348E7CB251C5F8C008387E4 /* DCSellerDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348E7CA251C5F8C008387E4 /* DCSellerDescriptionViewController.swift */; };
 		6348E7CE251CF525008387E4 /* DCAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348E7CD251CF525008387E4 /* DCAlertContainerView.swift */; };
 		6348E7D1251D2B82008387E4 /* DCDataLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6348E7D0251D2B82008387E4 /* DCDataLoadingViewController.swift */; };
@@ -73,6 +74,7 @@
 		6331FBBD251AEF7400259023 /* Int+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Ext.swift"; sourceTree = "<group>"; };
 		6331FBBF251B13A100259023 /* DCCarDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCCarDescriptionViewController.swift; sourceTree = "<group>"; };
 		6331FBC2251B15CB00259023 /* DCTitleSubtitleAttributeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCTitleSubtitleAttributeView.swift; sourceTree = "<group>"; };
+		63378CEE2B338E6900B6A8A8 /* SearchByCategory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SearchByCategory.json; sourceTree = "<group>"; };
 		6348E7CA251C5F8C008387E4 /* DCSellerDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCSellerDescriptionViewController.swift; sourceTree = "<group>"; };
 		6348E7CD251CF525008387E4 /* DCAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCAlertContainerView.swift; sourceTree = "<group>"; };
 		6348E7D0251D2B82008387E4 /* DCDataLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCDataLoadingViewController.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 		63945772250E9C2300661244 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				63378CEE2B338E6900B6A8A8 /* SearchByCategory.json */,
 				638B38B6251E6B7F002392FB /* CarDetailsWithPictures.json */,
 				63945777250EDE2900661244 /* PorscheModels.json */,
 				63945776250EDE2900661244 /* SearchByModelAndCategory.json */,
@@ -488,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				638B38B7251E6B80002392FB /* CarDetailsWithPictures.json in Resources */,
+				63378CEF2B338E6900B6A8A8 /* SearchByCategory.json in Resources */,
 				63945759250E9B8B00661244 /* LaunchScreen.storyboard in Resources */,
 				6394577E250EDE2900661244 /* PorscheModels.json in Resources */,
 				63945756250E9B8B00661244 /* Assets.xcassets in Resources */,
