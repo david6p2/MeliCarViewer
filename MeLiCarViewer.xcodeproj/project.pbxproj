@@ -56,6 +56,7 @@
 		63DAE78E251317D000C64D83 /* DCSubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE78D251317D000C64D83 /* DCSubtitleLabel.swift */; };
 		63DAE7902513267700C64D83 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE78F2513267700C64D83 /* UIHelper.swift */; };
 		8D5216362B338802006D3E11 /* PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5216352B338802006D3E11 /* PrettyJSON.swift */; };
+		8D5216392B3392A3006D3E11 /* SearchViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5216382B3392A3006D3E11 /* SearchViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		63DAE78D251317D000C64D83 /* DCSubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCSubtitleLabel.swift; sourceTree = "<group>"; };
 		63DAE78F2513267700C64D83 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		8D5216352B338802006D3E11 /* PrettyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyJSON.swift; sourceTree = "<group>"; };
+		8D5216382B3392A3006D3E11 /* SearchViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewViewModel.swift; path = MeLiCarViewer/ViewModels/SearchViewViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				63945770250E9BBF00661244 /* Models */,
+				8D5216372B33925E006D3E11 /* ViewModels */,
 				6394576F250E9BB600661244 /* Views */,
 				6394576E250E9BA200661244 /* Controllers */,
 				6331FBB8251ABB7D00259023 /* Extensions */,
@@ -409,6 +412,14 @@
 			path = CustomAlert;
 			sourceTree = "<group>";
 		};
+		8D5216372B33925E006D3E11 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8D5216382B3392A3006D3E11 /* SearchViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -519,6 +530,7 @@
 				63D3C10A25166B3800B230D9 /* CarDetailViewController.swift in Sources */,
 				63945784250EE09600661244 /* DataLoader.swift in Sources */,
 				6348E7D1251D2B82008387E4 /* DCDataLoadingViewController.swift in Sources */,
+				8D5216392B3392A3006D3E11 /* SearchViewViewModel.swift in Sources */,
 				6348E7CE251CF525008387E4 /* DCAlertContainerView.swift in Sources */,
 				63DAE7872513076900C64D83 /* DCBodyLabel.swift in Sources */,
 				6331FBC3251B15CB00259023 /* DCTitleSubtitleAttributeView.swift in Sources */,

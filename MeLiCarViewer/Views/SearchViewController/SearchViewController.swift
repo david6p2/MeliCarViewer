@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Combine
 
 class SearchViewController: UIViewController {
   @IBOutlet weak var modelTextField: DCTextField!
@@ -14,6 +15,9 @@ class SearchViewController: UIViewController {
   var modelPicker: UIPickerView!
   
   var controller: SearchController = .init()
+    var viewModel: SearchViewViewModel = .init()
+    var cancellables = Set<AnyCancellable>()
+    
   var selectedCarModel: CarModel? = nil
   
   @IBAction func searchAction(_ sender: UIButton) {
@@ -36,11 +40,23 @@ class SearchViewController: UIViewController {
     modelTextField.inputView = modelPicker
     createToolbar()
     
+      viewModel.porscheModels.sink { error in
+          self.presentDCAlertOnMainThread(
+            title: "Invalid Models",
+            message: "We were unable to load the Porsche models you selected. Please try again.",
+            buttonTitle: "OK")
+      } receiveValue: { carModels in
+          print("I have magic \(carModels)")
+      }.store(in: &cancellables)
+
+      viewModel.fetchPorscheModels()
+      /*
     controller.fetchPorscheModels {[weak self] success in
       if !success {
         self?.presentDCAlertOnMainThread(title: "Invalid Models", message: "We were unable to load the Porsche models you selected. Please try again.", buttonTitle: "OK")
       }
     }
+       */
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -66,7 +82,7 @@ class SearchViewController: UIViewController {
   }
   
   private func updateSelectedCarModel(withPickerRow row: Int) {
-    selectedCarModel = controller.porscheModels?[row]
+      selectedCarModel = viewModel.porscheModels.value?[row]
     modelTextField.text = selectedCarModel?.name
   }
   
@@ -83,13 +99,13 @@ extension SearchViewController: UIPickerViewDataSource {
   }
   
   func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-    return controller.porscheModels?.count ?? 0
+    return viewModel.porscheModels.value?.count ?? 0
   }
 }
 
 extension SearchViewController: UIPickerViewDelegate {
   func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    guard let carModel = controller.porscheModels?[row] else {
+    guard let carModel = viewModel.porscheModels.value?[row] else {
       return nil
     }
     return carModel.name
