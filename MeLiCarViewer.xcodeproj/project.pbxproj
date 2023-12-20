@@ -54,6 +54,7 @@
 		63DAE78B25130EE700C64D83 /* UIViewController+ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */; };
 		63DAE78E251317D000C64D83 /* DCSubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE78D251317D000C64D83 /* DCSubtitleLabel.swift */; };
 		63DAE7902513267700C64D83 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE78F2513267700C64D83 /* UIHelper.swift */; };
+		8D5216362B338802006D3E11 /* PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5216352B338802006D3E11 /* PrettyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowAlert.swift"; sourceTree = "<group>"; };
 		63DAE78D251317D000C64D83 /* DCSubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCSubtitleLabel.swift; sourceTree = "<group>"; };
 		63DAE78F2513267700C64D83 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		8D5216352B338802006D3E11 /* PrettyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */,
 				6348E7D2251D66A8008387E4 /* UIView+Ext.swift */,
 				638B38BD251EA60E002392FB /* OSLog+Ext.swift */,
+				8D5216352B338802006D3E11 /* PrettyJSON.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				63DAE7742510705100C64D83 /* CarResultsViewController.swift in Sources */,
 				6331FBBA251ABC3200259023 /* String+Ext.swift in Sources */,
 				6331FBBC251ABFA200259023 /* Date+Ext.swift in Sources */,
+				8D5216362B338802006D3E11 /* PrettyJSON.swift in Sources */,
 				63DAE77E2511248700C64D83 /* DCError.swift in Sources */,
 				63DAE7892513082800C64D83 /* DCAlertViewController.swift in Sources */,
 				6348E7D3251D66A8008387E4 /* UIView+Ext.swift in Sources */,

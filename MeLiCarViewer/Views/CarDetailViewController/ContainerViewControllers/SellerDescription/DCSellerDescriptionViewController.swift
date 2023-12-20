@@ -78,7 +78,7 @@ class DCSellerDescriptionViewController: UIViewController {
 
   private func configureAttributeViews() {
     let sellerContactName = porscheResult.sellerContact.contact.isEmpty ? "No Disponible" : porscheResult.sellerContact.contact.capitalized
-    let sellerNameAttribute = porscheResult.seller.carDealer ? "Concesionario" : sellerContactName
+      let sellerNameAttribute = porscheResult.seller.carDealer ?? false ? "Concesionario" : sellerContactName
     sellerNameAttributeView.setAttribute(title: "Vendedor", value: sellerNameAttribute)
 
     var sellerLocationAttribute = ""
