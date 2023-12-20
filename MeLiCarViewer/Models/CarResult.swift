@@ -37,7 +37,7 @@ struct AvailableFilter: Codable {
 // MARK: - AvailableFilterValue
 struct AvailableFilterValue: Codable {
   let id, name: String
-  let results: Int
+  let results: Int?
 }
 
 // MARK: - Filter
@@ -76,18 +76,18 @@ struct CarResult: Codable, Hashable {
   let seller: Seller
   let price: Int
   let currencyID: CurrencyID
-  let availableQuantity, soldQuantity: Int
+  let availableQuantity, soldQuantity: Int?
   let buyingMode: BuyingMode
   let listingTypeID: ListingTypeID
   let stopTime: String
   let condition: Condition
-  let permalink: String
+  let permalink: String?
   let thumbnail: String
   let acceptsMercadopago: Bool
   let installments: String?
-  let address: Address
+  let address: Address?
   let shipping: Shipping
-  let sellerAddress: SellerAddress
+  let sellerAddress: SellerAddress?
   let sellerContact: SellerContact
   let location: Location
   let attributes: [Attribute]
@@ -96,7 +96,7 @@ struct CarResult: Codable, Hashable {
   let officialStoreID: Int?
   let domainID: DomainID
   let catalogProductID: String?
-  let tags: [String]
+  let tags: [String]?
   
   enum CodingKeys: String, CodingKey {
     case id
@@ -134,7 +134,7 @@ struct CarResult: Codable, Hashable {
 // MARK: - Sort
 struct Sort: Codable {
   let id: String?
-  let name: String
+  let name: String?
 }
 
 // MARK: - Address
@@ -186,6 +186,8 @@ struct Struct: Codable {
 enum Unit: String, Codable {
   case cc = "cc"
   case km = "km"
+  case l = "L"
+  case hp = "hp"
 }
 
 // MARK: - AttributeValue
@@ -207,8 +209,8 @@ struct Location: Codable {
   let addressLine: String
   let zipCode: String
   let subneighborhood: String?
-  let neighborhood, city, state, country: Sort
-  let latitude, longitude: Double
+  let neighborhood, city, state, country: Sort?
+  let latitude, longitude: Double?
   
   enum CodingKeys: String, CodingKey {
     case addressLine = "address_line"
@@ -220,11 +222,11 @@ struct Location: Codable {
 // MARK: - Seller
 struct Seller: Codable {
   let id: Int
-  let permalink: String
-  let registrationDate: String
-  let carDealer, realEstateAgency: Bool
-  let tags: [String]
-  let sellerReputation: SellerReputation
+  let permalink: String?
+  let registrationDate: String?
+  let carDealer, realEstateAgency: Bool?
+  let tags: [String]?
+  let sellerReputation: SellerReputation?
   let carDealerLogo, homeImageURL: String?
   
   enum CodingKeys: String, CodingKey {
@@ -295,8 +297,8 @@ struct Ratings: Codable {
 // MARK: - SellerAddress
 struct SellerAddress: Codable {
   let id, comment, addressLine, zipCode: String
-  let country, state, city: Sort
-  let latitude, longitude: String
+  let country, state, city: Sort?
+  let latitude, longitude: String?
   
   enum CodingKeys: String, CodingKey {
     case id, comment
@@ -325,7 +327,7 @@ struct SellerContact: Codable {
 struct Shipping: Codable {
   let freeShipping: Bool
   let mode: String
-  let tags: [String]
+  let tags: [String]?
   let logisticType: String?
   let storePickUp: Bool
   
