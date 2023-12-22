@@ -11,16 +11,16 @@ import Foundation
 import OSLog
 
 final class SearchViewViewModel {
-    
     var porscheModels: [CarModel]?
-    var errorPublisher: PassthroughSubject<Error, Never>
-
-    private var isFetchInProgress = false
     var dataLoader: DataLoader
+    lazy var errorPublisher = internalPublisher.eraseToAnyPublisher()
+    
+    private var internalPublisher: PassthroughSubject<Error, Never>
+    private var isFetchInProgress = false
 
     init(loader: DataLoader = DataLoader()) {
         dataLoader = loader
-        errorPublisher = PassthroughSubject()
+        internalPublisher = PassthroughSubject()
     }
 
     func fetchPorscheModels() {
@@ -40,7 +40,7 @@ final class SearchViewViewModel {
                 self?.isFetchInProgress = false
                 let errorInfo = error.errorInfo ?? DataLoader.noErrorDescription
                 os_log(.debug, log: .searchViewViewModel, "%{public}@", errorInfo)
-                self?.errorPublisher.send(error)
+                self?.internalPublisher.send(error)
             }
         })
     }
