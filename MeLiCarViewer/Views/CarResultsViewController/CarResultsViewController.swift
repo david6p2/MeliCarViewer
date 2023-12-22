@@ -32,6 +32,7 @@ class CarResultsViewController: DCDataLoadingViewController {
             title = "Porsche " + modelName
         }
         controller = CarResultsController(carModel: selectedCarModel)
+        viewModel = CarResultsViewModel(carModel: selectedCarModel)
     }
 
     @available(*, unavailable)
