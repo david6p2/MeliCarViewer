@@ -40,7 +40,7 @@ class CarViewCell: UICollectionViewCell {
         backgroundColor = .systemBackground
         layer.cornerRadius = 10
         clipsToBounds = true
-        addSubviews(carImageView, carTitleLabel, priceLabel, yearKmLabel)
+        contentView.addSubviews(carImageView, carTitleLabel, priceLabel, yearKmLabel)
     }
 
     private func configureCarImageView() {
