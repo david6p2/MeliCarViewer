@@ -12,6 +12,8 @@ import UIKit
 class CarDetailViewController: DCDataLoadingViewController {
     let scrollView = UIScrollView()
 
+    var carInfoHeaderVC: DCCarInfoHeaderViewController?
+
     let headerView = UIView()
     let itemViewOne = UIView()
     let itemViewTwo = UIView()
@@ -64,6 +66,7 @@ class CarDetailViewController: DCDataLoadingViewController {
     }
 
     func getPorschePictures() {
+        configureUIElements(with: self.car)
         controller.searchPorschePictures(forPorscheId: car.id) { [weak self] result in
             guard let self = self else { return }
 
@@ -71,7 +74,7 @@ class CarDetailViewController: DCDataLoadingViewController {
             case let .success(pictures):
                 self.controller.startDownload(for: pictures) {
                     DispatchQueue.main.async {
-                        self.configureUIElements(with: self.car, and: self.controller.porschePicturesInformation)
+                        self.setPicturesInformation(self.controller.porschePicturesInformation)
                         self.calculateScrollViewContentSize()
                     }
                 }
@@ -84,15 +87,19 @@ class CarDetailViewController: DCDataLoadingViewController {
         }
     }
 
-    private func configureUIElements(with porscheResult: CarResult, and _: CarPicturesInformation?) {
+    private func configureUIElements(with porscheResult: CarResult) {
         let carInfoHeaderVC = DCCarInfoHeaderViewController(porscheResult: controller.porscheResult)
-        carInfoHeaderVC.porschePicturesInformation = controller.porschePicturesInformation
+        self.carInfoHeaderVC = carInfoHeaderVC
         let carDescriptionVC = DCCarDescriptionViewController(porscheResult: porscheResult)
         let sellerDescriptionVC = DCSellerDescriptionViewController(porscheResult: porscheResult)
 
         add(childViewController: carInfoHeaderVC, to: headerView)
         add(childViewController: carDescriptionVC, to: itemViewOne)
         add(childViewController: sellerDescriptionVC, to: itemViewTwo)
+    }
+
+    private func setPicturesInformation(_ pictures: CarPicturesInformation?) {
+        carInfoHeaderVC?.porschePicturesInformation = pictures
     }
 
     private func layoutUI() {
