@@ -16,7 +16,13 @@ class DCCarInfoHeaderViewController: UIViewController {
     let priceLabel = DCSubtitleLabel(textAlignment: .left, fontSize: 28)
 
     public var porscheResult: CarResult!
-    public var porschePicturesInformation: CarPicturesInformation?
+    public var porschePicturesInformation: CarPicturesInformation? {
+        didSet {
+            carImageView.image = UIImage(data: (porschePicturesInformation?.images?.first)!)
+            carImageView.setNeedsLayout()
+            carImageView.layoutIfNeeded()
+        }
+    }
 
     init(porscheResult: CarResult) {
         super.init(nibName: nil, bundle: nil)
@@ -36,7 +42,6 @@ class DCCarInfoHeaderViewController: UIViewController {
     }
 
     func configueUIElements() {
-        carImageView.image = UIImage(data: (porschePicturesInformation?.images?.first)!)
         yearKmLabel.text = createYearKmText(porscheResult)
         carTitleLabel.text = porscheResult.title
         publishedLabel.text = "Publicado el \(porschePicturesInformation?.dateCreated.convertToDisplayFormat() ?? "...")"
