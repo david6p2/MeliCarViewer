@@ -6,6 +6,7 @@
 //  Copyright © 2020 David A Cespedes R. All rights reserved.
 //
 
+import Combine
 import os.log
 import UIKit
 
@@ -21,6 +22,8 @@ class CarResultsViewController: DCDataLoadingViewController {
     var dataSource: UICollectionViewDiffableDataSource<Section, CarResult>!
 
     var controller: CarResultsController = .init(carModel: nil)
+    var viewModel: CarResultsViewModel = .init(carModel: nil)
+    var cancellables = Set<AnyCancellable>()
 
     init(selectedCarModel: CarModel?) {
         super.init(nibName: nil, bundle: nil)
@@ -38,11 +41,30 @@ class CarResultsViewController: DCDataLoadingViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        addViewModelBinding()
         configureViewController()
         configureSearchController()
         configureCollectionView()
-        searchPorscheModel(withPage: controller.page)
+        searchPorscheModel(withPage: viewModel.page)
         configureDataSource()
+    }
+    
+    func addViewModelBinding() {
+        viewModel.carModelResultPublisher.sink { [weak self] result in
+            guard let self = self else { return }
+            self.dismissLoadingView()
+
+            switch result {
+            case .success:
+                self.updateUI(with: self.viewModel.porscheModelsResult)
+            case let .failure(error):
+                self.presentDCAlertOnMainThread(title: "Something went wrong", message: error.type.rawValue, buttonTitle: "OK")
+                let errorInfo = error.errorInfo ?? DataLoader.noErrorDescription
+                os_log(.debug, log: .carResultsVC, "%{public}@", errorInfo)
+            }
+
+            self.isLoadingMoreCars = false
+        }.store(in: &cancellables)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -84,6 +106,8 @@ class CarResultsViewController: DCDataLoadingViewController {
         showLoadingView()
         isLoadingMoreCars = true
 
+        viewModel.searchPorscheModel(page: page)
+        /*
         controller.searchPorscheModel(controller.porscheModelToSearch?.id, page: page) { [weak self] result in
             guard let self = self else { return }
             self.dismissLoadingView()
@@ -99,6 +123,7 @@ class CarResultsViewController: DCDataLoadingViewController {
 
             self.isLoadingMoreCars = false
         }
+         */
     }
 
     func updateUI(with carResults: CarModelResult?) {
@@ -107,15 +132,15 @@ class CarResultsViewController: DCDataLoadingViewController {
             return
         }
 
-        if controller.carsResults.isEmpty {
-            let message = "There are no Porsche \(controller.porscheModelToSearch?.name ?? "of the selected model") for sale right now 😢."
+        if viewModel.carsResults.isEmpty {
+            let message = "There are no Porsche \(viewModel.porscheModelToSearch?.name ?? "of the selected model") for sale right now 😢."
             DispatchQueue.main.async {
                 self.showEmptyStateView(with: message, in: self.view)
             }
             return
         }
 
-        updateData(on: controller.carsResults)
+        updateData(on: viewModel.carsResults)
     }
 
     func configureDataSource() {
@@ -151,16 +176,16 @@ extension CarResultsViewController: UICollectionViewDelegate {
         let height = scrollView.frame.size.height
 
         if offsetY > contentHeight - height {
-            guard controller.hasMoreResults, !isLoadingMoreCars else {
+            guard viewModel.hasMoreResults, !isLoadingMoreCars else {
                 return
             }
-            controller.page += 1
-            searchPorscheModel(withPage: controller.page)
+            viewModel.page += 1
+            searchPorscheModel(withPage: viewModel.page)
         }
     }
 
     func collectionView(_: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let activeArray = isSearching ? controller.filteredCarsResults : controller.carsResults
+        let activeArray = isSearching ? viewModel.filteredCarsResults : viewModel.carsResults
         let car = activeArray[indexPath.item]
 
         let destinationViewController = CarDetailViewController(carResult: car)
@@ -172,17 +197,17 @@ extension CarResultsViewController: UICollectionViewDelegate {
 extension CarResultsViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         guard let filter = searchController.searchBar.text, !filter.isEmpty else {
-            controller.filteredCarsResults.removeAll()
-            updateData(on: controller.carsResults)
+            viewModel.filteredCarsResults.removeAll()
+            updateData(on: viewModel.carsResults)
             isSearching = false
             return
         }
 
         isSearching = true
 
-        controller.filteredCarsResults = controller.carsResults.filter { $0.title.lowercased().contains(filter.lowercased()) }
-        os_log(.debug, log: .carResultsVC, "%{public}@", String(controller.filteredCarsResults.count))
-        updateData(on: controller.filteredCarsResults)
+        viewModel.filteredCarsResults = viewModel.carsResults.filter { $0.title.lowercased().contains(filter.lowercased()) }
+        os_log(.debug, log: .carResultsVC, "%{public}@", String(viewModel.filteredCarsResults.count))
+        updateData(on: viewModel.filteredCarsResults)
     }
 }
 

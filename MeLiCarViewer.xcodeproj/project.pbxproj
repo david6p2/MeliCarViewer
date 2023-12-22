@@ -54,6 +54,7 @@
 		63DAE78B25130EE700C64D83 /* UIViewController+ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */; };
 		63DAE78E251317D000C64D83 /* DCSubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE78D251317D000C64D83 /* DCSubtitleLabel.swift */; };
 		63DAE7902513267700C64D83 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DAE78F2513267700C64D83 /* UIHelper.swift */; };
+		8D08C6EB2B3638DF00A21DE9 /* CarResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D08C6EA2B3638DF00A21DE9 /* CarResultsViewModel.swift */; };
 		8D5216362B338802006D3E11 /* PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5216352B338802006D3E11 /* PrettyJSON.swift */; };
 		8D5216392B3392A3006D3E11 /* SearchViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5216382B3392A3006D3E11 /* SearchViewViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -120,6 +121,7 @@
 		63DAE78A25130EE700C64D83 /* UIViewController+ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowAlert.swift"; sourceTree = "<group>"; };
 		63DAE78D251317D000C64D83 /* DCSubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCSubtitleLabel.swift; sourceTree = "<group>"; };
 		63DAE78F2513267700C64D83 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		8D08C6EA2B3638DF00A21DE9 /* CarResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarResultsViewModel.swift; sourceTree = "<group>"; };
 		8D5216352B338802006D3E11 /* PrettyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrettyJSON.swift; sourceTree = "<group>"; };
 		8D5216382B3392A3006D3E11 /* SearchViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewViewModel.swift; path = MeLiCarViewer/ViewModels/SearchViewViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -413,6 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				8D5216382B3392A3006D3E11 /* SearchViewViewModel.swift */,
+				8D08C6EA2B3638DF00A21DE9 /* CarResultsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -560,6 +563,7 @@
 				63DAE777251073C100C64D83 /* DCButton.swift in Sources */,
 				6394574F250E9B8800661244 /* SceneDelegate.swift in Sources */,
 				63D3C1182519C03500B230D9 /* Constants.swift in Sources */,
+				8D08C6EB2B3638DF00A21DE9 /* CarResultsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
