@@ -19,8 +19,11 @@ class DCCarInfoHeaderViewController: UIViewController {
     public var porschePicturesInformation: CarPicturesInformation? {
         didSet {
             carImageView.image = UIImage(data: (porschePicturesInformation?.images?.first)!)
+            publishedLabel.text = "Publicado el \(porschePicturesInformation?.dateCreated.convertToDisplayFormat() ?? "...")"
             carImageView.setNeedsLayout()
+            publishedLabel.setNeedsLayout()
             carImageView.layoutIfNeeded()
+            publishedLabel.layoutIfNeeded()
         }
     }
 
