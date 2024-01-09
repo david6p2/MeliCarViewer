@@ -211,7 +211,7 @@ class DataLoaderTests: XCTestCase {
     }
 
     func testDownloadImage_WhenTheMethodIsCalledWithAnInvalidURL_ThenTheCompletionHandlerShouldFailWithInvalidURLType() {
-        let imageURLString = "123 45"
+        let imageURLString = "https://api.mercádo|libre.com/items/60259"
         let data: Data = .init()
         MockURLProtocol.requestHandler = { request in
             XCTAssertNotEqual(request.url, URL(string: "https://api.mercadolibre.com/items/60259"), "The URL should not be valid")
