@@ -37,8 +37,10 @@ class DCDataLoadingViewController: UIViewController {
 
     func dismissLoadingView() {
         DispatchQueue.main.async {
-            self.containerView.removeFromSuperview()
-            self.containerView = nil
+            if self.containerView != nil {
+                self.containerView.removeFromSuperview()
+                self.containerView = nil
+            }
         }
     }
 
